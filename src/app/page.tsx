@@ -3,6 +3,7 @@ import { NavbarDemo } from '@/components/Navbar';
 import { Lamp } from '@/components/Lamp';
 import {ThemeProvider as NextThemesProvider} from "next-themes";
 import LandingPage from '@/page/LandingPage';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -16,12 +17,12 @@ export default function Home() {
             Your Education Explore
           </p>
         </div> */}
-
        
         
 
 
     </main>
+<Footer/>
     </NextThemesProvider>
   );
 }

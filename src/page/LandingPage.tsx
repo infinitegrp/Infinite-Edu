@@ -13,6 +13,8 @@ import GuideLineGroup from '@/components/GuideLineGroup';
 import Contact from '@/components/Contact';
 import About from '@/components/About';
 import { Lamp } from '@/components/Lamp';
+import { WhyGuideline } from '@/components/WhyGuideline';
+import Location from '@/components/Location';
 
 interface CardProps {
     children: ReactNode;
@@ -22,7 +24,7 @@ interface CardProps {
 export const Card = ({ children, className }: CardProps) => {
 
     return <motion.section
-        className={` rounded-xl h-full w-full dark:bg-neutral-900  bg-blue-50 border dark:border-gray-800     shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:shadow shadow-blue-50 overflow-hidden`}
+        className={` rounded-xl h-full w-full dark:bg-neutral-950  bg-blue-50 border dark:border-gray-800     shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:shadow shadow-blue-50 overflow-hidden`}
         initial={{ opacity: 0, y: -5, }}
         whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.1 } }}>
         {children}
@@ -67,9 +69,8 @@ export default function LandingPage() {
                     ))}
                 </div>
                 <p className="pt-8 font-normal font-center text-center text-black dark:text-neutral-700 pb-10 ">
-                    Spotlight effect is a great way to draw attention to a specific partof the <br />
-                    page. Here, we are drawing the attention towards the text section of the page. <br />
-                    I don&apos;t know why but I&apos;m running out of copy.
+                    Elevate your future with higher studies <br/>- where knowledge
+                    meets opportunity!
                 </p>
                 <PlaceholdersAndVanishInput
                     placeholders={placeholders} onChange={function (e: React.ChangeEvent<HTMLInputElement>): void {
@@ -81,6 +82,13 @@ export default function LandingPage() {
                 />
                 <ProgressLanding />
             </div>
+
+
+            <div className=" w-full dark:bg-black bg-white   flex flex-col items-center justify-center">
+                <WhyGuideline />
+            </div>
+
+
             <div className=" w-full gap-1 md:gap-2  dark:bg-black bg-white   flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">Our Services</p>
                 <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-700 mb-20">
@@ -103,24 +111,24 @@ export default function LandingPage() {
                     </div>
                 </div>
             </div>
+
+
             <Lamp />
 
-            {/* <div className="h-[80rem] px-5 md:px-20 lg:px-20 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
-                <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">About Us</p>
-                <p className="pt- text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
-                    At Guideline Educational Institution, we are dedicated to delivering premier educational services on a global scale,
-                    with a strategic presence in both the UAE and India. We offer a wide range of educational pathways including distance learning,
-                    international study opportunities, university admissions within India and UAE, and vocational training programs,
-                    tailored to students from all corners of the globe.
-                </p>
-                <About />
-            </div> */}
-            <div className="h-[80rem]  px-5 md:px-20 lg:px-40 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
+
+            <div className="h-[50rem] lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Contact Us</p>
-                <p className="pt- text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
+                <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
                     Have a nice works? Reach out and let’s chat.
                 </p>
-                <div className='max-w-screen-2xl'><Contact /></div>
+                <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40'><Contact /></div>
+            </div>
+            <div className="h-[50rem] lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center ">
+                <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Our Locations</p>
+                <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
+                    our prime locations in bustling cities across the UAE and India.
+                </p>
+                <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[1rem]'><Location /></div>
             </div>
         </>
     )

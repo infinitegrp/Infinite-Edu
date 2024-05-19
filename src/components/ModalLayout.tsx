@@ -1,20 +1,37 @@
 import React from 'react';
-import { Modal } from "antd";
+import { ConfigProvider, Modal } from "antd";
+import { useTheme } from 'next-themes';
 
 interface ModalLayoutProps {
-    open: boolean;
-    title: string;
-    width: number;
-    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-    children: React.ReactNode
+   open: boolean;
+   title: string;
+   width: number;
+   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+   children: React.ReactNode
 }
 
 const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, setOpen, children }) => {
-    return (
-        <Modal zIndex={9999} className="modal-head" rootClassName="p-16" width={width} footer={false} title={title} centered open={open} onCancel={() => setOpen(false)}>
+   const { theme } = useTheme()
+   return (
+      <ConfigProvider
+         theme={{
+            token: {
+               borderRadius: 20,
+               // colorBgMask:'#fff',
+               // colorBgContainer: '#f6ffed',
+            },
+            components: {
+               Modal: {
+                  contentBg: theme === 'light' ? '#fff' : '#0a0a0a',
+               },
+            },
+         }}
+      >
+         <Modal zIndex={9999} className="modal-head" rootClassName="p-16" width={width} footer={false} title={title} centered open={open} onCancel={() => setOpen(false)}>
             {children}
-        </Modal>
-    );
+         </Modal>
+      </ConfigProvider>
+   );
 };
 
 export default ModalLayout;
