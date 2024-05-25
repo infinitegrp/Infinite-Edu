@@ -2,6 +2,7 @@
 import React, { ReactNode, useEffect } from 'react'
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import Image from 'next/image';
+import BorderLineCard from './ui/borderCard';
 
 interface CardProps {
     children: ReactNode;
@@ -39,38 +40,48 @@ export default function ProgressLanding() {
 
     return (
         <div className='flex flex-row mt-20 gap-5 w-full justify-between max-w-screen-2xl lg:px-40'>
-            <Card>
+
+            <BorderLineCard className='h-40 justify-center items-center overflow-hidden'>
+                <motion.div initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.2 }} className='w-150 h-150 ml-auto' >
+                    <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-sm' />
+                </motion.div>
                 <div className="flex flex-col lg:w-44 absolute items-center justify-center">
                     <motion.h1 className=' text-black dark:text-white font-bold text-4xl '>{Universities}</motion.h1>
                     <p className=' text-black dark:text-gray-300  font-bold'>Universities</p>
                     <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                 </div>
-                <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-150 h-150 ml-auto opacity-10' />
-            </Card>
-            <Card>
+
+            </BorderLineCard>
+            <BorderLineCard className='h-40 justify-center items-center overflow-hidden'>
+                <motion.div initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.2 }} className='w-150 h-150 ml-auto' >
+                    <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-sm' />
+                </motion.div>
                 <div className="flex flex-col lg:w-44 absolute items-center justify-center">
                     <motion.h1 className=' text-black dark:text-white font-bold text-4xl '>{Students}</motion.h1>
                     <p className=' text-black dark:text-gray-300  font-bold'>Students</p>
                     <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                 </div>
-                <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-150 h-150 ml-auto opacity-10' />
-            </Card>
-            <Card>
-                <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-150 h-150 ml-auto opacity-10' />
+            </BorderLineCard>
+            <BorderLineCard className='h-40 justify-center items-center overflow-hidden'>
+                <motion.div initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.2 }} className='w-150 h-150 ml-auto' >
+                    <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-sm' />
+                </motion.div>
                 <div className="flex flex-col lg:w-44 absolute items-center justify-center">
                     <motion.h1 className=' text-black dark:text-white font-bold text-4xl '>{Countries}</motion.h1>
                     <p className=' text-black dark:text-gray-300  font-bold'>Countries</p>
                     <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                 </div>
-            </Card>
-            <Card>
-                <div className="flex flex-col lg:w-44 absolute items-center justify-center">
+            </BorderLineCard>
+            <BorderLineCard className='h-40 justify-center items-center overflow-hidden'>
+                <motion.div className="flex flex-col lg:w-44 absolute items-center justify-center " initial={{ scale: 1 }} whileHover={{ scale: 1.5 }} >
                     <motion.h1 initial={{ scale: 1 }} whileHover={{ scale: 1.5 }} className=' text-black dark:text-white font-bold text-4xl '>{Years}</motion.h1>
                     <p className=' text-black dark:text-gray-300  font-bold'>Years of Experience </p>
                     <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
-                </div>
-                    <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-150 h-150 ml-auto opacity-10' />
-            </Card>
+                </motion.div>
+                <motion.div initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.2 }} className='w-150 h-150 ml-auto' >
+                    <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-sm' />
+                </motion.div>
+            </BorderLineCard>
 
             {/* {text.map((el, i) => (
                         <motion.p className='text-black flex flex-row' initial={{ opacity: 0 }} animate={{ opacity: 1 }}

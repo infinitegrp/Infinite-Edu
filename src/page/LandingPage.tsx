@@ -15,6 +15,7 @@ import About from '@/components/About';
 import { Lamp } from '@/components/Lamp';
 import { WhyGuideline } from '@/components/WhyGuideline';
 import Location from '@/components/Location';
+import SmoothScroll from '@/components/ScrollManger';
 
 interface CardProps {
     children: ReactNode;
@@ -53,8 +54,9 @@ export default function LandingPage() {
 
     return (
         <>
-            <div className="h-[50rem] pt-20 w-full dark:bg-black bg-white  relative flex flex-col items-center justify-center">
-                <Spotlight className="fixed z-10 -top-40 left-0 md:left-60 md:-top-20" fill="white" />
+                {/* <SmoothScroll> */}
+
+            <div className="pt-20 w-full dark:bg-black bg-white  relative flex flex-col items-center justify-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <div className="flex flex-row ">
                     {text.map((el, i) => (
@@ -68,8 +70,8 @@ export default function LandingPage() {
                         </motion.h1>
                     ))}
                 </div>
-                <p className="pt-8 font-normal font-center text-center text-black dark:text-neutral-700 pb-10 ">
-                    Elevate your future with higher studies <br/>- where knowledge
+                <p className="pt-8 font-normal font-center text-center text-black dark:text-neutral-300 pb-10 ">
+                    Elevate your future with higher studies - where knowledge <br/>
                     meets opportunity!
                 </p>
                 <PlaceholdersAndVanishInput
@@ -84,26 +86,45 @@ export default function LandingPage() {
             </div>
 
 
-            <div className=" w-full dark:bg-black bg-white   flex flex-col items-center justify-center">
+            <div className="w-full dark:bg-black bg-white flex flex-col items-center justify-center">
                 <WhyGuideline />
             </div>
 
 
             <div className=" w-full gap-1 md:gap-2  dark:bg-black bg-white   flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">Our Services</p>
-                <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-700 mb-20">
-                    Spotlight effect is a great way to draw attention to a specific partof the <br />
-                    page. Here, we are drawing the attention towards the text section of the <br />
+                <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-700 mb-20 max-w-[30rem] px-4 sm:px-0">
+                    Spotlight effect is a great way to draw attention to a specific part of the
+                    page. Here, we are drawing the attention towards the text section of the
                     page. I don&apos;t know why but I&apos;m running out of copy.
                 </p>
-                <div className="max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
+                {/* <div className="max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
                     <div className='md:w-2/3'><Card ><StudyInternationaly /></Card> </div>
                     <div className='md:w-1/3'><Card ><UniversityAdmission /></Card> </div>
-                </div>
-                <div className="max-w-screen-2xl z--10 px-5 md:px-20 lg:px-40  w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
+                </div> */}
+                {/* <div className="max-w-screen-2xl z--10 px-5 md:px-20 lg:px-40  w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
                     <div className="md:w-2/6"> <Card ><DistanceEducation /></Card></div>
                     <div className="flex flex-col gap-4 w-full h-full md:w-4/6">
                         <div className=" flex flex-row md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
+                            <Card className="md:w-1/2 "><WorkInDubai /></Card>
+                            <Card className="md:w-1/2 "><StudyIndia /></Card>
+                        </div>
+                        <Card><GuideLineGroup /></Card>
+                    </div>
+                </div> */}
+                <div className="max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
+                    <Card ><StudyInternationaly /></Card>
+                    <div className='md:w-1/3  md:block lg:block xl:block'><Card ><UniversityAdmission /></Card> </div>
+
+                </div>
+                    <div className='md:w-1/3'> </div>
+                <div className="max-w-screen-2xl z--10 px-5 md:px-20 lg:px-40  w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
+                    <div className="md:w-2/6">
+                         <Card ><DistanceEducation /></Card>
+                    <Card ><UniversityAdmission /></Card>
+                         </div>
+                    <div className="flex flex-col  gap-4 w-full h-full md:w-4/6">
+                        <div className=" flex md:flex-row flex-col md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
                             <Card className="md:w-1/2 "><WorkInDubai /></Card>
                             <Card className="md:w-1/2 "><StudyIndia /></Card>
                         </div>
@@ -116,20 +137,21 @@ export default function LandingPage() {
             <Lamp />
 
 
-            <div className="h-[50rem] lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
+            <div className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Contact Us</p>
                 <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
                     Have a nice works? Reach out and let’s chat.
                 </p>
                 <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40'><Contact /></div>
             </div>
-            <div className="h-[50rem] lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center ">
+            <div className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center ">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Our Locations</p>
                 <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
                     our prime locations in bustling cities across the UAE and India.
                 </p>
                 <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[1rem]'><Location /></div>
             </div>
+                {/* </SmoothScroll> */}
         </>
     )
 }

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Location = () => {
     return (
-        <div className="flex flex-row max-w-screen-2xl gap-10">
+        <div className="flex flex-col md:flex-row max-w-screen-2xl gap-10">
             <div className="flex flex-col w-full items-center">
                 <div className='w-full h-full min-h-10 justify-center flex '>
                     <div className="w- h-[19rem] rounded-2xl border-spacing- ml-0 pl-0 border-gray-800 border-4 overflow-hidden">

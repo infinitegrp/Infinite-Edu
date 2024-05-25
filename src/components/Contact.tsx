@@ -3,11 +3,7 @@ import React from "react";
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "../../utils/cn";
-import {
-    IconBrandGithub,
-    IconBrandGoogle,
-    IconBrandOnlyfans,
-} from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandGoogle, IconBrandOnlyfans,} from "@tabler/icons-react";
 
 export default function Contact() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -17,7 +13,7 @@ export default function Contact() {
     return (
         <>
             <div className=" w-full flex mx-auto rounded-none md:rounded-2xl p-4 shadow-input bg-white dark:bg-black">
-                <div className="w-3/5">
+                <div className="w-5/5 md:w-3/5">
                     <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
                         Have a question , or just want a Appointment, say hi!
                     </h2>
@@ -52,7 +48,7 @@ export default function Contact() {
 
                     </form>
                 </div>
-                <div className="w-2/5 pl-20 flex gap-2 flex-col">
+                <div className="hidden md:w-2/5 pl-10 xl:pl-20 sm:flex gap-2 flex-col">
                     <h2 className="font-bold text-2xl text-neutral-800 dark:text-neutral-200">
                         Contact Informations
                     </h2>
