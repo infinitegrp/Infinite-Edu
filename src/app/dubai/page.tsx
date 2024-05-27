@@ -31,7 +31,6 @@ const page = () => {
 
       <NavbarDemo />
       <MotionConfig transition={{ type: 'spring', mass: 5, stiffness: 150, damping: 50, restDelta: 0.0001 }}>
-
         <div className="h-screen ">
           <ScrollController section={section} onSectionChange={setSection} />
 
@@ -61,66 +60,42 @@ const page = () => {
                 className="pt-1 text-sm font-normal font-center text-center text-gray-400 dark:text-neutral-700 mb-20 max-w-[30rem] px-4 sm:px-0">
                 opportunity for students to begin their educational journey in Dubai and complete their final year in the UK
               </motion.p>
+
+
               <motion.div className=" max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 flex flex-col gap-5  w-full h-full">
-                {/* <motion.div
-                  initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}
-                  className="bg-green-500 w-full h-[25rem] flex items-center justify-center overflow-hidden">
-                  <Image src='/images/dubai/dubai.png' className="w-full lg:h-[30rem] " width={1000} height={1000} alt="Dubai Work" />
-                </motion.div> */}
-                <motion.div
-                  initial={{ opacity: 0.5, y: 100 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                  className="relative w-full  flex items-center justify-center overflow-hidden"
-                >
-                  <Image
-                    src='/images/dubai/dubai.png'
-                    className="w-full lg:h-[30rem] object-cover"
-                    width={1000}
-                    height={1000}
-                    alt="Dubai Work"
-                  />
-                  <motion.p
-                    initial={{ opacity: 0.5, y: 100 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                <motion.div initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                  className="relative w-full  flex items-center justify-center overflow-hidden">
+                  <motion.div whileHover={{ scale: 1 }} initial={{ scale: 1.1 }} whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                    className="absolute text-sm font-normal text-start text-gray-200 dark:text-neutral-700 max-w-[60rem] px-4 sm:px-0"
-                  >
-                    <span>study and work in dubai</span><br />
-                    By participating in our pathway program, students gain the advantage of
-                    experiencing diverse educational systems, cultures, and networks, significantly
-                    enriching their academic and personal development. We are committed to guiding our
-                    students every step of the way, ensuring they achieve their goals and make the most
-                    of this unique educational adventure.
-                  </motion.p>
+                    className="relative w-full  flex items-end  justify-start overflow-hidden" >
+                    <Image src='/images/dubai/dubai.png' className="w-full lg:h-[30rem] object-cover" width={1000} height={1000} alt="Dubai Work" />
+                    <motion.div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-0 "
+                      initial={{ opacity: 0.5 }} whileHover={{ opacity: 1 }} transition={{ duration: 1 }} />
+                     <motion.p initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0.5 }} whileHover={{ scale: 1.1 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                      className="absolute text-sm ml-40 mb-20 font-normal text-gray-300 dark:text-neutral-700 max-w-[50rem]  sm:px-0 z-999">
+                      <span className="text-lg font-bold">Work in dubai</span><br />
+                      By participating in our pathway program, students gain the advantage of
+                      experiencing diverse educational systems, cultures, and networks, significantly
+                      enriching their academic and personal development. We are committed to guiding our
+                      students every step of the way, ensuring they achieve their goals and make the most
+                      of this unique educational adventure.
+                    </motion.p>
+                  </motion.div>
                 </motion.div>
+
+
                 <motion.div className=" w-full h-[23rem] flex flex-row  gap-5">
                   <motion.div className="bg-white w-4/6 h-full overflow-hidden"
                     initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}>
-                    <motion.div
-                      whileHover={{ scale: 1 }} initial={{ scale: 1.1 }}
-                      // initial={{ opacity: 0.5, y: 100 }}
-                      whileInView={{ opacity: 1, y: 0 }}
+                    <motion.div whileHover={{ scale: 1 }} initial={{ scale: 1.1 }} whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                      className="relative w-full  flex items-center justify-center overflow-hidden"
-                    >
-                      <Image
-                        src='/images/dubai/Work.png'
-                        className="w-full lg:h-[30rem] object-cover"
-                        width={1000}
-                        height={1000}
-                        alt="Dubai Work"
-                      />
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-0"
+                      className="relative w-full  flex items-center justify-center overflow-hidden" >
+                      <Image src='/images/dubai/Work.png' className="w-full lg:h-[30rem] object-cover" width={1000} height={1000} alt="Dubai Work" />
+                      <motion.div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-0"
                         initial={{ opacity: 0.5 }} whileHover={{ opacity: 1 }} transition={{ duration: 1 }} />
-                      <motion.p
-                        initial={{ opacity: 0.5, y: 100 }}
-                        whileInView={{ opacity: 1, y: 0.5 }}
-                        whileHover={{scale: 1.1}}
-                        transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                        className="absolute text-sm font-normal mx-20 pt-16  text-gray-200 dark:text-neutral-700 max-w-[60rem] px-4 sm:px-0 z-999">
-                        <span>Work in dubai</span><br />
+                      <motion.p initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0.5 }} whileHover={{ scale: 1.1 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                        className="absolute text-sm font-normal mx-20 pt-16  text-gray-300 dark:text-neutral-700 max-w-[60rem] px-4 sm:px-0 z-999">
+                        <span className="text-lg font-bold">Work in dubai</span><br />
                         By participating in our pathway program, students gain the advantage of
                         experiencing diverse educational systems, cultures, and networks, significantly
                         enriching their academic and personal development. We are committed to guiding our
@@ -129,19 +104,46 @@ const page = () => {
                       </motion.p>
                     </motion.div>
                   </motion.div>
-                  <motion.div className="bg-blue-500 w-2/6 h-full" initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}>
-                    <Image src='/images/dubai/happyFace.png' className="w-full h-full " width={3000} height={3000} alt="Dubai Work" />
+
+
+                  <motion.div className="bg-blue-500 w-2/6 h-full overflow-hidden" initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}>
+                    <motion.div whileHover={{ scale: 1 }} initial={{ scale: 1.1 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                      className="relative w-full  flex  overflow-hidden" >
+                      <Image src='/images/dubai/happyFace.png' className="w-full h-full " width={3000} height={3000} alt="Dubai Work" />
+                      <motion.div className="absolute inset-0 bg-gradient-to-b from-black to-transparent z-0"
+                        initial={{ opacity: 0.5 }} whileHover={{ opacity: 1 }} transition={{ duration: 1 }} />
+                      <motion.p initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0.5 }} whileHover={{ scale: 1.1 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                        className="absolute text-sm font-normal mx-10 pt-10  text-gray-300 dark:text-neutral-700 max-w-[60rem] px-4 sm:px-0 z-999">
+                        <span className="text-lg font-bold">User centric Design</span><br />
+                        By participating in our pathway program, students gain the advantage of
+                        experiencing diverse educational systems, cultures, and networks, significantly
+                        enriching their academic and personal development.
+                      </motion.p>
+                    </motion.div>
                   </motion.div>
                 </motion.div>
 
 
                 <motion.div initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}
-                  className="bg-orange-500 w-full h-[20rem] rounded-sm">
-                  <Image src='/images/dubai/VISA-support.png' className="w-full h-full " width={3000} height={3000} alt="Dubai Work" />
+                  className="bg-orange-500 w-full h-[20rem] overflow-hidden rounded-sm">
+                  <motion.div whileHover={{ scale: 1 }} initial={{ scale: 1.1 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                    className="relative w-full  flex  overflow-hidden" >
+                    <Image src='/images/dubai/VISA-support.png' className="w-full h-full " width={3000} height={3000} alt="Dubai Work" />
+                    <motion.div className="absolute inset-0 flex  bg-gradient-to-t from-black to-transparent z-0"
+                      initial={{ opacity: 0.5 }} whileHover={{ opacity: 1 }} transition={{ duration: 1 }} />
+                    <motion.p initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0.5 }} whileHover={{ scale: 1.1 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
+                      className="absolute text-sm font-normal pt-36 mx-24 text-gray-300 dark:text-neutral-700 max-w-[50rem]  sm:px-0 z-999">
+                      <span className="text-lg font-bold">Work in dubai</span><br />
+                      By participating in our pathway program, students gain the advantage of
+                      experiencing diverse educational systems, cultures, and networks, significantly
+                      enriching their academic and personal development. We are committed to guiding our
+                      students every step of the way, ensuring they achieve their goals and make the most
+                      of this unique educational adventure.
+                    </motion.p>
+                  </motion.div>
                 </motion.div>
-
-
               </motion.div>
+
 
               <motion.p initial={{ opacity: 0.5, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}
                 className="pt-40 text-sm font-normal font-center text-center text-gray-400 dark:text-neutral-700 mb-10 max-w-[60rem] px-4 sm:px-0">

@@ -1,23 +1,33 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion';
+
 
 export default function StudyIndia() {
    return (
-      <div className='pt-10 px-8 max-h-[350px]'>
-         <h1 className='font-bold text-xl text-black dark:text-white'>Study in India</h1>
-         <p className='text-sm lg:text-base text-gray-500 dark:text-white pt-5 '>
-            Students looking to pursue their education in the UAE will find
-         </p>
-         <Link href={'/india'}>
-            <button className="mt-5 h-8 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm dark:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-               <p className='pr-2'> Explore</p>
-               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00065 14.6663C11.6827 14.6663 14.6673 11.6817 14.6673 7.99967C14.6673 4.31767 11.6827 1.33301 8.00065 1.33301C4.31865 1.33301 1.33398 4.31767 1.33398 7.99967C1.33398 11.6817 4.31865 14.6663 8.00065 14.6663ZM8.31398 5.64634C8.40773 5.55271 8.53482 5.50011 8.66732 5.50011C8.79982 5.50011 8.9269 5.55271 9.02065 5.64634L11.0207 7.64634C11.1143 7.74009 11.1669 7.86717 11.1669 7.99967C11.1669 8.13218 11.1143 8.25926 11.0207 8.35301L9.02065 10.353C8.97488 10.4021 8.91968 10.4415 8.85834 10.4689C8.79701 10.4962 8.7308 10.5109 8.66367 10.5121C8.59653 10.5133 8.52984 10.5009 8.46759 10.4758C8.40533 10.4506 8.34877 10.4132 8.30129 10.3657C8.25381 10.3182 8.21638 10.2617 8.19124 10.1994C8.16609 10.1371 8.15374 10.0705 8.15492 10.0033C8.15611 9.93619 8.1708 9.86998 8.19813 9.80865C8.22546 9.74732 8.26486 9.69212 8.31398 9.64634L9.46065 8.49967H5.33398C5.20138 8.49967 5.0742 8.447 4.98043 8.35323C4.88666 8.25946 4.83398 8.13228 4.83398 7.99967C4.83398 7.86707 4.88666 7.73989 4.98043 7.64612C5.0742 7.55235 5.20138 7.49967 5.33398 7.49967H9.46065L8.31398 6.35301C8.22035 6.25926 8.16776 6.13218 8.16776 5.99967C8.16776 5.86717 8.22035 5.74009 8.31398 5.64634Z" fill="white" fill-opacity="0.82" />
-               </svg>
-            </button>
-         </Link>
-         <Image src="/images/dubai.png" alt="india" width={480} height={480} className='w-full h-100 ml-auto' />
-      </div>
+      <div className="h-full w-full justify-center items-start  overflow-hidden flex flex-col relative">
+            <motion.div className='pt-3 md:pt-4 lg:pt-6 px-4 md:px-4 lg:px-6 h-full w-full  bg-white dark:bg-neutral-950'>
+               <h1 className='font-semibold text-lg md:text-xl text-black dark:text-gray-100'>Study in India</h1>
+               <p className='text-sm lg:text-base text-gray-500 dark:text-gray-300 pt-1 md:pt-2 lg:pt-3 '>
+                  Students looking to pursue their education in the UAE will find
+               </p>
+               <div className='d-flex flex-row'>
+                  <Link href={'/dubai'} >
+                     <button className="absolute px-3 md:px-3 text-xs md:text-sm z-20 mt-2 md:mt-5 h-8 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  dark:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                        <p className='pr-2'>Explore</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00065 14.6663C11.6827 14.6663 14.6673 11.6817 14.6673 7.99967C14.6673 4.31767 11.6827 1.33301 8.00065 1.33301C4.31865 1.33301 1.33398 4.31767 1.33398 7.99967C1.33398 11.6817 4.31865 14.6663 8.00065 14.6663ZM8.31398 5.64634C8.40773 5.55271 8.53482 5.50011 8.66732 5.50011C8.79982 5.50011 8.9269 5.55271 9.02065 5.64634L11.0207 7.64634C11.1143 7.74009 11.1669 7.86717 11.1669 7.99967C11.1669 8.13218 11.1143 8.25926 11.0207 8.35301L9.02065 10.353C8.97488 10.4021 8.91968 10.4415 8.85834 10.4689C8.79701 10.4962 8.7308 10.5109 8.66367 10.5121C8.59653 10.5133 8.52984 10.5009 8.46759 10.4758C8.40533 10.4506 8.34877 10.4132 8.30129 10.3657C8.25381 10.3182 8.21638 10.2617 8.19124 10.1994C8.16609 10.1371 8.15374 10.0705 8.15492 10.0033C8.15611 9.93619 8.1708 9.86998 8.19813 9.80865C8.22546 9.74732 8.26486 9.69212 8.31398 9.64634L9.46065 8.49967H5.33398C5.20138 8.49967 5.0742 8.447 4.98043 8.35323C4.88666 8.25946 4.83398 8.13228 4.83398 7.99967C4.83398 7.86707 4.88666 7.73989 4.98043 7.64612C5.0742 7.55235 5.20138 7.49967 5.33398 7.49967H9.46065L8.31398 6.35301C8.22035 6.25926 8.16776 6.13218 8.16776 5.99967C8.16776 5.86717 8.22035 5.74009 8.31398 5.64634Z" fill="white" fill-opacity="0.82" />
+                        </svg>
+                     </button>
+                  </Link>
+                  <motion.div className="absolute inset-0 flex  bg-gradient-to-t from-blue-500 to-transparent z-10"
+                      initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.3 }} transition={{ duration: 1 }} />
+               </div>
+            </motion.div>
+            <div className='absolute pt-20 md:pt-28 pl-20 md:pl-36 h-full w-full'>
+               <Image src="/images/tajShade.png" alt="dubai" width={1480} height={1480} className='w-40 md:w-60 md:h-100 absolute' />
+            </div>
+         </div>
    )
 }

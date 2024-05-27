@@ -16,6 +16,7 @@ import { Lamp } from '@/components/Lamp';
 import { WhyGuideline } from '@/components/WhyGuideline';
 import Location from '@/components/Location';
 import SmoothScroll from '@/components/ScrollManger';
+import BorderLineCard from '@/components/ui/borderCard';
 
 interface CardProps {
     children: ReactNode;
@@ -54,9 +55,9 @@ export default function LandingPage() {
 
     return (
         <>
-                {/* <SmoothScroll> */}
+            {/* <SmoothScroll> */}
 
-            <div className="pt-20 w-full dark:bg-black bg-white  relative flex flex-col items-center justify-center">
+            <div className="py-40 w-full dark:bg-black bg-white  relative flex flex-col items-center justify-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <div className="flex flex-row ">
                     {text.map((el, i) => (
@@ -70,8 +71,8 @@ export default function LandingPage() {
                         </motion.h1>
                     ))}
                 </div>
-                <p className="pt-8 font-normal font-center text-center text-black dark:text-neutral-300 pb-10 ">
-                    Elevate your future with higher studies - where knowledge <br/>
+                <p className="py-8 pb-40 font-normal font-center text-center text-black dark:text-neutral-300">
+                    Elevate your future with higher studies - where knowledge <br />
                     meets opportunity!
                 </p>
                 <PlaceholdersAndVanishInput
@@ -86,14 +87,14 @@ export default function LandingPage() {
             </div>
 
 
-            <div className="w-full dark:bg-black bg-white flex flex-col items-center justify-center">
+            <div className="w-full pt-10 dark:bg-black bg-white flex flex-col items-center justify-center">
                 <WhyGuideline />
             </div>
 
 
             <div className=" w-full gap-1 md:gap-2  dark:bg-black bg-white   flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">Our Services</p>
-                <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-700 mb-20 max-w-[30rem] px-4 sm:px-0">
+                <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-20 max-w-[30rem] px-4 sm:px-0">
                     Spotlight effect is a great way to draw attention to a specific part of the
                     page. Here, we are drawing the attention towards the text section of the
                     page. I don&apos;t know why but I&apos;m running out of copy.
@@ -113,24 +114,26 @@ export default function LandingPage() {
                     </div>
                 </div> */}
                 <div className="max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
-                    <Card ><StudyInternationaly /></Card>
-                    <div className='md:w-1/3  md:block lg:block xl:block'><Card ><UniversityAdmission /></Card> </div>
-
+                    <div className='md:w-2/3'><StudyInternationaly /> </div>
+                    <div className='md:w-1/3 hidden md:block'><BorderLineCard className='h-60 justify-center items-start  overflow-hidden flex flex-col relative'><UniversityAdmission /></BorderLineCard> </div>
                 </div>
-                    <div className='md:w-1/3'> </div>
+                <div className='md:w-1/3'> </div>
                 <div className="max-w-screen-2xl z--10 px-5 md:px-20 lg:px-40  w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
-                    <div className="md:w-2/6">
-                         <Card ><DistanceEducation /></Card>
-                    <Card ><UniversityAdmission /></Card>
-                         </div>
-                    <div className="flex flex-col  gap-4 w-full h-full md:w-4/6">
-                        <div className=" flex md:flex-row flex-col md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
-                            <Card className="md:w-1/2 "><WorkInDubai /></Card>
-                            <Card className="md:w-1/2 "><StudyIndia /></Card>
+                    <div className="md:w-2/6 w-1/2">
+                        <BorderLineCard className=' md:block h-full justify-center items-start  overflow-hidden flex flex-col relative'><DistanceEducation /></BorderLineCard>
+
+                    </div>
+                    <div className="flex flex-col  gap-4 h-full w-1/2 md:w-4/6">
+                        <div className=" flex md:flex-row flex-col gap-2 md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
+                            <BorderLineCard className="h-40 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative"><WorkInDubai /></BorderLineCard>
+                            <BorderLineCard className="h-40 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative"><StudyIndia /></BorderLineCard>
+                            <div className='md:w-1/3 block md:hidden'><BorderLineCard className='h-full justify-center items-start  overflow-hidden flex flex-col relative'><UniversityAdmission /></BorderLineCard> </div>
+
                         </div>
-                        <Card><GuideLineGroup /></Card>
+                        <div className="hidden md:block"><GuideLineGroup /></div>
                     </div>
                 </div>
+                    <div className="block md:hidden max-w-screen-2xl px-5 pt-1"><GuideLineGroup /></div>
             </div>
 
 
@@ -151,7 +154,6 @@ export default function LandingPage() {
                 </p>
                 <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[1rem]'><Location /></div>
             </div>
-                {/* </SmoothScroll> */}
         </>
     )
 }
