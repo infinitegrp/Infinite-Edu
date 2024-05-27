@@ -59,6 +59,9 @@ export default function LandingPage() {
 
             <div className="py-40 w-full dark:bg-black bg-white  relative flex flex-col items-center justify-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+                <p className="py-8 font-normal text-xl font-center text-center text-black dark:text-neutral-300">
+                Guideline Education Institution <br />
+                </p>
                 <div className="flex flex-row ">
                     {text.map((el, i) => (
                         <motion.h1
@@ -71,7 +74,7 @@ export default function LandingPage() {
                         </motion.h1>
                     ))}
                 </div>
-                <p className="py-8 pb-40 font-normal font-center text-center text-black dark:text-neutral-300">
+                <p className="py-8 pb-14 font-normal text-xl font-center text-center text-black dark:text-neutral-300">
                     Elevate your future with higher studies - where knowledge <br />
                     meets opportunity!
                 </p>
@@ -83,7 +86,7 @@ export default function LandingPage() {
                     }}                // onChange={handleChange}
                 // onSubmit={onSubmit}
                 />
-                <ProgressLanding />
+                <ProgressLanding/>
             </div>
 
 
@@ -133,7 +136,7 @@ export default function LandingPage() {
                         <div className="hidden md:block"><GuideLineGroup /></div>
                     </div>
                 </div>
-                    <div className="block md:hidden max-w-screen-2xl px-5 pt-1"><GuideLineGroup /></div>
+                <div className="block md:hidden max-w-screen-2xl px-5 pt-1"><GuideLineGroup /></div>
             </div>
 
 

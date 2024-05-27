@@ -39,9 +39,9 @@ export default function ProgressLanding() {
     }, []);
 
     return (
-        <div className='flex flex-row mt-20 gap-5 w-full justify-between max-w-screen-2xl lg:px-40'>
+        <div className='flex flex-row mt-40 gap-5 w-full justify-between max-w-screen-2xl lg:px-40'>
 
-            <BorderLineCard className='h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent'>
+            <BorderLineCard className='h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent '>
                 <motion.div initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.2 }} className='w-150 h-150 ml-auto' >
                     <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-lg opacity-10' />
                 </motion.div>
