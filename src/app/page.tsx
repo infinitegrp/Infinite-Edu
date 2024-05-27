@@ -23,11 +23,11 @@ export default function Home() {
       <Spotlight className="fixed z-10 -top-40 left-0 md:left-60 md:-top-20" fill="rgb(147 197 253)" />
       <SmoothScroll>
 
-        <main className={`flex  flex-col w-full  items-center justify-between`}>
           <div className={roboto.className}>
+        <main className={`flex  flex-col w-full  items-center justify-between`}>
             <LandingPage />
-          </div>
         </main>
+          </div>
       </SmoothScroll>
       <Footer />
     </NextThemesProvider>
