@@ -5,7 +5,6 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 import LandingPage from '@/page/LandingPage';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/ScrollManger';
-import { Parallax } from '@/components/Parallax';
 import { Spotlight } from '@/components/ui/Spotlight';
 import { Roboto } from '@next/font/google'
 import { Poppins } from 'next/font/google';
