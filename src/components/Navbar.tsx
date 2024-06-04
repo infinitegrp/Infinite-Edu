@@ -64,6 +64,9 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
+        <MenuItem setActive={setActive} active={active} item='Blogs'>
+        <HoveredLink href="/blogs">Blogs</HoveredLink>
+        </MenuItem>
         <MenuItem setActive={setActive} active={active} item='Contact'>
         <button className="dark:text-white" onClick={() => setTheme(theme==='light'?'dark':'light')}>{theme}</button>
         </MenuItem>

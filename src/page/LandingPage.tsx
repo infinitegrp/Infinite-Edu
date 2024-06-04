@@ -57,15 +57,15 @@ export default function LandingPage() {
         <>
             {/* <SmoothScroll> */}
 
-            <div className="py-40 w-full dark:bg-black bg-white  relative flex flex-col items-center justify-center">
+            <section className="pt-[20vh] md:pt-[20vh] pb-[10vh]  w-full h-screen justify-between  dark:bg-black bg-white  relative flex flex-col items-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-                <p className="py-8 font-normal text-xl font-center text-center text-black dark:text-neutral-300">
+                <p className="py-2 font-normal text-lg md:text-xl font-center text-center text-black dark:text-neutral-300">
                 Guideline Education Institution <br />
                 </p>
                 <div className="flex flex-row ">
                     {text.map((el, i) => (
                         <motion.h1
-                            className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-4"
+                            className="text-2xl md:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-[1vh]"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.25, delay: i / 10, }}
@@ -74,7 +74,13 @@ export default function LandingPage() {
                         </motion.h1>
                     ))}
                 </div>
-                <p className="py-8 pb-14 font-normal text-xl font-center text-center text-black dark:text-neutral-300">
+                <div className="w-[40rem] h- relative ">
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+                </div>
+                <p className=" font-normal text-xl font-center text-center text-black dark:text-neutral-300">
                     Elevate your future with higher studies - where knowledge <br />
                     meets opportunity!
                 </p>
@@ -87,7 +93,7 @@ export default function LandingPage() {
                 // onSubmit={onSubmit}
                 />
                 <ProgressLanding/>
-            </div>
+            </section>
 
 
             <div className="w-full pt-10 dark:bg-black bg-white flex flex-col items-center justify-center">

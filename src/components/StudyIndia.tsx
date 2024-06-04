@@ -13,7 +13,7 @@ export default function StudyIndia() {
                   Students looking to pursue their education in the UAE will find
                </p>
                <div className='d-flex flex-row'>
-                  <Link href={'/dubai'} >
+                  <Link href={'/india'} >
                      <button className="absolute px-3 md:px-3 text-xs md:text-sm z-20 mt-2 md:mt-5 h-8 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  dark:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <p className='pr-2'>Explore</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
