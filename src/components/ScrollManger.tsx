@@ -45,8 +45,8 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     // as scrollY changes between 0px and the scrollable height, create a negative scroll value...
     // ... based on current scroll position to translateY the document in a natural way
     const transform = useTransform(scrollY, [0, pageHeight], [0, -pageHeight])
-    const physics = { damping: 25, mass: 0.27, stiffness: 50 }  // easing of smooth scroll
-    const smPhysics = { damping: 20, mass: 0.1, stiffness: 1 }  // easing of smooth scroll
+    const smPhysics = { damping: 25, mass: 0.27, stiffness: 50 }  // easing of smooth scroll
+    const physics = { damping: 10, mass: 0.1, stiffness: 10 }  // easing of smooth scroll
     const spring = useSpring(transform, physics) // apply easing to the negative scroll value
     const smSpring = useSpring(transform, smPhysics) // apply easing to the negative scroll value
 
