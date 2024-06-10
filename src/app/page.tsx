@@ -27,8 +27,8 @@ export default function Home() {
             <LandingPage />
         </main>
           </div>
-      </SmoothScroll>
       <Footer />
+      </SmoothScroll>
     </NextThemesProvider>
   );
 }

@@ -32,14 +32,16 @@ export function Lamp() {
         Fueling company growth through <br /> mental well-being
       </motion.h1>
       <motion.div className="flex flex-row w-full h-full items-end gap-2 md:gap-4 max-w-screen-2xl px-5 md:px-20 lg:px-40 pt-0">
-        <Card><motion.div className="w-full h-80"><Programs /></motion.div></Card>
+       <div className="h-full w-full"> <Card><motion.div className="w-full h-80"><Programs/></motion.div></Card></div>
         <div className="md:hidden flex-col flex w-full h-full gap-2 md:gap-4 max-w-screen-2xl">
-        <Card><motion.div className="w-full h-60"><University /></motion.div></Card>
-        <Card><motion.div className="w-full h-40"><Countries /></motion.div></Card>
+          <Card><motion.div className="w-full h-60"><University /></motion.div></Card>
+          <Card><motion.div className="w-full h-40"><Countries /></motion.div></Card>
         </div>
         <Card className="hidden md:block"><motion.div className="w-full h-60"><University /></motion.div></Card>
         <Card className="hidden md:block"><motion.div className="w-full h-40"><Countries /></motion.div></Card>
+        <div className="w-full">
         <Card><motion.div className="w-full h-80"><Years /></motion.div></Card>
+        </div>
       </motion.div>
     </LampContainer>
   );

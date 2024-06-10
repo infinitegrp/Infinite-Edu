@@ -5,8 +5,8 @@ import BorderLineCard from './ui/borderCard'
 export default function UniversityAdmission() {
     return (
         <>
-        <div className='h-full pb-9 pt-3 md:pt-4 lg:pt-6 px-4 md:px-5 lg:px-8  bg-white dark:bg-neutral-950  overflow-hidden'>
-            <h1 className='font-semibold text-lg md:text-xl text-black dark:text-gray-100'>UniversityAdmission</h1>
+        <div className='h-full pb-2 md:pb-9 pt-3 md:pt-4 lg:pt-6 px-4 md:px-5 lg:px-8  bg-white dark:bg-neutral-950  overflow-hidden'>
+            <h1 className='font-semibold text-base md:text-xl text-black dark:text-gray-100'>University Admission</h1>
             <p className='text-sm lg:text-base text-gray-500 dark:text-gray-300 pt-1 md:pt-2'>
                 We're here to make your university admission journey across the globe 
                 a breeze, and the best part – we don't charge any extra fees for it! 

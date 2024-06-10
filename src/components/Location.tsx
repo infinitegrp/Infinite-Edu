@@ -14,8 +14,8 @@ const Location = () => {
                     </div>
                     <div className='flex absolute bg-gray-900 py-3 px-8 rounded-xl blur-xs opacity-90 justify-start items-center mt-40 '>
                         <div className="flex flex-row items-center gap-8">
-                            <p className='w-full text-gray-300'><span className='font-bold text-gray-50'>
-                                Wolfpack Workspaces</span> <br />62/5011, Iyyattil Junction, Shenoys, Kochi, ,<br />Ernakulam, Kerala 682011
+                            <p className='w-full text-neutral-400'><span className='font-bold text-gray-50'>
+                                Wolfpack Workspaces</span> <br />62/5011, Iyyattil Junction, Shenoys, Kochi, <br />Ernakulam, Kerala 682011
                                 <br /><span className='text-blue-500'>View larger map</span>
                             </p>
                             <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
-                <p className='w-full text-gray-300 text-lg text-center pt-10'>
+                <p className='w-full text-black dark:text-neutral-400 text-lg text-center pt-10'>
                     <span className='font-bold text-gray-50'>Head office INDIA </span>
                     <br />Wolfpack Business Tower. KPCC Jn.,<br/> MG Road - Cochin Kerala, India
                     <br />Ph :+91 99477 31238<br /> Mail : info@guidelineedu.com
@@ -40,8 +40,8 @@ const Location = () => {
                     </div>
                     <div className='flex absolute bg-gray-900 py-3 px-8 rounded-xl blur-xs opacity-90 justify-start items-center mt-40 '>
                         <div className="flex flex-row items-center gap-8">
-                            <p className='w-full text-gray-300'><span className='font-bold text-gray-50'>
-                                Wolfpack Workspaces</span> <br />62/5011, Iyyattil Junction, Shenoys, Kochi, ,<br />Ernakulam, Kerala 682011
+                            <p className='w-full text-black dark:text-neutral-400'><span className='font-bold text-gray-50'>
+                                Wolfpack Workspaces</span> <br />62/5011, Iyyattil Junction, Shenoys, Kochi, <br />Ernakulam, Kerala 682011
                                 <br /><span className='text-blue-500'>View larger map</span>
                             </p>
                             <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
-                <p className='w-full text-gray-300 text-lg text-center pt-10'>
+                <p className='w-full text-black dark:text-neutral-400 text-lg text-center pt-10'>
                     <span className='font-bold text-gray-50'>Head office INDIA </span>
                     <br />Wolfpack Business Tower. KPCC Jn.,<br/> MG Road - Cochin Kerala, India
                     <br />Ph :+91 99477 31238<br /> Mail : info@guidelineedu.com

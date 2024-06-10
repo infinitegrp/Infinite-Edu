@@ -30,7 +30,7 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
-        {item}
+        {item === 'menu' ? <Image src="/images/logo.png" alt="logo" width={100} height={10}/> : item}
       </motion.p>
       {active !== null && (
         <motion.div
@@ -43,7 +43,7 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-white dark:bg-black backdrop-blur-lg rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
@@ -60,7 +60,7 @@ export const MenuItem = ({
   );
 };
 
-export const Menu = ({
+export const  Menu = ({
   setActive,
   children,
 }: {
@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full boder border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative border border-black/[0.2] dark:border-white/[0.2] backdrop-blur-lg shadow-input flex justify-center space-x-4 px-8 py-6 "
     >
       {children}
     </nav>

@@ -57,7 +57,7 @@ export default function LandingPage() {
         <>
             {/* <SmoothScroll> */}
 
-            <section className="pt-[20vh] md:pt-[20vh] pb-[10vh]  w-full h-screen justify-between  dark:bg-black bg-white  relative flex flex-col items-center">
+            <section className="pt-[20vh] md:pt-[20vh] pb-5 md:pb-[10vh] px-5  w-full h-screen justify-between  dark:bg-black bg-white  relative flex flex-col items-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <p className="py-2 font-normal text-lg md:text-xl font-center text-center text-black dark:text-neutral-300">
                 Guideline Education Institution <br />
@@ -65,7 +65,7 @@ export default function LandingPage() {
                 <div className="flex flex-row ">
                     {text.map((el, i) => (
                         <motion.h1
-                            className="text-2xl md:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-[1vh]"
+                            className="text-3xl md:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-1 md:p-5"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.25, delay: i / 10, }}
@@ -80,8 +80,8 @@ export default function LandingPage() {
                 <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
                 <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
                 </div>
-                <p className=" font-normal text-xl font-center text-center text-black dark:text-neutral-300">
-                    Elevate your future with higher studies - where knowledge <br />
+                <p className="font-normal text-sm md:text-xl pb-5 sm:pb-0 font-center text-center text-black dark:text-neutral-300">
+                    Elevate your future with higher studies - where knowledge 
                     meets opportunity!
                 </p>
                 <PlaceholdersAndVanishInput
@@ -96,7 +96,7 @@ export default function LandingPage() {
             </section>
 
 
-            <div className="w-full pt-10 dark:bg-black bg-white flex flex-col items-center justify-center">
+            <div id='why-guideline' className="w-full px-5 pt-10 dark:bg-black bg-white flex flex-col items-center justify-center">
                 <WhyGuideline />
             </div>
 
@@ -104,9 +104,7 @@ export default function LandingPage() {
             <div className=" w-full gap-1 md:gap-2  dark:bg-black bg-white   flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">Our Services</p>
                 <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-20 max-w-[30rem] px-4 sm:px-0">
-                    Spotlight effect is a great way to draw attention to a specific part of the
-                    page. Here, we are drawing the attention towards the text section of the
-                    page. I don&apos;t know why but I&apos;m running out of copy.
+                Each department is led by a dedicated divisional manager, guaranteeing focused expertise and strategic leadership. We are committed to “Guiding To Excellence”
                 </p>
                 {/* <div className="max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
                     <div className='md:w-2/3'><Card ><StudyInternationaly /></Card> </div>
@@ -134,8 +132,8 @@ export default function LandingPage() {
                     </div>
                     <div className="flex flex-col  gap-4 h-full w-1/2 md:w-4/6">
                         <div className=" flex md:flex-row flex-col gap-2 md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
-                            <BorderLineCard className="h-40 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative"><WorkInDubai /></BorderLineCard>
-                            <BorderLineCard className="h-40 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative"><StudyIndia /></BorderLineCard>
+                            <BorderLineCard className="h-48 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative"><WorkInDubai /></BorderLineCard>
+                            <BorderLineCard className="h-44 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative"><StudyIndia /></BorderLineCard>
                             <div className='md:w-1/3 block md:hidden'><BorderLineCard className='h-full justify-center items-start  overflow-hidden flex flex-col relative'><UniversityAdmission /></BorderLineCard> </div>
 
                         </div>
@@ -145,8 +143,9 @@ export default function LandingPage() {
                 <div className="block md:hidden max-w-screen-2xl px-5 pt-1"><GuideLineGroup /></div>
             </div>
 
-
-            <Lamp />
+            <div className="h-screen w-full">
+               <Lamp /> 
+            </div>
 
 
             <div className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
@@ -161,7 +160,7 @@ export default function LandingPage() {
                 <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
                     our prime locations in bustling cities across the UAE and India.
                 </p>
-                <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[1rem]'><Location /></div>
+                <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[5rem]'><Location /></div>
             </div>
         </>
     )

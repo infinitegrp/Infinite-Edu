@@ -6,8 +6,9 @@ import Image from 'next/image';
 export default function Programs() {
   return (
     <>
-    <div className='py-10 px-8 '>
-    <p className=' lg:text-md text-gray-500 dark:text-gray-400 pt-5'>
+    <Image src="/images/100k.png" alt="Computer man" width={160} height={240} className='' />
+    <div className='pb-10 md:px-3'>
+    <p className='text-sm md:text-base text-gray-500 dark:text-gray-400 px-3'>
     Embark on a journey of unparalleled opportunity with over 100,000 programs offered
     </p>
     {/* <motion.svg width="149" height="138" viewBox="0 0 169 158" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +34,6 @@ export default function Programs() {
         fill="url(#paint0_linear_837_456)"
       />
     </motion.svg> */}
-  <Image src="/images/100k.png" alt="Computer man" width={500} height={240} className='w-15 h-15' />
   </div>
   </>
 
