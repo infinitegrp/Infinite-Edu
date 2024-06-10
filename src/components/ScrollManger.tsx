@@ -7,8 +7,12 @@ import {
     useSpring,
     motion
 } from "framer-motion"
+import  { useMediaQuery } from "react-responsive"
+
+
 
 const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
+    const sm = useMediaQuery({ maxWidth: 768 });            
     // scroll container
     const scrollRef = useRef<HTMLDivElement | null>(null)
 
@@ -20,7 +24,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
         for (let entry of entries) {
             setPageHeight(entry.contentRect.height)
         }
-    }, [])
+    }, [])  
 
     useEffect(() => {
         console.log(pageHeight);
@@ -42,13 +46,16 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     // ... based on current scroll position to translateY the document in a natural way
     const transform = useTransform(scrollY, [0, pageHeight], [0, -pageHeight])
     const physics = { damping: 25, mass: 0.27, stiffness: 50 }  // easing of smooth scroll
+    const smPhysics = { damping: 20, mass: 0.1, stiffness: 1 }  // easing of smooth scroll
     const spring = useSpring(transform, physics) // apply easing to the negative scroll value
+    const smSpring = useSpring(transform, smPhysics) // apply easing to the negative scroll value
+
 
     return (
         <>
             <motion.div
                 ref={scrollRef}
-                style={{ y: spring }} // translateY of scroll container using negative scroll value
+                style={{ y: (sm ?   spring   : smSpring) }} 
                 className="w-full fixed"
             >
                 {children}

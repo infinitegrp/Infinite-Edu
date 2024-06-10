@@ -7,12 +7,12 @@ import Image from "next/image";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { ScrollController } from '../../components/scrollController';
 import { NavbarDemo } from "@/components/Navbar";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';   
 import Footer from "@/components/Footer";
 
 const page = () => {
   const [section, setSection] = useState(0);
-  const sm = useMediaQuery({ maxWidth: 768 });
+  const sm = useMediaQuery({ maxWidth: 768 });    
   const md = useMediaQuery({ maxWidth: 768 });
 
   return (

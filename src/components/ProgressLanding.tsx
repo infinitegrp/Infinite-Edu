@@ -48,7 +48,7 @@ export default function ProgressLanding() {
                 <div className="flex flex-col sm:p-1 p-4 lg:w-44 absolute items-center justify-center">
                     <motion.h1 className=' text-black dark:text-white font-bold text-2xl '>{Universities}</motion.h1>
                     <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold'>Universities</p>
-                    <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
+                    <p className=' text-black dark:text-gray-400 text-xs text-center w-32 md:w-40'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                 </div>
             </BorderLineCard>
                 </div>
@@ -60,7 +60,7 @@ export default function ProgressLanding() {
                 <div className="flex flex-col sm:p-1 p-4 lg:w-44 absolute items-center justify-center overflow-hidden">
                     <motion.h1 className=' text-black dark:text-white font-bold text-2xl '>{Students}</motion.h1>
                     <p className=' text-black dark:text-gray-300 xl:text-base font-bold'>Students</p>
-                    <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
+                    <p className=' text-black dark:text-gray-400 text-xs text-center w-32 md:w-40'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                     
                 </div>
             </BorderLineCard>
@@ -77,7 +77,7 @@ export default function ProgressLanding() {
                 <div className="flex flex-col sm:p-1 p-4 lg:w-44 absolute items-center justify-center">
                     <motion.h1 className=' text-black dark:text-white font-bold text-2xl '>{Countries}</motion.h1>
                     <p className=' text-black dark:text-gray-300 xl:text-base font-bold'>Countries</p>
-                    <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
+                    <p className=' text-black dark:text-gray-400 text-xs text-center w-32 md:w-40'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                 </div>
             </BorderLineCard>
             </div>
@@ -87,7 +87,7 @@ export default function ProgressLanding() {
                 <motion.div className="flex flex-col sm:p-1 p-4 lg:w-44 absolute items-center justify-center " initial={{ scale: 1 }} whileHover={{ scale: 1.5 }} >
                     <motion.h1 initial={{ scale: 1 }} whileHover={{ scale: 1.5 }} className=' text-black dark:text-white font-bold text-2xl '>{Years}</motion.h1>
                     <p className=' text-black dark:text-gray-300 xl:text-base font-bold'>Years of Experience </p>
-                    <p className=' text-black dark:text-gray-400 text-xs text-center'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
+                    <p className=' text-black dark:text-gray-400 text-xs text-center w-32 md:w-40'>Lorem Ipsum is a dummy text for country without any sense that is used to fill spaces in graphic</p>
                 </motion.div>
                 <motion.div initial={{ opacity: 0.01 }} whileHover={{ opacity: 0.02 }} className='w-150 h-150' >
                     <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-lg ' />
