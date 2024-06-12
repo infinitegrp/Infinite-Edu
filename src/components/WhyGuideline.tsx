@@ -4,6 +4,7 @@ import { SparklesCore } from "./ui/sparkles";
 import ModalLayout from "./ModalLayout";
 import { useTheme } from "next-themes";
 import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 export function WhyGuideline() {
     const { theme } = useTheme()
@@ -49,7 +50,7 @@ export function WhyGuideline() {
                 <div className="flex justify-center flex-col pt-80 md:pt-0 mx-5 absolute items-center">
                     <p className="text-center w-[50vh] pt-20 pb-6 px-10 md:;px-none dark:text-gray-300 text-gray-700">We are authorized to manage student enrolments for universities and colleges.  </p>
                     <div className=" max-w-screen-2xl px-10 my-2 md:px-20 lg:px-60  flex flex-col md:flex-row justify-center items-start gap-4">
-                        <button className=" hidden md:block mt-1 mb-4 h-8 animate-shimmer items-center flex flex-row rounded-xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
+                        <button className="hidden md:flex mt-1 mb-4 h-8 animate-shimmer items-center flex-row rounded-xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
                       bg-[length:200%_100%] px-2 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             {/* <p className='pr-2'> Get Connected</p> */}
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +60,7 @@ export function WhyGuideline() {
                         <p className="dark:text-gray-400 text-gray-700 text-md text-center md:text-left"><span className="dark:text-gray-300">Guideline Educational Institution is committed to transparency, ensuring that students make their payments directly to their chosen college or
                             university.</span> We support a straightforward, no-extra-cost payment procedure, maintaining both transparency and trust throughout the
                             process</p>
-                        <button className="hidden md:block mt-1 mb-4 h-8 animate-shimmer items-center flex flex-row rounded-xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
+                        <button className="hidden md:flex mt-1 mb-4 h-8 animate-shimmer items-center flex-row rounded-xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
                       bg-[length:200%_100%] px-2 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             {/* <p className='pr-2'> Get Connected</p> */}
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +73,18 @@ export function WhyGuideline() {
                     <p className="text-center w-[50vh] pt-10 dark:text-gray-300 text-gray-700 font-bold text-lg">What is guideline group <span className="text-indigo-500">alumni ?</span> </p>
                     <div className="flex flex-row">
                         <p className="text-center  pt-1 dark:text-gray-300 text-gray-700 text-sm">known more</p>
-                        <button onClick={() => setOpen(true)} className="mt-1 ml-2 mb-4  animate-shimmer items-center flex flex-row rounded-2xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
+                        
+                        <Link href='/Aluminis'>
+                        <button onClick={() => setOpen(true)} className="md:hidden block mt-1 ml-2 mb-4  animate-shimmer items-center flex-row rounded-2xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
+                      bg-[length:200%_100%] p-1 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                            {/* <p className='pr-2'> Get Connected</p> */}
+                            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.11091 10.2052L10.0107 4.24561" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.1986 9.64438L10.2073 4.07522L4.69612 3.27373" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        </Link>
+                        <button onClick={() => setOpen(true)} className="hidden md:block mt-1 ml-2 mb-4  animate-shimmer items-center flex-row rounded-2xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
                       bg-[length:200%_100%] p-1 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                             {/* <p className='pr-2'> Get Connected</p> */}
                             <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">

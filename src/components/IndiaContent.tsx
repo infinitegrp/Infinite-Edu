@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 const IndiaContent = () => {
+  const [openContact, setopenContact] = useState(false);
   return (
     <div className="w-full bg-[#FEFDFD]">
       <div className="max-w-screen-2xl px-5 md:px-20 lg:px-40 w-full space-y-4 mx-auto py-4 pb-24 text-neutral-500">
@@ -20,7 +22,9 @@ const IndiaContent = () => {
               without any hidden fees
             </p>
             <br />
-            <Link href={"/"}>Learn more</Link>
+            <Link href={"#"} onClick={() => setopenContact(true)}>
+              Learn more
+            </Link>
           </div>
           <div className="md:w-1/2 flex justify-center">
             <Image
@@ -41,7 +45,9 @@ const IndiaContent = () => {
               ensuring that every need is addressed promptly and effectively.
             </p>
             <br />
-            <Link href={"/"}>Learn more</Link>
+            <Link href={"#"} onClick={() => setopenContact(true)}>
+              Learn more
+            </Link>
           </div>
           <div className="md:w-1/2 md:order-1 flex justify-center">
             <Image
@@ -54,22 +60,14 @@ const IndiaContent = () => {
         </div>
       </div>
       <div className="bg-black ">
-      <div className="max-w-screen-2xl px-5 md:px-20 lg:px-40 w-full space-y-4 mx-auto py-24 md:text-base text-xs text-neutral-500">
-            
-        <p>
-          Students looking to pursue their education in the UAE will find
-          comprehensive assistance from our experienced professionals. We help
-          students select the right course and institution that align with their
-          career objectives, ensuring a transparent admissions process free from
-        </p>
-        <motion.button
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-          className="border px-4 py-1 rounded-2xl"
-        >
-          Enquire Now
-        </motion.button>
+        <div className="max-w-screen-2xl px-5 md:px-20 lg:px-40 w-full space-y-4 mx-auto py-24 md:text-base text-xs text-neutral-500">
+          <p>
+            Students looking to pursue their education in the UAE will find
+            comprehensive assistance from our experienced professionals. We help
+            students select the right course and institution that align with
+            their career objectives, ensuring a transparent admissions process
+            free from
+          </p>
         </div>
       </div>
       <div className="max-w-screen-2xl px-5 md:px-20 lg:px-40 w-full space-y-4 mx-auto py-24 text-neutral-500 text-center">
@@ -86,9 +84,11 @@ const IndiaContent = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
           className="border px-4 py-1 rounded-2xl"
+          onClick={() => setopenContact(true)}
         >
           Enquire Now
         </motion.button>
+        <ContactForm open={openContact} setOpen={setopenContact} />
       </div>
     </div>
   );
