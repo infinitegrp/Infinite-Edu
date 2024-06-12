@@ -22,7 +22,7 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, s
             },
             components: {
                Modal: {
-                  contentBg: theme === 'light' ? '#fff' : '#0a0a0a',
+                  contentBg: theme === 'light' ? '#fff' : '#212227',
                },
             },
          }}

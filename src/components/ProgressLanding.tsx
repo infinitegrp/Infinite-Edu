@@ -38,7 +38,7 @@ export default function ProgressLanding() {
     }, []);
 
     return (
-    <div className='flex flex-col pt-20 md:flex-row md:px-5 w-full justify-center items-center max-w-screen-2xl'>
+    <div className='flex flex-col md:flex-row md:px-5 w-full justify-center items-center max-w-screen-2xl'>
         <div className='flex flex-row'>
             <div className="p-2">
             <BorderLineCard className='h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent '>

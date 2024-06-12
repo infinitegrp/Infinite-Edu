@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export default function page() {
   return (
-    <NextThemesProvider attribute="class" defaultTheme="dark">
+    <NextThemesProvider attribute="class" defaultTheme="light">
       <NavbarDemo />
       <SmoothScroll>
         <MultiLayerParallax />
