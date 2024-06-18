@@ -1,2 +1,0 @@
-# GuideLineEdu
-Guideline Educational Institution
