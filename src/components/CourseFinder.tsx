@@ -11,10 +11,9 @@ const CourseFinder = () => {
       setIsExpanded(!isExpanded);
    };
    const placeholders = [
-      "What's the first rule of Fight Club?",
-      "Who is Tyler Durden?",
-      "Where is Andrew Laeddis Hiding?",
-      "Write a Javascript method to reverse a string",
+      "What's the Study in dubai Pathway?",
+      "How to Study in India?",
+      "Looking for University Admission",
       "How to assemble your own PC?",
    ];
 

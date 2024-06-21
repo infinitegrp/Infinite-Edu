@@ -4,6 +4,7 @@ import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "../../utils/cn";
 import { IconBrandGithub, IconBrandGoogle, IconBrandOnlyfans,} from "@tabler/icons-react";
+import { PhoneInput } from "./ui/phoneInput";
 
 export default function Contact() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -31,10 +32,16 @@ export default function Contact() {
                                     <Input id="lastname" placeholder="Durden" type="text" />
                                 </LabelInputContainer>
                             </div>
-                            <LabelInputContainer className="mb-4">
+                            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+                                <LabelInputContainer>
                                 <Label htmlFor="email">Email Address</Label>
                                 <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
-                            </LabelInputContainer>
+                                </LabelInputContainer>
+                                <LabelInputContainer>
+                                    <Label htmlFor="phone">Phone</Label>
+                                    <PhoneInput id="phone" placeholder="Durden" type="text" />
+                                </LabelInputContainer>
+                            </div>
                             <LabelInputContainer className="mb-4">
                                 <Label htmlFor="password">Message</Label>
                                 <Input id="password" className="h-40" type="text" />

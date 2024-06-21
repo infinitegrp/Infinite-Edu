@@ -172,17 +172,9 @@ const page = () => {
                         }}
                         className="absolute text-xs md:text-sm ml-7 mr-7 md:ml-24 mb-10 md:mb-20 font-normal text-gray-300 max-w-[50rem]  sm:px-0 z-999"
                       >
-                        <span className="text-lg md:text-lg font-bold">
-                          Work in dubai
-                        </span>
+                        <span className="text-lg md:text-lg font-bold">Dubai-UK International Study Pathway</span>
                         <br />
-                        By participating in our pathway program, students gain
-                        the advantage of experiencing diverse educational
-                        systems, cultures, and networks, significantly enriching
-                        their academic and personal development. We are
-                        committed to guiding our students every step of the way,
-                        ensuring they achieve their goals and make the most of
-                        this unique educational adventure.
+                        Our "Study in Dubai Pathway Program" offers a unique opportunity for students to begin their educational journey in Dubai and complete their final year in the UK. This program is designed to provide students with a comprehensive international learning experience, combining the vibrant culture and dynamic educational landscape of Dubai with the prestigious universities located in the UK.
                       </motion.p>
                     </motion.div>
                   </motion.div>
@@ -233,14 +225,8 @@ const page = () => {
                           }}
                           className="absolute text-xs md:text-sm font-normal mx-3 md:mx-20 pt-14  text-gray-300 max-w-[60rem] px-4 sm:px-0 z-999"
                         >
-                          <span className="text-lg font-bold">
-                            Study & Work in dubai
-                          </span>
-                          <br />
-                          First impressions should always leave an indelible
-                          mark. The New Safari’s Parametric Grille is designed
-                          to do just that. It makes the frontal stance bolder
-                          and masculine, captivating the onlooker instantly.
+                          <span className="text-lg font-bold">Comprehensive Support for a Smooth Transition Abroad</span><br />
+                          We understand that transitioning to a new country for studies can be challenging, which is why we offer extensive support services to ensure a smooth and comfortable experience for our students. From the moment you enroll in the program, we assist with food, accommodation, work opportunities, visa requirements, and other essential needs. Our goal is to not only facilitate your academic growth but also to ensure your well-being and success outside the classroom.
                         </motion.p>
                       </motion.div>
                     </motion.div>
@@ -290,13 +276,10 @@ const page = () => {
                           }}
                           className="absolute text-xs md:text-sm font-normal mx-3 md:mx-10 pt-24 md:pt-10  text-gray-300 max-w-[60rem] px-4 sm:px-0 z-999"
                         >
-                          <span className="text-lg font-bold">
-                            Study in dubai
-                          </span>
+                          <span className="text-lg font-bold">Enriched Academic and Personal Growth</span>
                           <br />
-                          By participating in our pathway program, students gain
-                          the advantage of experiencing diverse educational
-                          systems, cultures, and networks, significantly
+                          By participating in our pathway program, students gain the advantage of
+                          experiencing diverse educational systems, cultures, and networks, significantly
                           enriching their academic and personal development.
                         </motion.p>
                       </motion.div>
@@ -353,10 +336,7 @@ const page = () => {
                           Visa Support for Studying Abroad
                         </span>
                         <br />
-                        By participating in our pathway program, students gain
-                        the advantage of experiencing diverse educational
-                        systems, cultures, and networks, significantly enriching
-                        their academic and personal development.
+                        We go beyond academics for our students studying abroad. We provide a 2-year resident visa along with a No Objection Certificate (NOC), empowering them to gain valuable work experience alongside their studies. This initiative opens up a world of professional opportunities, enabling students to integrate into the workforce, apply their knowledge practically, and secure financial independence. Our commitment ensures a seamless transition from classroom to career, giving our students a competitive edge in the global job market.
                       </motion.p>
                     </motion.div>
                   </motion.div>
@@ -380,7 +360,7 @@ const page = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
                   className="border px-4 py-1 rounded-2xl"
-                  onClick={()=>setopenContact(true)}
+                  onClick={() => setopenContact(true)}
                 >
                   Enquire Now
                 </motion.button>
