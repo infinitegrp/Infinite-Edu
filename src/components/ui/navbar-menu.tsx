@@ -17,11 +17,13 @@ export const MenuItem = ({
   setActive,
   active,
   item,
+  href,
   children,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
+  href: string;
   children?: React.ReactNode;
 }) => {
   return (
@@ -30,9 +32,11 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
+        <Link href={href}>
         {item === 'menu' ? <Image src="/images/logo.png" alt="logo" width={100} height={10}/> : item}
+        </Link>
       </motion.p>
-      {active !== null && (
+      {children && active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

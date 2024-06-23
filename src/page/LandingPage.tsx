@@ -35,7 +35,7 @@ export default function LandingPage() {
 
     const text = "Your Education Explorer".split(" ");
     return (
-        <>  <section className="pt-[20vh] md:pt-[20vh] pb-5 md:pb-[10vh] px-5  w-full h-screen justify-between  dark:bg-black bg-white  relative flex flex-col items-center">
+        <>  <section id='home' className="pt-[20vh] md:pt-[20vh] pb-5 md:pb-[10vh] px-5  w-full h-screen justify-between  dark:bg-black bg-white  relative flex flex-col items-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <p className="py-2 font-normal text-lg md:text-xl font-center text-center text-black dark:text-neutral-300">
                     Guideline Education Institution <br />
@@ -74,7 +74,7 @@ export default function LandingPage() {
             </div>
 
 
-            <div className=" w-full gap-1 md:gap-2  dark:bg-black bg-white   flex flex-col items-center justify-center">
+            <div id='about' className=" w-full gap-1 md:gap-2  dark:bg-black bg-white   flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">Our Services</p>
                 <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-20 max-w-[30rem] px-4 sm:px-0">
                     Each department is led by a dedicated divisional manager, guaranteeing focused expertise and strategic leadership. We are committed to “Guiding To Excellence”
@@ -121,7 +121,7 @@ export default function LandingPage() {
             </div>
 
 
-            <div className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
+            <div id='contact' className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
                 <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Contact Us</p>
                 <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
                     Have a nice works? Reach out and let’s chat.

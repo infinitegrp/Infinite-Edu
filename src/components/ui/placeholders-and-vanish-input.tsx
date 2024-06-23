@@ -17,7 +17,9 @@ export function PlaceholdersAndVanishInput({
   useEffect(() => {
     const startAnimation = () => {
       const interval = setInterval(() => {
-        setCurrentPlaceholder((prev) => (prev + 1) % placeholders.length);
+        setCurrentPlaceholder((prev) =>
+          prev + 1 === placeholders.length ? 0 : prev + 1
+        );
       }, 1500);
       return () => clearInterval(interval);
     };

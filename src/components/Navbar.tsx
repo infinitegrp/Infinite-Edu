@@ -30,16 +30,21 @@ function Navbar({ className }: { className?: string }) {
         )}
       >
         <Menu setActive={setActive}>
-          <MenuItem setActive={setActive} active={active} item="Home">
+          <MenuItem setActive={setActive} active={active} item="Home" href="/">
             <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/">Home</HoveredLink>
+              <HoveredLink href="#home">Home</HoveredLink>
               <HoveredLink href="#why-guideline">Why Guideline</HoveredLink>
-              <HoveredLink href="/seo">About Us</HoveredLink>
-              <HoveredLink href="/branding">Contact Us</HoveredLink>
+              <HoveredLink href="#about">About Us</HoveredLink>
+              <HoveredLink href="#contact" >Contact Us</HoveredLink>
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="WhyGuideline">
-            <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+          <MenuItem setActive={setActive} active={active} item="WhyGuideline" href="/">
+           
+          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="OurService" href="/">
+          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Blogs" href="/blogs">
+          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
                 title="Algochurn"
                 href="https://algochurn.com"
@@ -64,28 +69,8 @@ function Navbar({ className }: { className?: string }) {
                 src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                 description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
               />
-            </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="OurService">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/hobby">Hobby</HoveredLink>
-              <HoveredLink href="/individual">Individual</HoveredLink>
-              <HoveredLink href="/team">Team</HoveredLink>
-              <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-            </div>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Blogs">
-            <HoveredLink href="/blogs">Blogs</HoveredLink>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Contact">
-            <button
-              className="text-black dark:text-white"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-              {theme}
-            </button>
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="theme">
+            </div>          </MenuItem>
+          <MenuItem setActive={setActive} active={active} item="Contact" href="/">
             <button
               className="text-black dark:text-white"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -102,7 +87,7 @@ function Navbar({ className }: { className?: string }) {
         )}
       >
         <Menu setActive={setActive}>
-          <MenuItem setActive={setActive} active={active} item="menu">
+          <MenuItem setActive={setActive} active={active} item="menu" href="/">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/">Home</HoveredLink>
               <HoveredLink href="#why-guideline">Why Guideline</HoveredLink>
