@@ -35,7 +35,7 @@ const ContactForm: React.FC<ContactProps> = ({
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
     try {
-      await axios.post(`${process.env.NEXT_PUBLIC_API}/enquiry`, data);
+      await axios.post(`${process.env.NEXT_PUBLIC_API}/api/v1/enquiry`, data);
       if (formRef.current) {
         formRef.current.reset();
       }

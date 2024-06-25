@@ -9,6 +9,7 @@ import {
 import { cn } from "../../utils/cn";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import axios from "axios";
 
 export function NavbarDemo() {
   return (
@@ -17,10 +18,24 @@ export function NavbarDemo() {
     </div>
   );
 }
-
+interface Blog {
+  title: string;
+  url: string;
+  image: string;
+  description: string;
+}
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   const { theme, setTheme } = useTheme();
+  const [blogs, setBlogs] = React.useState<Blog[]>([]);
+  React.useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/api/v1/blogs`);
+    setBlogs(res?.data?.data);
+  };
   return (
     <>
       <div
@@ -35,49 +50,48 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="#home">Home</HoveredLink>
               <HoveredLink href="#why-guideline">Why Guideline</HoveredLink>
               <HoveredLink href="#about">About Us</HoveredLink>
-              <HoveredLink href="#contact" >Contact Us</HoveredLink>
+              <HoveredLink href="#contact">Contact Us</HoveredLink>
+              <HoveredLink
+                href={"#"}
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              >
+                Theme {theme}
+              </HoveredLink>
             </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="WhyGuideline" href="/">
-           
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="WhyGuideline"
+            href="/"
+          ></MenuItem>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="OurService"
+            href="/"
+          ></MenuItem>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Blogs"
+            href="/blogs"
+          >
+            <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+              {blogs?.slice(0, 4)?.map(item=><ProductItem
+                title={item?.title}
+                href={item?.url}
+                src={`${process.env.NEXT_PUBLIC_API}/uploads/${item.image}`}
+                description={item?.description?.substring(0,70)+'...'}
+              />)}
+            </div>
           </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="OurService" href="/">
-          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Blogs" href="/blogs">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-              <ProductItem
-                title="Algochurn"
-                href="https://algochurn.com"
-                src="https://assets.aceternity.com/demos/algochurn.webp"
-                description="Prepare for tech interviews like never before."
-              />
-              <ProductItem
-                title="Tailwind Master Kit"
-                href="https://tailwindmasterkit.com"
-                src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                description="Production ready Tailwind css components for your next project"
-              />
-              <ProductItem
-                title="Moonbeam"
-                href="https://gomoonbeam.com"
-                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                description="Never write from scratch again. Go from idea to blog in minutes."
-              />
-              <ProductItem
-                title="Rogue"
-                href="https://userogue.com"
-                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-              />
-            </div>          </MenuItem>
-          <MenuItem setActive={setActive} active={active} item="Contact" href="/">
-            <button
-              className="text-black dark:text-white"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-              {theme}
-            </button>
-          </MenuItem>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Contact"
+            href="/"
+          ></MenuItem>
         </Menu>
       </div>
       <div
@@ -94,12 +108,12 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="#about">About Us</HoveredLink>
               <HoveredLink href="/blogs">Blogs</HoveredLink>
               <HoveredLink href="#contact">Contact Us</HoveredLink>
-              <button
-                className="text-black dark:text-white"
+              <HoveredLink
+                href={"#"}
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               >
                 Theme {theme}
-              </button>
+              </HoveredLink>
             </div>
           </MenuItem>
         </Menu>

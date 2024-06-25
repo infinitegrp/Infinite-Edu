@@ -49,7 +49,7 @@ const CourseFinder = () => {
   }, []);
 
   const fetchData = async () => {
-    const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/courses`);
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/api/v1/courses`);
     setCourses(res?.data?.data);
   };
   
@@ -78,7 +78,7 @@ const CourseFinder = () => {
         }}
       />
       <motion.div
-        className="backdrop-blur-lg bg border-gray-600 bg-gray-50/5 border rounded-2xl w-[75vw] md:w-[70vw] lg:w-[40vw] items-center p-2 gap-2 overflow-y-auto overflow-x-clip grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        className="backdrop-blur-lg bg border-gray-600 bg-gray-100 dark:bg-gray-50/5 border rounded-2xl w-[75vw] md:w-[70vw] lg:w-[40vw] items-center p-2 gap-2 overflow-y-auto overflow-x-clip grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
         onClick={toggleHeight}
         initial={false}
         animate={{
@@ -94,12 +94,12 @@ const CourseFinder = () => {
               e.stopPropagation();
               handleCourseClick(courseItem.name);
             }}
-            className="backdrop-blur-lg bg border-gray-600 bg-gray-50/5 border rounded-2xl w-full px-3 py-2 text-sm"
+            className="backdrop-blur-lg text-gray-600 dark:text-gray-400 border-gray-600 bg-gray-50/5 border rounded-2xl w-full px-3 py-2 text-sm"
             initial={false}
             animate={{ opacity: isExpanded ? 1 : 0 }}
           >
             {courseItem.name} | {courseItem.abbreviation} <br />
-            <span className="text-xs dark:text-gray-400">
+            <span className="text-xs">
               {courseItem.description}
             </span>
           </motion.div>

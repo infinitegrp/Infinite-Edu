@@ -15,8 +15,8 @@ export const HeroParallax = ({
 }: {
   products: {
     title: string;
-    link: string;
-    thumbnail: string;
+    url: string;
+    image: string;
   }[];
 }) => {
   const firstRow = products.slice(0, 5);
@@ -121,11 +121,12 @@ export const ProductCard = ({
 }: {
   product: {
     title: string;
-    link: string;
-    thumbnail: string;
+    url: string;
+    image: string;
   };
   translate: MotionValue<number>;
 }) => {
+  const [imgSrc, setImgSrc] = React.useState(`${process.env.NEXT_PUBLIC_API}/uploads/${product?.image}`);
   return (
     <motion.div
       style={{
@@ -138,15 +139,16 @@ export const ProductCard = ({
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
       <Link
-        href={product.link}
+        href={product.url}
         className="block group-hover/product:shadow-2xl "
       >
         <Image
-          src={product.thumbnail}
+          src={imgSrc}
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={product.title}
+          onError={() => setImgSrc('/images/logo.png')} // Fallback image
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>

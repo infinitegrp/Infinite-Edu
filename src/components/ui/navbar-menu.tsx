@@ -92,14 +92,16 @@ export const ProductItem = ({
   href: string;
   src: string;
 }) => {
+  const [imgSrc, setImgSrc] = React.useState(src);
   return (
     <Link href={href} className="flex space-x-2">
       <Image
-        src={src}
+        src={imgSrc}
         width={140}
         height={70}
         alt={title}
         className="flex-shrink-0 rounded-md shadow-2xl"
+        onError={() => setImgSrc('/images/logo.png')} // Fallback image
       />
       <div>
         <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
