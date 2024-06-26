@@ -32,9 +32,26 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
-        <Link href={href}>
-        {item === 'menu' ? <Image src="/images/logo.png" alt="logo" width={100} height={10}/> : item}
-        </Link>
+        {item === "menu" ? (
+          <Link href={href} onClick={(e) => e.preventDefault()}>
+            <Image
+              src={"/images/logo.png"}
+              alt="logo"
+              width={100}
+              height={10}
+              className="dark:hidden"
+            />
+            <Image
+              src={"/images/logoWhite.png"}
+              alt="logo"
+              width={100}
+              height={10}
+              className="hidden dark:flex"
+            />
+          </Link>
+        ) : (
+          <Link href={href}>{item}</Link>
+        )}
       </motion.p>
       {children && active !== null && (
         <motion.div
@@ -64,7 +81,7 @@ export const MenuItem = ({
   );
 };
 
-export const  Menu = ({
+export const Menu = ({
   setActive,
   children,
 }: {
@@ -97,11 +114,11 @@ export const ProductItem = ({
     <Link href={href} className="flex space-x-2">
       <Image
         src={imgSrc}
-        width={140}
-        height={70}
+        width={110}
+        height={110}
         alt={title}
         className="flex-shrink-0 rounded-md shadow-2xl"
-        onError={() => setImgSrc('/images/logo.png')} // Fallback image
+        onError={() => setImgSrc("/apple-touch-icon.png")} // Fallback image
       />
       <div>
         <h4 className="text-xl font-bold mb-1 text-black dark:text-white">

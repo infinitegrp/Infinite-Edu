@@ -21,7 +21,7 @@ export default function Home() {
         className="fixed z-10 -top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(147 197 253)"
       />
-      <SmoothScroll>
+      {/* <SmoothScroll> */}
         <div className={roboto.className}>
           <main
             className={`flex  flex-col w-full  items-center justify-between`}
@@ -30,7 +30,7 @@ export default function Home() {
           </main>
         </div>
         <Footer />
-      </SmoothScroll>
+      {/* </SmoothScroll> */}
     </NextThemesProvider>
   );
 }

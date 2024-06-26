@@ -86,7 +86,7 @@ export default function Contact() {
                   data={code}
                   dispatch={setCode}
                 />
-                <input className="hidden" name="code" value={code?.dial_code} />
+                <input className="hidden" name="code" value={code?.dial_code} readOnly/>
               </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">

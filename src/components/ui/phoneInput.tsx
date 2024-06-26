@@ -22,7 +22,7 @@ export interface InputProps
     ExtraProps {}
 
 const PhoneInput = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, data,dispatch, ...props }, ref) => {
+  ({ className, type, data, dispatch, ...props }, ref) => {
     const radius = 100;
     const [visible, setVisible] = React.useState(false);
     const [open, setOpen] = React.useState(false);
@@ -78,9 +78,9 @@ const PhoneInput = React.forwardRef<HTMLInputElement, InputProps>(
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="m1 1 4 4 4-4"
               />
             </svg>
@@ -95,8 +95,8 @@ const PhoneInput = React.forwardRef<HTMLInputElement, InputProps>(
               className="py-2 text-sm text-gray-700 dark:text-gray-200 h-[17rem] overflow-scroll"
               aria-labelledby="dropdown-phone-button"
             >
-              {CountryList.getAll()?.map((item) => (
-                <li>
+              {CountryList.getAll()?.map((item, idx) => (
+                <li key={idx}>
                   <button
                     type="button"
                     onClick={() => {

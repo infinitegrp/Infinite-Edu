@@ -52,7 +52,7 @@ export default function LandingPage() {
                         </motion.h1>
                     ))}
                 </div>
-                <div className="w-[40rem] h- relative ">
+                <div className="w-[24rem] md:w-[40rem] h- relative ">
                     <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                     <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
                     <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />

@@ -8,7 +8,7 @@ import React, {
 } from "react";
 import ResizeObserver from "resize-observer-polyfill";
 import {
-  useViewportScroll,
+  useScroll,
   useTransform,
   useSpring,
   motion,
@@ -45,7 +45,7 @@ const SmoothScroll = ({ children }: { children: React.ReactNode }) => {
     return () => resizeObserver.disconnect();
   }, [scrollRef, resizePageHeight]);
 
-  const { scrollY } = useViewportScroll(); // measures how many pixels user has scrolled vertically
+  const { scrollY } = useScroll(); // measures how many pixels user has scrolled vertically
   // as scrollY changes between 0px and the scrollable height, create a negative scroll value...
   // ... based on current scroll position to translateY the document in a natural way
   const transform = useTransform(scrollY, [0, pageHeight], [0, -pageHeight]);

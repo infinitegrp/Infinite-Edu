@@ -9,8 +9,8 @@ import axios from "axios";
 interface ContactProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  course: string;
-  dispatch: React.Dispatch<React.SetStateAction<string>>;
+  course?: string;
+  dispatch?: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const ContactForm: React.FC<ContactProps> = ({
@@ -97,7 +97,7 @@ const ContactForm: React.FC<ContactProps> = ({
                 data={code}
                 dispatch={setCode}
               />
-              <input className="hidden" name="code" value={code?.dial_code} />
+              <input className="hidden" name="code" value={code?.dial_code} readOnly/>
             </LabelInputContainer>
           </div>
           <LabelInputContainer className="mb-4">
@@ -108,7 +108,7 @@ const ContactForm: React.FC<ContactProps> = ({
               type="text"
               placeholder="course details"
               value={course}
-              onChange={(e) => dispatch(e.target.value)}
+              onChange={(e) =>dispatch && dispatch(e.target.value)}
             />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">
