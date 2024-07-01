@@ -2,7 +2,7 @@ const Enquiry = require('../models/enquiry')
 
 const getEnquiry = async (req, res) => {
   try {
-    const data = await Enquiry.find()
+    const data = await Enquiry.find().sort({ createdAt: -1 })
     res.status(200).json({ data })
   } catch (err) {
     console.log(err);
@@ -11,10 +11,10 @@ const getEnquiry = async (req, res) => {
 };
 
 const addEnquiry = async (req, res) => {
-  const { firstname, lastname, email, message } = req?.body
+  const { firstname, lastname, email, phone, code, course, message } = req?.body
   try {
     const data = await Enquiry.create({
-      firstname, lastname, email, message
+      firstname, lastname, email, phone, code, course, message
     })
     res.status(201).json({ data, message: 'Enquiry created successfully' });
   } catch (err) {
@@ -27,7 +27,7 @@ const updateEnquiry = async (req, res) => {
   const { _id, read, priority } = req?.body
   try {
     const data = await Enquiry.updateOne({ _id },
-      { $set: { read, priority }})
+      { $set: { read, priority } })
     res.status(201).json({ data, message: 'Enquiry updated successfully' });
   } catch (err) {
     console.log(err);
@@ -47,8 +47,8 @@ const deleteEnquiry = async (req, res) => {
 }
 
 module.exports = {
-    getEnquiry,
-    addEnquiry,
-    updateEnquiry,
-    deleteEnquiry,
-  }
+  getEnquiry,
+  addEnquiry,
+  updateEnquiry,
+  deleteEnquiry,
+}

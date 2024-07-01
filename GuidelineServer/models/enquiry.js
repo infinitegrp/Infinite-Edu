@@ -12,6 +12,17 @@ const enquirySchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    phone: {
+        type: String,
+        required: true
+    },
+    code: {
+        type: String,
+        required: true
+    },
+    course: {
+        type: String,
+    },
     message: {
         type: String,
     },
