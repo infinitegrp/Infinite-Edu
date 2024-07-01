@@ -16,9 +16,9 @@ const Login = () => {
     const [data, setData] = useState({})
     const handleLogin = () => {
         if (process.env.REACT_APP_USERNAME === data?.email && process.env.REACT_APP_PASSWORD === data?.password) {
+            setAuth(dispatch, true)
             toast.success('Login Successfull')
         } else {
-            setAuth(dispatch, true)
             toast.error('Invalid username or password')
         }
     }
