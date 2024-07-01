@@ -21,13 +21,13 @@ import "assets/css/nucleo-svg.css";
 import "assets/css/style.css";
 import AddCourse from "pages/Courses/AddCourses";
 import AddBlog from "pages/Blogs/AddBlog";
-import SignIn from "layouts/authentication/sign-in";
 import EditBlog from "pages/Blogs/EditBlog";
 import EditCourse from "pages/Courses/EditCourse";
+import Login from "pages/Auth";
 
 export default function App() {
   const [controller, dispatch] = useController();
-  const { miniSidenav, direction, sidenavColor, darkSidenav, darkMode } =
+  const { miniSidenav, direction, sidenavColor, darkSidenav, darkMode, auth } =
     controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
   const [rtlCache, setRtlCache] = useState(null);
@@ -86,6 +86,8 @@ export default function App() {
     <CacheProvider value={rtlCache}>
       <ThemeProvider theme={darkMode ? themeDarkRTL : themeRTL}>
         <CssBaseline />
+        {!auth ? <Login /> :
+          <>
         <Sidenav
           color={sidenavColor}
           brand={darkSidenav || darkMode ? brand : brandDark}
@@ -106,11 +108,14 @@ export default function App() {
           </Routes>
           {/* <Footer /> */}
         </DashboardLayout>
+        </>}
       </ThemeProvider>
     </CacheProvider>
   ) : (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
       <CssBaseline />
+      {!auth ? <Login /> :
+          <>
       <Sidenav
         color={sidenavColor}
         brand={darkSidenav || darkMode ? brand : brandDark}
@@ -131,6 +136,7 @@ export default function App() {
         </Routes>
         {/* <Footer /> */}
       </DashboardLayout>
+      </>}
     </ThemeProvider>
   );
 }

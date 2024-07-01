@@ -1,8 +1,6 @@
 import request from "utils/request";
 
-const addCourses = async (data) => request(`/enquiry`, 'POST', {
-  firstname: 'Roshan', lastname: 'Jacob', email: 'roshan@gmail.com', message: 'Session/Transaction: A MongoDB session with a transaction is used to ensure atomicity, meaning all operations succeed or fail together. Balance Calculation: The balance for the new transaction must be calculated based on the existing balances.You need to ensure the balance for the new transaction is correct before inserting it. Error Handling: Proper error handling ensures the transaction is aborted if any error occurs during the process.'})
-// const addCourses = async (data) => request(`/courses`, 'POST', data)
+const addCourses = async (data) => request(`/courses`, 'POST', data)
 const editCourse = async (data) => request(`/courses`, 'PATCH', data)
 const deleteCourse = async (data) => request(`/courses/${data?._id}`, 'DELETE', data)
 const addCollege = async (data) => request(`/college`, 'POST', data)
