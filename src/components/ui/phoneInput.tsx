@@ -117,7 +117,7 @@ const PhoneInput = React.forwardRef<HTMLInputElement, InputProps>(
               type={type}
               className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-transparent rounded-e-md dark:placeholder-gray-400 dark:text-white focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600"
               pattern="[0-9]{10}"
-              placeholder="123-456-7890"
+              placeholder="1234567890"
               required
               ref={ref}
               {...props}

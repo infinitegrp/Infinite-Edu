@@ -14,6 +14,7 @@ export const HeroParallax = ({
   products,
 }: {
   products: {
+    _id:string;
     title: string;
     url: string;
     image: string;
@@ -120,6 +121,7 @@ export const ProductCard = ({
   translate,
 }: {
   product: {
+    _id:string;
     title: string;
     url: string;
     image: string;
@@ -139,7 +141,7 @@ export const ProductCard = ({
       className="group/product h-96 w-[30rem] relative flex-shrink-0 bg-white"
     >
       <Link
-        href={product.url}
+        href={`/blogs/${product?._id}`}
         className="block group-hover/product:shadow-2xl "
       >
         <Image

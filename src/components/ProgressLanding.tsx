@@ -41,7 +41,7 @@ export default function ProgressLanding() {
     <div className='flex flex-col md:flex-row md:px-5 w-full justify-center items-center max-w-screen-2xl'>
         <div className='flex flex-row'>
             <div className="p-2">
-            <BorderLineCard className='h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent '>
+            <BorderLineCard className='h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent'>
                 <motion.div initial={{ opacity: 0.1 }} whileHover={{ opacity: 0.2 }} className='min-w-44 min-h-44' >
                     <Image src="/gif/blueGradient.gif" alt="Computer man" width={480} height={480} className='w-full h-full blur-lg opacity-10' />
                 </motion.div>

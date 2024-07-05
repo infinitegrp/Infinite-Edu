@@ -8,13 +8,13 @@ import Footer from "@/components/Footer";
 
 export default function page() {
   return (
-    <NextThemesProvider attribute="class" defaultTheme="dark">
+    <NextThemesProvider attribute="class" forcedTheme="light">
       <NavbarDemo />
       <SmoothScroll>
         <MultiLayerParallax />
         <IndiaContent />
-      </SmoothScroll>
         <Footer />
+      </SmoothScroll>
     </NextThemesProvider>
   );
 }

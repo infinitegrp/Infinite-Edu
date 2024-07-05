@@ -15,7 +15,7 @@ export default function StudyInternationaly() {
     const [open, setOpen] = useState(false)
     const [openContact, setopenContact] = useState(false);
     return (
-        <div className='overflow-hidden '>
+        <div className='overflow-hidden cursor-pointer'>
             <BorderLineCard className='h-60 overflow-hidden'>
                 <div className='h-full w-full justify-center items-start  overflow-hidden flex flex-col relative bg-white dark:bg-neutral-950'>
                 <div className="px-4 md:px-5 lg:px-10  ">

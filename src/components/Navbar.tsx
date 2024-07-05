@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   HoveredLink,
   Menu,
@@ -10,8 +10,18 @@ import { cn } from "../../utils/cn";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import axios from "axios";
+import { SunOutlined, MoonOutlined } from '@ant-design/icons';
+import { useRouter } from "next/router";
 
 export function NavbarDemo() {
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
   return (
     <div className="relative top-8 w-full flex items-center justify-center">
       <Navbar />
@@ -19,7 +29,9 @@ export function NavbarDemo() {
   );
 }
 interface Blog {
+  _id:string;
   title: string;
+  subtitle: string;
   url: string;
   image: string;
   description: string;
@@ -85,10 +97,10 @@ function Navbar({ className }: { className?: string }) {
               {blogs?.slice(0, 4)?.map((item, idx) => (
                 <ProductItem
                   key={idx}
-                  title={item?.title}
-                  href={item?.url}
+                  title={item?.title?.substring(0, 20) + "..."}
+                  href={`/blogs/${item?._id}`}
                   src={`${process.env.NEXT_PUBLIC_API}/uploads/${item.image}`}
-                  description={item?.description?.substring(0, 70) + "..."}
+                  description={item?.subtitle?.substring(0, 100) + "..."}
                 />
               ))}
             </div>
@@ -98,7 +110,14 @@ function Navbar({ className }: { className?: string }) {
             active={active}
             item="Contact"
             href="/#contact"
-          ></MenuItem>
+          >
+          </MenuItem>
+            <button
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className=" bg-gray-100 dark:bg-gray-800 dark:text-white text-black rounded-full w-7 "
+            >
+              {theme === 'dark' ? <SunOutlined /> : <MoonOutlined />}
+            </button>
         </Menu>
       </div>
       <div
@@ -114,7 +133,9 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/#why-guideline">Why Guideline</HoveredLink>
               <HoveredLink href="/#about">About Us</HoveredLink>
               <HoveredLink href="/blogs">Blogs</HoveredLink>
+              <HoveredLink href="/blogs">Blogs</HoveredLink>
               <HoveredLink href="/#contact">Contact Us</HoveredLink>
+
               <HoveredLink
                 href="#"
                 onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
@@ -126,6 +147,7 @@ function Navbar({ className }: { className?: string }) {
               </HoveredLink>
             </div>
           </MenuItem>
+
         </Menu>
       </div>
     </>

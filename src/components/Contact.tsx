@@ -51,7 +51,7 @@ export default function Contact() {
                 <Input
                   id="firstname"
                   name="firstname"
-                  placeholder="Tyler"
+                  placeholder="First Name"
                   type="text"
                   required
                 />
@@ -61,7 +61,7 @@ export default function Contact() {
                 <Input
                   id="lastname"
                   name="lastname"
-                  placeholder="Durden"
+                  placeholder="Last Name"
                   type="text"
                 />
               </LabelInputContainer>
@@ -72,7 +72,7 @@ export default function Contact() {
                 <Input
                   id="email"
                   name="email"
-                  placeholder="projectmayhem@fc.com"
+                  placeholder="example@gmail.com"
                   type="email"
                   required
                 />
@@ -85,14 +85,15 @@ export default function Contact() {
                   type="phone"
                   data={code}
                   dispatch={setCode}
+                  placeholder="1234567890"
                 />
-                <input className="hidden" name="code" value={code?.dial_code} readOnly/>
+                <input className="hidden" name="code" value={code?.dial_code} readOnly />
               </LabelInputContainer>
             </div>
             <LabelInputContainer className="mb-4">
-              <Label htmlFor="password">Message</Label>
+              <Label htmlFor="text">Message</Label>
               <Input
-                id="password"
+                id="message"
                 name="message"
                 className="h-40"
                 type="text"
@@ -142,10 +143,10 @@ export default function Contact() {
             <br /> Mail : info@guidelineedu.com
           </p>
           <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
-            <span className="font-bold text-lg">Head office U.A.E</span> <br />
-            Office No. 3109 Aspin Commercial Tower Sheikh Zayed Road Dubai,
-            U.A.E <br /> <br />
-            Ph : +971 50 339 7437
+            <span className="font-bold text-lg">Head office INDIA</span> <br />
+            Wolfpack Business Tower. KPCC Jn., MG Road - Cochin Kerala, India
+            <br /> <br />
+            Ph :+91 99477 31238
             <br /> Mail : info@guidelineedu.com
           </p>
           <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">

@@ -5,12 +5,13 @@ import { useTheme } from 'next-themes';
 interface ModalLayoutProps {
    open: boolean;
    title: string;
+   bgcolor?: string;
    width: number;
    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
    children: React.ReactNode
 }
 
-const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, setOpen, children }) => {
+const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, setOpen, children, bgcolor }) => {
    const { theme } = useTheme()
    return (
       <ConfigProvider
@@ -22,7 +23,7 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, s
             },
             components: {
                Modal: {
-                  contentBg: theme === 'light' ? '#fff' : '#212227',
+                  contentBg: bgcolor ? bgcolor : theme === 'light' ? '#fff' : '#212227',
                },
             },
          }}

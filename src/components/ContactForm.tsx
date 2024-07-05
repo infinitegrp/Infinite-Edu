@@ -11,6 +11,7 @@ interface ContactProps {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   course?: string;
   dispatch?: React.Dispatch<React.SetStateAction<string>>;
+  bgcolor?: string;
 }
 
 const ContactForm: React.FC<ContactProps> = ({
@@ -18,6 +19,7 @@ const ContactForm: React.FC<ContactProps> = ({
   setOpen,
   course = "",
   dispatch,
+  bgcolor
 }) => {
   const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = React.useState(false);
@@ -46,7 +48,7 @@ const ContactForm: React.FC<ContactProps> = ({
     }
   };
   return (
-    <ModalLayout open={open} setOpen={setOpen} title="" width={1000}>
+    <ModalLayout open={open} setOpen={setOpen} title="" width={1000} bgcolor={bgcolor}>
       <div className="md:p-10">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
           Have a question , or just want a Appointment, say hi!
@@ -62,7 +64,7 @@ const ContactForm: React.FC<ContactProps> = ({
               <Input
                 id="firstname"
                 name="firstname"
-                placeholder="Tyler"
+                placeholder="First name"
                 type="text"
                 required
               />
@@ -72,7 +74,7 @@ const ContactForm: React.FC<ContactProps> = ({
               <Input
                 id="lastname"
                 name="lastname"
-                placeholder="Durden"
+                placeholder="Last name"
                 type="text"
               />
             </LabelInputContainer>
@@ -83,7 +85,7 @@ const ContactForm: React.FC<ContactProps> = ({
               <Input
                 id="email"
                 name="email"
-                placeholder="projectmayhem@fc.com"
+                placeholder="example@gmail.com"
                 type="email"
                 required
               />

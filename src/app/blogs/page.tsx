@@ -16,7 +16,7 @@ const page = () => {
     setBlogs(res?.data?.data);
   };
   return (
-    <NextThemesProvider attribute="class" defaultTheme="dark">
+    <NextThemesProvider attribute="class" forcedTheme="dark">
       <NavbarDemo />
       <HeroParallax products={blogs} />
     </NextThemesProvider>
