@@ -62,6 +62,7 @@ const CourseFinder = () => {
   const filteredCourses = courses.filter(
     (course) =>
       course.name.toLowerCase().includes(search.toLowerCase()) ||
+      course.description.toLowerCase().includes(search.toLowerCase()) ||
       course.abbreviation.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -94,7 +95,7 @@ const CourseFinder = () => {
               e.stopPropagation();
               handleCourseClick(courseItem.name);
             }}
-            className="backdrop-blur-lg text-gray-600 dark:text-gray-400 border-gray-600 bg-gray-50/5 border rounded-2xl w-full px-3 py-2 text-sm"
+            className="backdrop-blur-lg text-gray-600 dark:text-gray-400 border-gray-600 bg-gray-50/5 border rounded-2xl w-full h-full px-3 py-2 text-sm"
             initial={false}
             animate={{ opacity: isExpanded ? 1 : 0 }}
           >

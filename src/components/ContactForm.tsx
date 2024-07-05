@@ -109,8 +109,10 @@ const ContactForm: React.FC<ContactProps> = ({
               name="course"
               type="text"
               placeholder="course details"
-              value={course}
-              onChange={(e) =>dispatch && dispatch(e.target.value)}
+              {...(course && dispatch && {
+                value: course,
+                onChange: (e) => dispatch(e.target.value)
+              })}
             />
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">

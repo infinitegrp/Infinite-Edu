@@ -14,7 +14,7 @@ interface Props {
 }
 
 const Blog = ({ data }: { data: Props }) => {
-   const [imgSrc, setImgSrc] = React.useState(data?.image)
+   const [imgSrc, setImgSrc] = React.useState(`${process.env.NEXT_PUBLIC_API}/uploads/${data?.image}`)
    const formatDescription = (desc: string) => {
       // const sanitizedHtml = DOMPurify.sanitize(desc);
       return <div dangerouslySetInnerHTML={{ __html: desc }} />;
