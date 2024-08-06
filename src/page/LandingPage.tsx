@@ -38,7 +38,7 @@ export default function LandingPage() {
         <>  <section id='home' className="pt-[20vh] md:pt-[20vh] pb-5 md:pb-[10vh] px-5  w-full h-screen justify-between  dark:bg-black bg-white  relative flex flex-col items-center">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
                 <p className="py-2 font-normal text-lg md:text-xl font-center text-center text-black dark:text-neutral-300">
-                    Guideline Education Institution <br />
+                    Guideline Educational Institution <br />
                 </p>
                 <div className="flex flex-row ">
                     {text.map((el, i) => (
