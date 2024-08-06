@@ -25,15 +25,15 @@ export default function ProgressLanding() {
     const count1 = useMotionValue(0);
     const count2 = useMotionValue(0);
     const count3 = useMotionValue(0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-    const Universities = useTransform(count, Math.round);
-    const Students = useTransform(count1, Math.round);
-    const Countries = useTransform(count2, Math.round);
-    const Years = useTransform(count3, Math.round);
+    const Universities = useTransform(count, value => `${Math.round(value)}k+`);
+    const Students = useTransform(count1, value => `${Math.round(value)}+`);
+    const Countries = useTransform(count2, value => `${Math.round(value)}+`);
+    const Years = useTransform(count3, value => `${Math.round(value)}+`);
 
     useEffect(() => {
-        const animation = animate(count, 124520, { duration: 2 });
+        const animation = animate(count, 100, { duration: 2 });
         const animation1 = animate(count1, 700, { duration: 2 });
-        const animation2 = animate(count2, 32, { duration: 2 });
+        const animation2 = animate(count2, 33, { duration: 2 });
         const animation3 = animate(count3, 15, { duration: 2 });
     }, []);
 

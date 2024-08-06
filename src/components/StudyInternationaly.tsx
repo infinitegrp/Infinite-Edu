@@ -19,9 +19,9 @@ export default function StudyInternationaly() {
             <BorderLineCard className='h-60 overflow-hidden'>
                 <div className='h-full w-full justify-center items-start  overflow-hidden flex flex-col relative bg-white dark:bg-neutral-950'>
                 <div className="px-4 md:px-5 lg:px-10  ">
-                    <h1 className='font-bold text-xl text-black dark:text-white md:pt-3'>StudyInternationaly</h1>
+                    <h1 className='font-bold text-xl text-black dark:text-white md:pt-3'>Study Internationaly</h1>
                     <p className='text-sm lg:text-base text-gray-500 dark:text-white lg:pt-2 md:pt-1 pt-2 lg:pr-10 md:pr-5 '>
-                        With partnerships in over 30+ countries and connections to 700+ universities,
+                        With partnerships in over 33+ countries and connections to 700+ universities,
                         we guide students in finding their ideal international study opportunity
                     </p>
                     <div className='flex pb-11 overflow-hidden'>
