@@ -14,6 +14,28 @@ const roboto = Poppins({
 });
 
 export default function Home() {
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  function disableDevtool() {
+    // Disable right-click
+    document.addEventListener("contextmenu", (e) => e.preventDefault());
+  
+    function ctrlShiftKey(e: KeyboardEvent, key: KeyboardEvent['key']) {
+      return e.ctrlKey && e.shiftKey && e.key === key;
+    }
+  
+    document.addEventListener("keydown", (e) => {
+      // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+      if (
+        e.key === "F12" ||
+        ctrlShiftKey(e, "i") ||
+        ctrlShiftKey(e, "j") ||
+        (e.ctrlKey && e.key === "u")
+      ) {
+        e.preventDefault();
+      }
+    });
+  }
+  disableDevtool()
   return (
     <NextThemesProvider attribute="class" defaultTheme="dark">
       <NavbarDemo />
