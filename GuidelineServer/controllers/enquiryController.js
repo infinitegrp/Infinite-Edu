@@ -11,10 +11,10 @@ const getEnquiry = async (req, res) => {
 };
 
 const addEnquiry = async (req, res) => {
-  const { firstname, lastname, email, phone, code, course, message } = req?.body
+  const { firstname, lastname, email, phone, code, course, qualification, message } = req?.body
   try {
     const data = await Enquiry.create({
-      firstname, lastname, email, phone, code, course, message
+      firstname, lastname, email, phone, code, course, qualification, message
     })
     res.status(201).json({ data, message: 'Enquiry created successfully' });
   } catch (err) {

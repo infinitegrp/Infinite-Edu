@@ -104,7 +104,7 @@ export default function App() {
             <Route path="/courses/editCourse/:id" element={<EditCourse />} />
             <Route path="/blogs/addBlog" element={<AddBlog />} />
             <Route path="/blogs/editBlog/:id" element={<EditBlog />} />
-            <Route path="*" element={<Navigate to="/dashboard" />} />
+            <Route path="*" element={<Navigate to="/Enquires" />} />
           </Routes>
           {/* <Footer /> */}
         </DashboardLayout>
@@ -132,7 +132,7 @@ export default function App() {
           <Route path="/courses/editCourse/:id" element={<EditCourse />} />
           <Route path="/blogs/addBlog" element={<AddBlog />} />
           <Route path="/blogs/editBlog/:id" element={<EditBlog />} />
-          <Route path="*" element={<Navigate to="/dashboard" />} />
+          <Route path="*" element={<Navigate to="/Enquires" />} />
         </Routes>
         {/* <Footer /> */}
       </DashboardLayout>

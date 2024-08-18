@@ -41,6 +41,7 @@ const TableData = () => {
     { name: "phone", align: "center" },
     { name: "email", align: "center" },
     { name: "course", align: "center" },
+    { name: "qualification", align: "center" },
     { name: "message", align: "center" },
     { name: "postedon", align: "center" },
     // { name: "Lastupdated", align: "center" },
@@ -65,6 +66,11 @@ const TableData = () => {
         {item?.course ?? '--'}
       </Typography>
     ),
+    qualification: (
+      <Typography variant="caption" color="secondary" fontWeight="medium">
+        {item?.qualification ?? '--'}
+      </Typography>
+    ),
     message: (
       <Tooltip title={item?.message} arrow>
         <Typography
@@ -74,7 +80,7 @@ const TableData = () => {
           onClick={() => handleOpen(item?.message)}
           style={{ cursor: 'pointer' }}
         >
-          {item?.message?.substring(0, 50)}
+          {item?.message?.substring(0, 40)}
         </Typography>
       </Tooltip>
     ),

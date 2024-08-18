@@ -23,6 +23,9 @@ const enquirySchema = new mongoose.Schema({
     course: {
         type: String,
     },
+    qualification: {
+        type: String,
+    },
     message: {
         type: String,
     },

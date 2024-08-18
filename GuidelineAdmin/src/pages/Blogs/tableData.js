@@ -18,7 +18,7 @@ function Blogs({ image, name, desc }) {
           {name}
         </Typography>
         <Typography variant="caption" color="secondary">
-          {desc}
+          {desc?.substring(0, 80)}
         </Typography>
       </Box>
     </Box>

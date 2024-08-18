@@ -6,13 +6,21 @@ import Box from "components/Box";
 import Enquiry from "pages/Enquires";
 
 const routes = [
+  // {
+  //   type: "route",
+  //   name: "Dashboard",
+  //   key: "dashboard",
+  //   route: "/dashboard",
+  //   icon: <Box component="i" color="primary" fontSize="14px" className="ni ni-tv-2" />,
+  //   component: <Dashboard />,
+  // },
   {
     type: "route",
-    name: "Dashboard",
-    key: "dashboard",
-    route: "/dashboard",
-    icon: <Box component="i" color="primary" fontSize="14px" className="ni ni-tv-2" />,
-    component: <Dashboard />,
+    name: "Enquires",
+    key: "Enquires",
+    route: "/Enquires",
+    icon: <Box component="i" color="warning" fontSize="14px" className="ni ni-book-bookmark" />,
+    component: <Enquiry />,
   },
   {
     type: "route",
@@ -29,14 +37,6 @@ const routes = [
     route: "/blogs",
     icon: <Box component="i" color="primary" fontSize="14px" className="ni ni-album-2" />,
     component: <Blogs />,
-  },
-  {
-    type: "route",
-    name: "Enquires",
-    key: "Enquires",
-    route: "/Enquires",
-    icon: <Box component="i" color="warning" fontSize="14px" className="ni ni-book-bookmark" />,
-    component: <Enquiry />,
   },
   { type: "title", title: "Account Pages", key: "account-pages" },
   {
