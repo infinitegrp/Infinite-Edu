@@ -139,7 +139,7 @@ export default function Contact() {
             <span className="font-bold text-lg">Head office U.A.E</span> <br />
             Office No. 3109 Aspin Commercial Tower Sheikh Zayed Road Dubai,
             U.A.E <br /> <br />
-            Ph : +971 50 339 7437
+            Ph : +971 58 5121 260
             <br /> Mail : info@guidelineedu.com
           </p>
           <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
@@ -149,12 +149,12 @@ export default function Contact() {
             Ph :+91 99477 31238
             <br /> Mail : info@guidelineedu.com
           </p>
-          <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
+          {/* <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
             <span className="font-bold text-lg">Appointment</span> <br />
             Mon to Thursday : 9am to 6pm (1pm to 2pm lunch break)
             <br />
             Friday : 2 pm to 6pm Public Holidays Off
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full">

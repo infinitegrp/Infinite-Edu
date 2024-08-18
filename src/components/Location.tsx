@@ -28,7 +28,7 @@ const Location = () => {
                 <p className='w-full text-black dark:text-neutral-400 text-lg text-center pt-10'>
                     <span className='font-bold text-gray-50'>Head office U.A.E </span>
                     <br />Office No. 3109 Aspin Commercial Tower <br/> Sheikh Zayed Road Dubai, U.A.E
-                    <br />Ph : +971 50 339 7437<br /> Mail : info@guidelineedu.com
+                    <br />Ph : +971 58 5121 260<br /> Mail : info@guidelineedu.com
                     <br /><Link href="#contact" className='text-blue-500'>Enquire Now</Link>
                 </p>
             </div>

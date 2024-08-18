@@ -49,10 +49,12 @@ const CourseFinder = () => {
   }, []);
 
   const fetchData = async () => {
-    const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/api/v1/courses`);
+    const res = await axios.get(
+      `${process.env.NEXT_PUBLIC_API}/api/v1/courses`
+    );
     setCourses(res?.data?.data);
   };
-  
+
   const handleCourseClick = (coursename: string) => {
     setCourse(coursename);
     setOpenContact(true);
@@ -70,16 +72,19 @@ const CourseFinder = () => {
     <>
       <PlaceholdersAndVanishInput
         placeholders={placeholders}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+        onChange={(e: any) => {
           setSearch(e.target.value);
           setIsExpanded(true);
+        }}
+        onBlur={(e: any) => {
+          setTimeout(() => setIsExpanded(false), 100);
         }}
         onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
           // Handle the submit here
         }}
       />
       <motion.div
-        className="backdrop-blur-lg bg border-gray-600 bg-gray-100 dark:bg-gray-50/5 border rounded-2xl w-[75vw] md:w-[70vw] lg:w-[40vw] items-center p-2 gap-2 overflow-y-auto overflow-x-clip grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        className="backdrop-blur-lg border-gray-600 bg-gray-100 dark:bg-gray-50/5 border rounded-2xl w-[75vw] md:w-[70vw] lg:w-[40vw] items-center p-2 gap-2 overflow-y-auto overflow-x-clip grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
         onClick={toggleHeight}
         initial={false}
         animate={{
@@ -100,9 +105,7 @@ const CourseFinder = () => {
             animate={{ opacity: isExpanded ? 1 : 0 }}
           >
             {courseItem.name} | {courseItem.abbreviation} <br />
-            <span className="text-xs">
-              {courseItem.description}
-            </span>
+            <span className="text-xs">{courseItem.description}</span>
           </motion.div>
         ))}
       </motion.div>

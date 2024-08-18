@@ -7,7 +7,7 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 function page() {
   const [openContact, setopenContact] = useState(false);
   return (
-    <NextThemesProvider attribute="class" defaultTheme="dark">
+    <NextThemesProvider attribute="class">
       <div>
         <div className="h-[70vh] w-full gap-1 md:gap-2 flex flex-col items-center justify-between  ">
           <Image
@@ -15,23 +15,18 @@ function page() {
             alt="fastTrack"
             width={500}
             height={100}
-            className=" w-60 pt-14"
+            className=" w-70 pt-14"
           />
 
           <h1 className="font-bold text-6xl mb-5 text-black dark:text-gray-100">
             Fast Track
           </h1>
           <p className="pt-1 p-5 text-md font-normal font-center text-center dark:text-gray-400 text-gray-700  max-w-[60rem]">
-            For those who prefer a traditional learning environment, our
-            on-campus programs provide a comprehensive educational experience
-            tailored to meet your needs. With our meticulously designed
-            curriculum and UGC-approved courses, you can embark on a journey of
-            academic excellence in a supportive and enriching atmosphere.
-            Whether you're a working professional seeking to enhance your skills
-            or an individual looking to complete your education, our on-campus
-            offerings provide the resources and guidance you need to succeed.
-            Join us and earn a respected degree that opens doors to endless
-            opportunities in your chosen field.
+            We offer a fast-track 6-month education program that accelerates
+            learning, allowing students to achieve their educational goals in a
+            short period of time. This intensive program is designed to provide
+            comprehensive knowledge and skills quickly, making it ideal for
+            those looking to fast-track their career advancement.
           </p>
           <button
             onClick={() => setopenContact(true)}

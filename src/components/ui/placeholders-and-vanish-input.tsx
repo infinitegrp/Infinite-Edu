@@ -7,9 +7,11 @@ export function PlaceholdersAndVanishInput({
   placeholders,
   onChange,
   onSubmit,
+  onBlur
 }: {
   placeholders: string[];
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: any) => void;
+  onBlur: (e: any) => void;
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 }) {
   const [currentPlaceholder, setCurrentPlaceholder] = useState(0);
@@ -181,13 +183,16 @@ export function PlaceholdersAndVanishInput({
             onChange && onChange(e);
           }
         }}
+        onClick={(e)=>onChange(e)}
+        onBlur={onBlur}
         onKeyDown={handleKeyDown}
         ref={inputRef}
         value={value}
         type="text"
         className={cn(
           "w-full relative text-sm sm:text-base z-50 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-4 sm:pl-10 pr-20",
-          animating && "text-transparent dark:text-transparent"
+          animating && "text-transparent dark:text-transparent",
+          value && "transform scale-110 shadow-lg",
         )}
       />
 
@@ -229,8 +234,8 @@ export function PlaceholdersAndVanishInput({
       </button>
 
       <div className="absolute inset-0 flex items-center rounded-full pointer-events-none">
-        <AnimatePresence mode="wait">
           {!value && (
+        <AnimatePresence mode="wait">
             <motion.p
               initial={{
                 y: 5,
@@ -253,8 +258,8 @@ export function PlaceholdersAndVanishInput({
             >
               {placeholders[currentPlaceholder]}
             </motion.p>
-          )}
         </AnimatePresence>
+          )}
       </div>
     </form>
   );

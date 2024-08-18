@@ -10,12 +10,11 @@ import { cn } from "../../utils/cn";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import axios from "axios";
-import { SunOutlined, MoonOutlined } from '@ant-design/icons';
-import { useRouter } from "next/router";
+import { SunOutlined, MoonOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import ThemeSwitch from "./ThemeSwitch";
 
 export function NavbarDemo() {
-  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -25,7 +24,11 @@ export function NavbarDemo() {
   if (!mounted) return null;
   return (
     <>
-      <Link href={"/"} className="hidden md:block absolute z-50 mt-4 ml-4" onClick={(e) => e.preventDefault()}>
+      <Link
+        href={"/"}
+        className="hidden md:block fixed z-50 mt-4 ml-4"
+        onClick={(e) => e.preventDefault()}
+      >
         <Image
           src={"/images/logo.png"}
           alt="logo"
@@ -41,7 +44,7 @@ export function NavbarDemo() {
           className="hidden dark:flex"
         />
       </Link>
-      <div className="relative top-8 w-full flex items-center justify-center">
+      <div className="relative top-8 w-full flex items-center justify-center bg-slate-800">
         <Navbar />
       </div>
     </>
@@ -59,6 +62,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   const { theme, setTheme } = useTheme();
   const [blogs, setBlogs] = React.useState<Blog[]>([]);
+
   React.useEffect(() => {
     fetchData();
   }, []);
@@ -105,7 +109,16 @@ function Navbar({ className }: { className?: string }) {
             active={active}
             item="OurService"
             href="/#about"
-          ></MenuItem>
+          >
+            <div className="flex flex-col space-y-4 text-sm">
+              <HoveredLink href="/#about">Study Internationally</HoveredLink>
+              <HoveredLink href="/#about">University Admission</HoveredLink>
+              <HoveredLink href="/#about">Distance Education</HoveredLink>
+              <HoveredLink href="/dubai">Study & Work In Dubai</HoveredLink>
+              <HoveredLink href="/india">Study In India</HoveredLink>
+              <HoveredLink href="https://www.guidelinegrp.com" target="_blank">Guideline Group</HoveredLink>
+            </div>
+          </MenuItem>
           <MenuItem
             setActive={setActive}
             active={active}
@@ -129,14 +142,8 @@ function Navbar({ className }: { className?: string }) {
             active={active}
             item="Contact"
             href="/#contact"
-          >
-          </MenuItem>
-          <button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className=" bg-gray-100 dark:bg-gray-800 dark:text-white text-black rounded-full w-7 "
-          >
-            {theme === 'dark' ? <SunOutlined /> : <MoonOutlined />}
-          </button>
+          ></MenuItem>
+          <ThemeSwitch />
         </Menu>
       </div>
       <div
@@ -152,7 +159,6 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/#why-guideline">Why Guideline</HoveredLink>
               <HoveredLink href="/#about">About Us</HoveredLink>
               <HoveredLink href="/blogs">Blogs</HoveredLink>
-              <HoveredLink href="/blogs">Blogs</HoveredLink>
               <HoveredLink href="/#contact">Contact Us</HoveredLink>
 
               <HoveredLink
@@ -164,9 +170,9 @@ function Navbar({ className }: { className?: string }) {
               >
                 Theme {theme}
               </HoveredLink>
+              <ThemeSwitch />
             </div>
           </MenuItem>
-
         </Menu>
       </div>
     </>

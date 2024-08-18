@@ -10,7 +10,7 @@ export default function StudyIndia() {
             <motion.div className='pt-3 md:pt-4 lg:pt-6 px-4 md:px-4 lg:px-6 h-full w-full  bg-white dark:bg-neutral-950'>
                <h1 className='font-semibold text-lg md:text-xl text-black dark:text-gray-100'>Study in India</h1>
                <p className='text-sm lg:text-base text-gray-500 dark:text-gray-300 pt-1 md:pt-2 lg:pt-3 '>
-                  Students looking to pursue their education in the UAE will find
+                  Students looking to pursue their education in the India will find
                </p>
                <div className='d-flex flex-row'>
                   <Link href={'/india'} >

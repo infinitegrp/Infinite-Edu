@@ -122,10 +122,10 @@ export default function LandingPage() {
 
 
             <div id='contact' className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center">
-                <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Contact Us</p>
-                <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
+                <p className="text-2xl md:text-4xl mb-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">Contact Us</p>
+                {/* <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
                     Have a nice works? Reach out and let’s chat.
-                </p>
+                </p> */}
                 <div className='w-full max-w-screen-2xl px-5 md:px-20 lg:px-40'><Contact /></div>
             </div>
             <div className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center ">

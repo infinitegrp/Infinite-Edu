@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://guidelineedu.com/" className="flex items-center">
-              <Image src={'/images/logoWhite.png'} className="hidden dark:flex" width={150} height={20} alt="guideline Logo" />
-              <Image src={'/images/logo.png'} className="dark:hidden" width={150} height={20} alt="guideline Logo" />
+              <Image src={'/images/logoWhite.png'} className="hidden dark:flex" width={200} height={30} alt="guideline Logo" />
+              <Image src={'/images/logo.png'} className="dark:hidden" width={200} height={30} alt="guideline Logo" />
               {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GuideLine</span> */}
             </a>
           </div>

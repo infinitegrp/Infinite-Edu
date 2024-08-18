@@ -114,7 +114,7 @@ const page = () => {
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
                   className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4"
                 >
-                  Study in Dubai Pathway
+                  Pathway Program
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0.5, y: 100 }}
@@ -333,7 +333,7 @@ const page = () => {
                       >
                         <span className="text-lg font-bold">
                           {" "}
-                          Visa Support for Studying Abroad
+                          Visa Support for Studying in Dubai
                         </span>
                         <br />
                         We go beyond academics for our students studying abroad. We provide a 2-year resident visa along with a No Objection Certificate (NOC), empowering them to gain valuable work experience alongside their studies. This initiative opens up a world of professional opportunities, enabling students to integrate into the workforce, apply their knowledge practically, and secure financial independence. Our commitment ensures a seamless transition from classroom to career, giving our students a competitive edge in the global job market.

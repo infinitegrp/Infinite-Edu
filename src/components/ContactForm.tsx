@@ -5,6 +5,7 @@ import { Input } from "../components/ui/input";
 import { cn } from "../../utils/cn";
 import { PhoneInput } from "./ui/phoneInput";
 import axios from "axios";
+import { Select } from "./ui/select";
 
 interface ContactProps {
   open: boolean;
@@ -102,6 +103,7 @@ const ContactForm: React.FC<ContactProps> = ({
               <input className="hidden" name="code" value={code?.dial_code} readOnly/>
             </LabelInputContainer>
           </div>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer className="mb-4">
             <Label htmlFor="course">Course</Label>
             <Input
@@ -115,6 +117,20 @@ const ContactForm: React.FC<ContactProps> = ({
               })}
             />
           </LabelInputContainer>
+          <LabelInputContainer>
+              <Label htmlFor="qualification">Qualification</Label>
+              <Select
+                id="qualification"
+                name="qualification"
+                required
+              >
+                <option value={"10th"}>10th Grade</option>
+                <option value={"12th"}>12th Grade</option>
+                <option value={"UG"}>UG (undergraduate)</option>
+                <option value={"PG"}>PG (postgraduate)</option>
+                </Select>
+            </LabelInputContainer>
+          </div>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="message">Message</Label>
             <Input id="message" name="message" className="h-40" type="text" />
