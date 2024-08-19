@@ -33,7 +33,7 @@ export const Card = ({ children, className }: CardProps) => {
 };
 
 export default function LandingPage() {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
     const text = "Your Education Explorer".split(" ");
     return (
         <>  <section id='home' className="pt-[20vh] md:pt-[20vh] pb-5 md:pb-[10vh] px-5  w-full h-screen justify-between  dark:bg-black bg-white  relative overflow-hidden flex flex-col items-center">
