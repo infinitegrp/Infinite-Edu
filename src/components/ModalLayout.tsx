@@ -18,8 +18,7 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, s
          theme={{
             token: {
                borderRadius: 20,
-               // colorBgMask:'#fff',
-               // colorBgContainer: '#f6ffed',
+               // colorBgMask: 'rgba(0, 0, 0, 0.8)',
             },
             components: {
                Modal: {
@@ -29,7 +28,12 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({ title, open = false, width, s
             },
          }}
       >
-         <Modal zIndex={9999} className="modal-head" rootClassName="p-16" width={width} footer={false} title={title} centered open={open} onCancel={() => setOpen(false)}>
+         <Modal zIndex={9999} className="modal-head" rootClassName="p-16" width={width} footer={false} title={title} centered open={open} onCancel={() => setOpen(false)} style={{
+            // backgroundImage: `url('/images/image.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            borderRadius: '20px'
+         }}>
             {children}
          </Modal>
       </ConfigProvider>

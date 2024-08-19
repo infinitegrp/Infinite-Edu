@@ -30,14 +30,14 @@ export default function ProgressLanding() {
   const count1 = useMotionValue(0);
   const count2 = useMotionValue(0);
   const count3 = useMotionValue(0);
-  const Universities = useTransform(count, (value) => `${Math.round(value)}k+`);
-  const Students = useTransform(count1, (value) => `${Math.round(value)}+`);
+  const Universities = useTransform(count, (value) => `${Math.round(value)}+`);
+  const FastTrack = useTransform(count1, (value) => `${Math.round(value)} mo`);
   const Countries = useTransform(count2, (value) => `${Math.round(value)}+`);
   const Years = useTransform(count3, (value) => `${Math.round(value)}+`);
 
   useEffect(() => {
-    const animation = animate(count, 100, { duration: 2 });
-    const animation1 = animate(count1, 700, { duration: 2 });
+    const animation = animate(count, 700, { duration: 2 });
+    const animation1 = animate(count1, 6, { duration: 2 });
     const animation2 = animate(count2, 33, { duration: 2 });
     const animation3 = animate(count3, 15, { duration: 2 });
   }, []);
@@ -67,43 +67,11 @@ export default function ProgressLanding() {
               </motion.h1>
               {/* <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold'>Universities</p> */}
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                Embark on a journey of unparalleled opportunity with over
-                100,000 programs offered
+                Embark on a journey of unparalleled opportunity with over 100k programs offered by more than 700 esteemed universities.
               </p>
             </div>
           </BorderLineCard>
         </div>
-        <div className="p-2">
-          <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
-            <motion.div
-              initial={{ opacity: 0.1 }}
-              whileHover={{ opacity: 0.2 }}
-              className="min-w-44 min-h-44"
-            >
-              <Image
-                src="/gif/blueGradient.gif"
-                alt="gradient"
-                draggable={false}
-                width={480}
-                height={480}
-                className="w-full h-full blur-lg opacity-10"
-              />
-            </motion.div>
-            <div className="flex flex-col sm:p-1 p-4 lg:w-48 absolute items-center justify-center overflow-hidden">
-              <motion.h1 className=" text-black dark:text-white font-bold text-2xl ">
-                {Students}
-              </motion.h1>
-              <p className=" text-black dark:text-gray-300 xl:text-base text-center font-bold">
-                Esteemed Universities
-              </p>
-              <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                more than 700 universities worldwide
-              </p>
-            </div>
-          </BorderLineCard>
-        </div>
-      </div>
-      <div className="flex flex-row">
         <div className="p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
@@ -130,6 +98,37 @@ export default function ProgressLanding() {
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
                 operates in over 32 countries, offering unparalleled expertise
                 to a global clientele.
+              </p>
+            </div>
+          </BorderLineCard>
+        </div>
+      </div>
+      <div className="flex flex-row">
+        <div className="p-2">
+          <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
+            <motion.div
+              initial={{ opacity: 0.1 }}
+              whileHover={{ opacity: 0.2 }}
+              className="min-w-44 min-h-44"
+            >
+              <Image
+                src="/gif/blueGradient.gif"
+                alt="gradient"
+                draggable={false}
+                width={480}
+                height={480}
+                className="w-full h-full blur-lg opacity-10"
+              />
+            </motion.div>
+            <div className="flex flex-col sm:p-1 p-4 lg:w-48 absolute items-center justify-center overflow-hidden">
+              <motion.h1 className=" text-black dark:text-white font-bold text-2xl ">
+                {FastTrack}
+              </motion.h1>
+              <p className=" text-black dark:text-gray-300 xl:text-base text-center font-bold">
+                FastTrack Programs
+              </p>
+              <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
+                Flexible Distance & Fastrack Programs for Professionals!
               </p>
             </div>
           </BorderLineCard>

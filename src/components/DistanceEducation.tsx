@@ -33,22 +33,21 @@ export default function DistanceEducation() {
   const [openContact, setopenContact] = useState(false);
   return (
     <>
-      <div className="py-3 md:py-4 lg:py-6 px-3 md:px-4 lg:px-8 bg-white dark:bg-neutral-950">
-        <h1 className="font-bold text-xl text-black dark:text-white">
+      <div className="py-3 md:py-4 lg:py-6 px-2 md:px-4 lg:px-8 bg-white dark:bg-neutral-950">
+        <h1 className="font-bold text-sm md:text-xl text-black dark:text-white">
           Distance Education
         </h1>
-        <p className="text-sm lg:text-base  text-gray-500 dark:text-gray-400 pt-3 ">
+        <p className="text-xs lg:text-base  text-gray-500 dark:text-gray-400 pt-3 ">
           Our distance/online education programs are ideal for working
           professionals who cannot commit to full-time, on-campus studies
         </p>
-        <div className="text-sm text-gray-400 pt-3 mb-3">
+        <div className="text-xs text-gray-400 pt-3 mb-3">
           - WES approved <br /> - UGC approved <br /> - NAAC approved <br /> -
           worldwide recognized
         </div>
 
-        <BorderLineCard className="w-full h-full flex justify-center items-center p-3 px-4 overflow-hidden relative dark:bg-transparent">
+        <BorderLineCard className="w-full h-full flex justify-center items-center p-3 px-2 overflow-hidden relative dark:bg-transparent">
           {/* For small screens */}
-          <Link href="/FastTrack" passHref>
             <div
               className="flex flex-col md:hidden"
               onClick={() => setOpen(true)}
@@ -72,7 +71,6 @@ export default function DistanceEducation() {
                 className="h-full md:w-full opacity-5 absolute"
               />
             </div>
-          </Link>
 
           {/* For medium screens and above */}
           <div
@@ -121,7 +119,6 @@ export default function DistanceEducation() {
         <div className="w-3 h-3"></div>
 
         <BorderLineCard className="w-full h-full flex justify-center items-center p-3 px-4 overflow-hidden relative dark:bg-transparent">
-          <Link href="/DistanceEducation" passHref>
             <div className="flex flex-col md:hidden">
               <h1 className="font-bold text-md text-black dark:text-white">
                 Distance Education on Sit
@@ -160,7 +157,6 @@ export default function DistanceEducation() {
               height={480}
               className="h-full md:w-full z-20 opacity-5 absolute"
             />
-          </Link>
           <div
             className="hidden md:flex flex-row items-center cursor-pointer"
             onClick={() => setOpenOnSite(true)}
@@ -215,10 +211,10 @@ export default function DistanceEducation() {
             className=" w-70"
           />
 
-          <h1 className="font-bold text-6xl mb-5 text-black dark:text-gray-100">
+          <h1 className="font-bold text-5xl md:text-6xl mb-5 text-black dark:text-gray-100">
             Fast Track
           </h1>
-          <p className="pt-1 text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700  max-w-[60rem]">
+          <p className="pt-1 text-md md:text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700  max-w-[60rem]">
             We offer a fast-track 6-month education program that accelerates
             learning, allowing students to achieve their educational goals in a
             short period of time. This intensive program is designed to provide
@@ -227,7 +223,7 @@ export default function DistanceEducation() {
           </p>
           <button
             onClick={() => setopenContact(true)}
-            className="mt-2 mb-4 p-2 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            className="mt-2 mb-4 p-2 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm text-white dark:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
             <p className="pr-2"> Get Connected</p>
             <svg
@@ -263,10 +259,10 @@ export default function DistanceEducation() {
             className=" w-60"
           />
 
-          <h1 className="font-bold text-6xl mb-5 text-black dark:text-gray-100">
+          <h1 className="font-bold text-4xl md:text-6xl mb-5 text-black dark:text-gray-100">
             Distance Education
           </h1>
-          <p className="pt-1 text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700  max-w-[60rem]">
+          <p className="pt-1 text-md md:text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700  max-w-[60rem]">
             For those who prefer a traditional learning environment, our
             on-campus programs provide a comprehensive educational experience
             tailored to meet your needs. With our meticulously designed
@@ -280,7 +276,7 @@ export default function DistanceEducation() {
           </p>
           <button
             onClick={() => setopenContact(true)}
-            className="mt-2 mb-4 p-2 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            className="mt-2 mb-4 p-2 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm text-white dark:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
             <p className="pr-2"> Get Connected</p>
             <svg

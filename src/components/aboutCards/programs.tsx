@@ -10,7 +10,7 @@ export default function Programs() {
     <h1 className='px-5 font-bold text-4xl text-black dark:text-gray-100 md:text-5xl py-5'>100k +</h1>
     <div className='pb-10 md:px-3'>
     <p className='text-sm md:text-base  text-gray-500 dark:text-gray-400 px-3'>
-    Embark on a journey of unparalleled opportunity with over 100,000 programs offered by more than 700 esteemed universities worldwide.
+    Embark on a journey of unparalleled opportunity with over 100,000 programs.
     </p>
     <motion.svg className='hidden sm:flex' width="149" height="138" viewBox="0 0 169 158" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
