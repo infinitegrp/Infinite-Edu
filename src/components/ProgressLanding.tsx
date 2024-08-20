@@ -12,7 +12,7 @@ interface CardProps {
 export const Card = ({ children, className }: CardProps) => {
   return (
     <motion.section
-      className={`rounded-2xl h-40 flex flex-col min-w-44 max-w-72  items-center justify-center   shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] dark:shadow  overflow-hidden`}
+      className={`rounded-2xl h-40 flex flex-col max-w-72  items-center justify-center   shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] dark:shadow  overflow-hidden`}
       initial={{ opacity: 0, y: -5 }}
       whileInView={{
         opacity: 1,
@@ -45,12 +45,12 @@ export default function ProgressLanding() {
   return (
     <div className="flex flex-col md:flex-row lg:px-5 w-full justify-center items-center max-w-screen-2xl">
       <div className="flex flex-row">
-        <div className="p-1 lg:p-2">
+        <div className="p-[3px] md:p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               initial={{ opacity: 0.1 }}
               whileHover={{ opacity: 0.2 }}
-              className="min-w-44 min-h-44"
+              className="min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
@@ -66,19 +66,19 @@ export default function ProgressLanding() {
                 {Universities}
               </motion.h1>
               {/* <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold'>Universities</p> */}
-              <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
+              <p className="text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
                 Embark on a journey of unparalleled opportunity with over 100k
                 programs offered by more than 700 esteemed universities.
               </p>
             </div>
           </BorderLineCard>
         </div>
-        <div className="p-1 lg:p-2">
+        <div className="p-[3px] md:p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               initial={{ opacity: 0.1 }}
               whileHover={{ opacity: 0.2 }}
-              className="min-w-44 min-h-44"
+              className="min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
@@ -105,12 +105,12 @@ export default function ProgressLanding() {
         </div>
       </div>
       <div className="flex flex-row">
-        <div className="p-1 lg:p-2">
+        <div className="p-[3px] md:p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               initial={{ opacity: 0.1 }}
               whileHover={{ opacity: 0.2 }}
-              className="min-w-44 min-h-44"
+              className="min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
@@ -134,7 +134,7 @@ export default function ProgressLanding() {
             </div>
           </BorderLineCard>
         </div>
-        <div className="p-1 lg:p-2">
+        <div className="p-[3px] md:p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               className="flex flex-col sm:p-1 p-4 lg:w-48 absolute items-center justify-center "
@@ -148,7 +148,7 @@ export default function ProgressLanding() {
               >
                 {Years}
               </motion.h1>
-              <p className=" text-black dark:text-gray-300 xl:text-base font-bold">
+              <p className=" text-black dark:text-gray-300 xl:text-base text-center font-bold">
                 Years of Experience{" "}
               </p>
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
@@ -158,7 +158,7 @@ export default function ProgressLanding() {
             <motion.div
               initial={{ opacity: 0.01 }}
               whileHover={{ opacity: 0.02 }}
-              className="min-w-44 min-h-44"
+              className="min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"

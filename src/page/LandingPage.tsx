@@ -54,7 +54,7 @@ export default function LandingPage() {
         <div className="flex flex-row ">
           {text.map((el, i) => (
             <motion.h1
-              className="text-3xl md:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-1 md:p-2"
+              className="text-[1.75rem] md:text-6xl lg:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 p-1 md:p-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.25, delay: i / 10 }}
@@ -74,7 +74,7 @@ export default function LandingPage() {
           Elevate your future with higher studies - where knowledge meets
           opportunity!
         </p>
-        <div className="flex flex-col p- items-center gap-2">
+        <div className="flex flex-col items-center gap-2">
           <CourseFinder />
           <ProgressLanding />
         </div>
