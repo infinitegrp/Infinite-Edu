@@ -50,7 +50,7 @@ export default function ProgressLanding() {
             <motion.div
               initial={{ opacity: 0.1 }}
               whileHover={{ opacity: 0.2 }}
-              className="min-h-44"
+              className="min-w-40 min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
@@ -78,7 +78,7 @@ export default function ProgressLanding() {
             <motion.div
               initial={{ opacity: 0.1 }}
               whileHover={{ opacity: 0.2 }}
-              className="min-h-44"
+              className="min-w-40 min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
@@ -110,7 +110,7 @@ export default function ProgressLanding() {
             <motion.div
               initial={{ opacity: 0.1 }}
               whileHover={{ opacity: 0.2 }}
-              className="min-h-44"
+              className="min-w-40 min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
@@ -158,7 +158,7 @@ export default function ProgressLanding() {
             <motion.div
               initial={{ opacity: 0.01 }}
               whileHover={{ opacity: 0.02 }}
-              className="min-h-44"
+              className="min-w-40 min-h-44"
             >
               <Image
                 src="/gif/blueGradient.gif"
