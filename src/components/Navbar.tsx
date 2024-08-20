@@ -116,7 +116,9 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/#about">Distance Education</HoveredLink>
               <HoveredLink href="/dubai">Study & Work In Dubai</HoveredLink>
               <HoveredLink href="/india">Study In India</HoveredLink>
-              <HoveredLink href="https://www.guidelinegrp.com" target="_blank">Guideline Group</HoveredLink>
+              <HoveredLink href="https://www.guidelinegrp.com" target="_blank">
+                Guideline Group
+              </HoveredLink>
             </div>
           </MenuItem>
           <MenuItem
@@ -168,9 +170,9 @@ function Navbar({ className }: { className?: string }) {
                   setTheme(theme === "light" ? "dark" : "light");
                 }}
               >
-                Theme {theme}
+                {theme === "light" ? "Dark" : "Light"} Mode
+                <ThemeSwitch />
               </HoveredLink>
-              <ThemeSwitch />
             </div>
           </MenuItem>
         </Menu>

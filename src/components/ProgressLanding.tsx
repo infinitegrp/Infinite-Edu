@@ -43,9 +43,9 @@ export default function ProgressLanding() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row md:px-5 w-full justify-center items-center max-w-screen-2xl">
+    <div className="flex flex-col md:flex-row lg:px-5 w-full justify-center items-center max-w-screen-2xl">
       <div className="flex flex-row">
-        <div className="p-2">
+        <div className="p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               initial={{ opacity: 0.1 }}
@@ -67,12 +67,13 @@ export default function ProgressLanding() {
               </motion.h1>
               {/* <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold'>Universities</p> */}
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                Embark on a journey of unparalleled opportunity with over 100k programs offered by more than 700 esteemed universities.
+                Embark on a journey of unparalleled opportunity with over 100k
+                programs offered by more than 700 esteemed universities.
               </p>
             </div>
           </BorderLineCard>
         </div>
-        <div className="p-2">
+        <div className="p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               initial={{ opacity: 0.1 }}
@@ -104,7 +105,7 @@ export default function ProgressLanding() {
         </div>
       </div>
       <div className="flex flex-row">
-        <div className="p-2">
+        <div className="p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               initial={{ opacity: 0.1 }}
@@ -133,7 +134,7 @@ export default function ProgressLanding() {
             </div>
           </BorderLineCard>
         </div>
-        <div className="p-2">
+        <div className="p-1 lg:p-2">
           <BorderLineCard className="h-40 justify-center items-center overflow-hidden bg-transparent dark:bg-transparent">
             <motion.div
               className="flex flex-col sm:p-1 p-4 lg:w-48 absolute items-center justify-center "

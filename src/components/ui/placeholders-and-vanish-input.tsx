@@ -7,7 +7,7 @@ export function PlaceholdersAndVanishInput({
   placeholders,
   onChange,
   onSubmit,
-  onBlur
+  onBlur,
 }: {
   placeholders: string[];
   onChange: (e: any) => void;
@@ -164,7 +164,7 @@ export function PlaceholdersAndVanishInput({
   return (
     <form
       className={cn(
-        "w-full relative max-w-xl mx-auto bg-white dark:bg-zinc-800 h-12 rounded-full overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200",
+        "w-full relative max-w-[95vw] md:max-w-xl mx-auto bg-white dark:bg-zinc-800 h-12 rounded-full overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200",
         value && "bg-gray-50"
       )}
       onSubmit={handleSubmit}
@@ -183,7 +183,7 @@ export function PlaceholdersAndVanishInput({
             onChange && onChange(e);
           }
         }}
-        onClick={(e)=>onChange(e)}
+        onClick={(e) => onChange(e)}
         onBlur={onBlur}
         onKeyDown={handleKeyDown}
         ref={inputRef}
@@ -192,7 +192,7 @@ export function PlaceholdersAndVanishInput({
         className={cn(
           "w-full relative text-sm sm:text-base z-50 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pl-4 sm:pl-10 pr-20",
           animating && "text-transparent dark:text-transparent",
-          value && "transform scale-110 shadow-lg",
+          value && "transform scale-110 shadow-lg"
         )}
       />
 
@@ -234,8 +234,8 @@ export function PlaceholdersAndVanishInput({
       </button>
 
       <div className="absolute inset-0 flex items-center rounded-full pointer-events-none">
-          {!value && (
-        <AnimatePresence mode="wait">
+        {!value && (
+          <AnimatePresence mode="wait">
             <motion.p
               initial={{
                 y: 5,
@@ -258,8 +258,8 @@ export function PlaceholdersAndVanishInput({
             >
               {placeholders[currentPlaceholder]}
             </motion.p>
-        </AnimatePresence>
-          )}
+          </AnimatePresence>
+        )}
       </div>
     </form>
   );
