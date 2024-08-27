@@ -40,6 +40,9 @@ export const Card = ({ children, className }: CardProps) => {
 export default function LandingPage() {
   const [open, setOpen] = useState(false);
   const text = "Your Education Explorer".split(" ");
+  React.useEffect(() => {
+    setTimeout(() => setOpen(true), 2000)
+},[])
   return (
     <>
       {" "}
