@@ -42,7 +42,7 @@ export default function LandingPage() {
   const text = "Your Education Explorer".split(" ");
   React.useEffect(() => {
     setTimeout(() => setOpen(true), 2000)
-},[])
+  }, [])
   return (
     <>
       {" "}
@@ -100,58 +100,73 @@ export default function LandingPage() {
           focused expertise and strategic leadership. We are committed to
           “Guiding To Excellence”
         </p>
-        {/* <div className="max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
-                    <div className='md:w-2/3'><Card ><StudyInternationaly /></Card> </div>
-                    <div className='md:w-1/3'><Card ><UniversityAdmission /></Card> </div>
-                </div> */}
-        {/* <div className="max-w-screen-2xl z--10 px-5 md:px-20 lg:px-40  w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
-                    <div className="md:w-2/6"> <Card ><DistanceEducation /></Card></div>
-                    <div className="flex flex-col gap-4 w-full h-full md:w-4/6">
-                        <div className=" flex flex-row md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
-                            <Card className="md:w-1/2 "><WorkInDubai /></Card>
-                            <Card className="md:w-1/2 "><StudyIndia /></Card>
-                        </div>
-                        <Card><GuideLineGroup /></Card>
-                    </div>
-                </div> */}
-        <div className="max-w-screen-2xl px-2 my-2 md:px-20 lg:px-40 h-52 md:h-60 w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
-          <div className="md:w-2/3">
-            <StudyInternationaly />{" "}
-          </div>
-          <div className="md:w-1/3 hidden md:block">
-            <BorderLineCard className="h-60 justify-center items-start  overflow-hidden flex flex-col relative">
-              <UniversityAdmission />
-            </BorderLineCard>{" "}
-          </div>
-        </div>
-        <div className="md:w-1/3"> </div>
-        <div className="max-w-screen-2xl z--10 px-2 md:px-20 lg:px-40  w-full flex gap-2 md:gap-4 flex-row justify-center mx-auto">
-          <div className="md:w-2/6 w-1/2">
-            <BorderLineCard className=" md:block h-full justify-center items-start  overflow-hidden flex flex-col relative">
+
+        <div className="hidden md:flex max-w-screen-2xl px-2 md:px-20 lg:px-40 md:h-[680px]  w-full gap-2 flex-row justify-center mx-auto relative">
+          <div className="w-4/6 h-full flex flex-col gap-1 justify-between">
+            <div className="h-2/5 rounded-xl">
+              <StudyInternationaly />
+            </div>
+            <BorderLineCard className="h-3/5 min-h-96 justify-center rounded-xl relative">
               <DistanceEducation />
             </BorderLineCard>
           </div>
-          <div className="flex flex-col  gap-4 h-full w-1/2 md:w-4/6">
-            <div className=" flex md:flex-row flex-col gap-2 md:gap-4 h-full w-full rounded-xl md:rounded-2xl ">
-              <BorderLineCard className="h-40  md:h-60 justify-center items-start  overflow-hidden flex flex-col relative">
-                <WorkInDubai />
+          <div className="w-2/6 h-full flex flex-col gap-1 relative">
+            <BorderLineCard className="h-[13.8rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
+              <WorkInDubai />
+            </BorderLineCard>
+            <BorderLineCard className="h-[13.8rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
+              <StudyIndia />
+            </BorderLineCard>
+            <BorderLineCard className="h-[13rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
+              <UniversityAdmission />
+            </BorderLineCard>
+          </div>
+        </div>
+
+
+        <div className="md:hidden max-w-screen-2xl z--10 px-2 md:px-20 lg:px-40  w-full flex gap-1 flex-col justify-center mx-auto">
+          <StudyInternationaly />
+          <div className="flex flex-row gap-1">
+            <div className="md:w-4/6 w-1/2">
+              <BorderLineCard className=" md:block h-full justify-center items-start  overflow-hidden flex flex-col relative">
+                <DistanceEducation />
               </BorderLineCard>
-              <BorderLineCard className="h-36 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative">
-                <StudyIndia />
-              </BorderLineCard>
-              <div className="md:w-1/3 block md:hidden">
+            </div>
+            <div className="flex flex-col  gap-1 h-full w-1/2 md:w-2/6">
+              <div className=" flex  flex-col gap-1 md:gap-2 h-full w-full rounded-xl md:rounded-2xl ">
+                <BorderLineCard className="h-40  md:h-52 justify-center items-start  overflow-hidden flex flex-col relative">
+                  <WorkInDubai />
+                </BorderLineCard>
+                <BorderLineCard className="h-40 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative">
+                  <StudyIndia />
+                </BorderLineCard>
                 <BorderLineCard className="h-full justify-center items-start  overflow-hidden flex flex-col relative">
                   <UniversityAdmission />
                 </BorderLineCard>{" "}
               </div>
             </div>
-            <div className="hidden md:block">
-              <GuideLineGroup />
-            </div>
           </div>
         </div>
-        {/* <div className="block md:hidden max-w-screen-2xl px-5 pt-1"><GuideLineGroup /></div> */}
       </div>
+
+      {/* <div
+        id="guideline_group"
+        className="pt-12 lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center"
+      >
+        <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-7">
+          Guideline Group
+        </p>
+        <p className="text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-20 max-w-[30rem] px-4 sm:px-0">
+          Guideline Group is an international conglomerate, marking a
+          substantial presence in Dubai and India. With an unwavering focus on
+          innovation and excellence
+        </p>
+        <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">
+          <GuideLineGroup />
+        </div>
+      </div> */}
+
+
       <div className="h-screen w-full">
         <Lamp />
       </div>
@@ -162,9 +177,6 @@ export default function LandingPage() {
         <p className="text-2xl md:text-4xl mb-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">
           Contact Us
         </p>
-        {/* <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
-                    Have a nice works? Reach out and let’s chat.
-                </p> */}
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">
           <Contact />
         </div>

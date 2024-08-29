@@ -9,7 +9,7 @@ export default function StudyInternationaly() {
   const [openContact, setopenContact] = useState(false);
   return (
     <div className="overflow-hidden cursor-pointer">
-      <BorderLineCard className="h-52 md:h-60 overflow-hidden">
+      <BorderLineCard className="h-52 md:h-[17rem] overflow-hidden">
         <div className="h-full w-full justify-center items-start  overflow-hidden flex flex-col relative bg-white dark:bg-neutral-950">
           <div className="px-3 md:px-5 lg:px-10  ">
             <h1 className="font-bold text-xl text-black dark:text-white pt-7 md:pt-3">

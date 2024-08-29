@@ -4,7 +4,6 @@ import { SparklesCore } from "./ui/sparkles";
 import ModalLayout from "./ModalLayout";
 import { useTheme } from "next-themes";
 import ContactForm from "./ContactForm";
-import Link from "next/link";
 
 export function WhyGuideline() {
   const { theme } = useTheme();
@@ -37,8 +36,7 @@ export function WhyGuideline() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="540" cy="186" r="6" fill="#5652FF" />
-            <circle
+           <circle
               cx="406"
               cy="393"
               r="248.5"

@@ -9,7 +9,7 @@ export default function StudyIndia() {
       <div className="h-full w-full justify-center items-start  overflow-hidden flex flex-col relative">
             <motion.div className='pt-3 md:pt-4 lg:pt-6 px-2.5 md:px-4 lg:px-6 h-full w-full  bg-white dark:bg-neutral-950'>
                <h1 className='font-semibold text-md md:text-xl text-black dark:text-gray-100'>Study in India</h1>
-               <p className='text-xs md:text-sm lg:text-base text-gray-500 dark:text-gray-300 pt-1 md:pt-2 lg:pt-3 '>
+               <p className='text-xs md:text-sm lg:text-md text-gray-500 dark:text-gray-300 pt-1 md:pt-2 lg:pt-3 '>
                   Students looking to pursue their education in the India will find
                </p>
                <div className='d-flex flex-row'>
@@ -26,7 +26,7 @@ export default function StudyIndia() {
                </div>
             </motion.div>
             <div className='absolute pt-20 md:pt-28 pl-20 md:pl-36 h-full w-full'>
-               <Image src="/images/tajShade.png" alt="dubai" width={1480} height={1480} className='w-40 md:w-60 md:h-100 absolute' />
+               <Image src="/images/tajShade.png" alt="dubai" width={1480} height={1480} className='w-40 md:w-52 md:h-100 absolute' />
             </div>
          </div>
    )

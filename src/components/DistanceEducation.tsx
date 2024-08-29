@@ -32,7 +32,7 @@ export default function DistanceEducation() {
   const [openContact, setopenContact] = useState(false);
   return (
     <>
-      <div className="py-3 md:py-4 lg:py-6 px-2 md:px-4 lg:px-8 bg-white dark:bg-neutral-950">
+      <div className="py-3 md:py-4 lg:py-6 px-2 md:px-4 lg:px-8 bg-white dark:bg-neutral-950 rounded-xl">
         <h1 className="font-bold text-sm md:text-xl text-black dark:text-white">
           Distance Education
         </h1>
@@ -44,8 +44,8 @@ export default function DistanceEducation() {
           - WES approved <br /> - UGC approved <br /> - NAAC approved <br /> -
           worldwide recognized
         </div>
-
-        <BorderLineCard className="w-full h-full flex justify-center items-center p-3 px-2 overflow-hidden relative dark:bg-transparent">
+        <div className="flex md:flex-row flex-col">
+        <BorderLineCard className="w-full h-full flex  justify-center items-center p-3 px-2 overflow-hidden relative dark:bg-transparent">
           {/* For small screens */}
           <div
             className="flex flex-col md:hidden"
@@ -54,7 +54,7 @@ export default function DistanceEducation() {
             <h1 className="font-bold text-md text-black dark:text-white">
               Fast Track
             </h1>
-            <p className="text-xs lg:text-sm text-gray-500 dark:text-gray-400 pt-1 ">
+            <p className="text-xs  text-gray-500 dark:text-gray-400 pt-1 ">
               Online fits busy professionals unable to commit to full-time
               on-campus studies.
             </p>
@@ -70,6 +70,7 @@ export default function DistanceEducation() {
           </div>
 
           {/* For medium screens and above */}
+
           <div
             className="hidden md:flex flex-row items-center cursor-pointer"
             onClick={() => setOpen(true)}
@@ -197,6 +198,7 @@ export default function DistanceEducation() {
             />
           </div>
         </BorderLineCard>
+        </div>
       </div>
       <ModalLayout open={open} setOpen={setOpen} title="" width={1000}>
         <div className="min-h-[70vh] w-full gap-1 md:gap-2 flex flex-col items-center justify-between ">

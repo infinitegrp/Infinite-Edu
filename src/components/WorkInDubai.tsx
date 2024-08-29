@@ -9,8 +9,8 @@ export default function WorkInDubai() {
       <>
          <div className="h-full w-full justify-center items-start  overflow-hidden flex flex-col relative">
             <motion.div className='pt-3 md:pt-4 lg:pt-6 px-2.5 md:px-5 lg:px-6  h-full w-full  bg-white dark:bg-neutral-950'>
-               <h1 className='font-semibold text-sm md:text-xl text-black dark:text-white'>Study and Work in Dubai</h1>
-               <p className='text-xs md:text-sm lg:text-base text-gray-500 dark:text-gray-300 pt-2 md:pt-2 lg:pt-3 '>
+               <h1 className='font-semibold text-sm md:text-lg text-black dark:text-white'>Study and Work in Dubai</h1>
+               <p className='text-xs md:text-sm lg:text-md text-gray-500 dark:text-gray-300 pt-2 md:pt-2 lg:pt-2 '>
                   Students looking to pursue their education in the UAE will find
                </p>
                <div className='d-flex flex-row'>
@@ -27,7 +27,7 @@ export default function WorkInDubai() {
                </div>
             </motion.div>
             <div className='absolute pt-20 pl-16 md:pt-28 md:pl-36 h-full w-full'>
-               <Image src="/images/dubai.png" alt="dubai" width={1480} height={1480} className='md:w-60 w-40 h-100 absolute' />
+               <Image src="/images/dubai.png" alt="dubai" width={1480} height={1480} className='md:w-60 w-40 ' />
             </div>
          </div>
       </>

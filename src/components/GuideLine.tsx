@@ -47,7 +47,6 @@ const WhyGuidelinePopup: React.FC<WhyGuidelineProps> = ({
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle cx="540" cy="186" r="6" fill="#5652FF" />
                 <circle
                   cx="406"
                   cy="393"
