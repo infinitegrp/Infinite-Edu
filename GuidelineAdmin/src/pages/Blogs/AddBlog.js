@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import Input from "components/Input";
 import { useAddBlogs } from "queries/Query";
 import { useNavigate } from "react-router-dom";
+import TextEditor from "./TextEditor";
 
 const AddBlog = () => {
    const [data, setData] = useState({})
@@ -67,7 +68,7 @@ const AddBlog = () => {
          title={'Add Blog'}
       >
          <Box sx={{ flexGrow: 1 }} display={'flex'} justifyContent={'center'}>
-            <Grid container spacing={2} maxWidth={600} py={5}>
+            <Grid container spacing={2} maxWidth={600} py={5} px={1}>
                <Grid item xs={12} sm={6}>
                   <Input
                      required
@@ -125,20 +126,8 @@ const AddBlog = () => {
                   </ToggleButton>
                </Grid>
 
-               <Grid item xs={12}>
-                  <Input
-                     id="description"
-                     name="description"
-                     placeholder="Blog Description"
-                     label="Blog Description *"
-                     value={data?.description || ''}
-                     onChange={handleChange}
-                     fullWidth
-                     autoComplete="Description"
-                     multiline
-                     rows={4}
-                     helperText="Short Description (about 10-20 words)"
-                  />
+               <Grid item xs={12} mb={12}>
+                  <TextEditor value={data?.description || ''} onChange={handleChange}/>
                </Grid>
 
                <Grid item xs={12} >

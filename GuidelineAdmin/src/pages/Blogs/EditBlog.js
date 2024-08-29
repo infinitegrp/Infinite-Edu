@@ -7,6 +7,7 @@ import { useEditBlogs } from "queries/Query";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetBlogsById } from "queries/Query";
 import { useDeleteBlogs } from "queries/Query";
+import TextEditor from "./TextEditor";
 
 const EditBlog = () => {
    const { id } = useParams();
@@ -87,7 +88,7 @@ const EditBlog = () => {
          title={'Edit Blog'}
       >
          <Box sx={{ flexGrow: 1 }} display={'flex'} justifyContent={'center'}>
-            <Grid container spacing={2} maxWidth={600} py={5}>
+            <Grid container spacing={2} maxWidth={600} py={5} px={1}>
                <Grid item xs={12} sm={6}>
                   <Input
                      required
@@ -145,20 +146,8 @@ const EditBlog = () => {
                   </ToggleButton>
                </Grid>
 
-               <Grid item xs={12}>
-                  <Input
-                     id="description"
-                     name="description"
-                     placeholder="Blog Description"
-                     label="Blog Description *"
-                     value={data?.description || ''}
-                     onChange={handleChange}
-                     fullWidth
-                     autoComplete="Description"
-                     multiline
-                     rows={4}
-                     helperText="Short Description (about 10-20 words)"
-                  />
+               <Grid item xs={12} mb={12}>
+                  <TextEditor value={data?.description || ''} onChange={handleChange}/>
                </Grid>
 
                <Grid item xs={12} >

@@ -22,12 +22,7 @@ import {
   navbarMobileMenu,
 } from "examples/Navbars/DashboardNavbar/styles";
 
-import {
-  useController,
-  setTransparentNavbar,
-  setMiniSidenav,
-  setOpenConfigurator,
-} from "context";
+import { useController, setTransparentNavbar, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Images
 import team2 from "assets/images/team-2.jpg";
@@ -110,6 +105,15 @@ function DashboardNavbar({ absolute, light, isMini }) {
     </Menu>
   );
 
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <AppBar
       position={absolute ? "absolute" : navbarType}
@@ -134,15 +138,18 @@ function DashboardNavbar({ absolute, light, isMini }) {
         </Box>
         {isMini ? null : (
           <Box sx={(theme) => navbarRow(theme, { isMini })}>
-            <Box pr={1}>
-              <Input
-                placeholder="Type here..."
-                startAdornment={
-                  <Icon fontSize="small" style={{ marginRight: "6px" }}>
-                    search
-                  </Icon>
-                }
-              />
+            <Box pr={1} sx={{color:'#fff'}}>
+              {time}
+              <br />
+              <Typography
+                variant="button"
+                fontWeight="regular"
+                textTransform="capitalize"
+                color={light ? "white" : "dark"}
+                sx={{ lineHeight: 0 }}
+              >
+                {new Date().toDateString()}
+              </Typography>
             </Box>
             <Box color={light ? "white" : "inherit"}>
               <IconButton
