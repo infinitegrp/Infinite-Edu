@@ -3,7 +3,11 @@ const fs = require('fs');
 
 const getBlogs = async (req, res) => {
   try {
-    const data = await Blog.find()
+    const filter = {};
+    if (!req?.query?.isAdmin) {
+      filter.status = true;
+    }
+    const data = await Blog.find(filter);
     res.status(200).json({ data })
   } catch (error) {
     console.log(error);

@@ -10,7 +10,7 @@ const deleteBlogs = async (data) => request(`/blogs/${data?._id}`, 'DELETE', dat
 const getCourses = async (data) => request(`/courses?page=${data?.pageNo}&perpageitems=${data?.pageCount}`, 'GET', data)
 const getCourseById = async (data) => request(`/courses/${data?.id}`, 'GET', data)
 const getCollege = async (data) => request(`/college?page=${data?.pageNo}&perpageitems=${data?.pageCount}`, 'GET', data)
-const getBlogs = async (data) => request(`/blogs?page=${data?.pageNo}&perpageitems=${data?.pageCount}`, 'GET', data)
+const getBlogs = async (data) => request(`/blogs?page=${data?.pageNo}&perpageitems=${data?.pageCount}&isAdmin=true`, 'GET', data)
 const getBlogsById = async (data) => request(`/blogs/${data?.id}`, 'GET', data)
 const getEnquiry = async (data) => request(`/enquiry?page=${data?.pageNo}&perpageitems=${data?.pageCount}`, 'GET', data)
 
