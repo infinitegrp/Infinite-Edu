@@ -2,7 +2,7 @@ const CourseFinder = require('../models/courseFinder')
 
 const getCourse = async (req, res) => {
     try {
-        const data = await CourseFinder.find()
+        const data = await CourseFinder.find().sort({ createdAt: -1 })
         res.status(200).json({ data })
     } catch (err) {
         console.log(err);
