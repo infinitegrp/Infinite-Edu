@@ -54,18 +54,27 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline ">
+                  <a
+                    href="https://www.facebook.com/guidelinedubai?mibextid=ZbWKwL"
+                    target="_blank"
+                    className="hover:underline">
                     Facebook
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a
+                    href="https://www.instagram.com/guideline.edu_?igsh=MXczZzQxbTZ1Mzc2bA=="
+                    target="_blank"
+                    className="hover:underline">
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Twitter
+                  <a
+                    href="https://api.whatsapp.com/send?phone=971585121260&text=Hi%C2%A0there,%C2%A0Let%27s%C2%A0have%C2%A0a%C2%A0talk"
+                    target="_blank"
+                    className="hover:underline">
+                    Whatsapp
                   </a>
                 </li>
               </ul>
@@ -93,14 +102,15 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="https://guidelineedu.com/" className="hover:underline">
+            <a href="https://guidelineedu.com" className="hover:underline">
               guideline™
             </a>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
-              href="#"
+              href="https://www.facebook.com/guidelinedubai?mibextid=ZbWKwL"
+              target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -119,7 +129,8 @@ const Footer = () => {
               <span className="sr-only">Facebook page</span>
             </a>
             <a
-              href="#"
+              href="https://api.whatsapp.com/send?phone=971585121260&text=Hi%C2%A0there,%C2%A0Let%27s%C2%A0have%C2%A0a%C2%A0talk"
+              target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
@@ -134,7 +145,8 @@ const Footer = () => {
               <span className="sr-only">WhatsApp</span>
             </a>
             <a
-              href="#"
+              href="mailto:info@guidelinegrp.com"
+              target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
@@ -150,7 +162,8 @@ const Footer = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/guideline.edu_?igsh=MXczZzQxbTZ1Mzc2bA=="
+              target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
@@ -158,15 +171,13 @@ const Footer = () => {
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
-                viewBox="0 0 20 17"
+                viewBox="0 0 24 24"
               >
                 <path
-                  fillRule="evenodd"
-                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                  clipRule="evenodd"
+                  d="M12 2.2c3.2 0 3.584.012 4.85.07 1.259.058 2.006.273 2.47.46.608.238 1.04.524 1.497.981.457.457.743.889.981 1.497.188.464.402 1.21.46 2.47.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.058 1.259-.273 2.006-.46 2.47-.238.608-.524 1.04-.981 1.497-.457.457-.889.743-1.497.981-.464.188-1.21.402-2.47.46-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.259-.058-2.006-.273-2.47-.46-.608-.238-1.04-.524-1.497-.981-.457-.457-.743-.889-.981-1.497-.188-.464-.402-1.21-.46-2.47C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.058-1.259.273-2.006.46-2.47.238-.608.524-1.04.981-1.497.457-.457.889-.743 1.497-.981.464-.188 1.21-.402 2.47-.46C8.416 2.212 8.8 2.2 12 2.2m0-2.2C8.737 0 8.332.013 7.052.07 5.77.127 4.868.337 4.16.634c-.742.313-1.373.732-1.987 1.347-.615.615-1.034 1.245-1.347 1.987C.337 5.132.127 6.034.07 7.316.013 8.6 0 9.005 0 12c0 2.995.013 3.4.07 4.684.057 1.282.267 2.184.634 2.892.313.742.732 1.373 1.347 1.987.615.615 1.245 1.034 1.987 1.347.708.367 1.61.577 2.892.634C8.6 23.987 9.005 24 12 24c2.995 0 3.4-.013 4.684-.07 1.282-.057 2.184-.267 2.892-.634.742-.313 1.373-.732 1.987-1.347.615-.615 1.034-1.245 1.347-1.987.367-.708.577-1.61.634-2.892.057-1.284.07-1.689.07-4.684 0-2.995-.013-3.4-.07-4.684-.057-1.282-.267-2.184-.634-2.892-.313-.742-.732-1.373-1.347-1.987-.615-.615-1.245-1.034-1.987-1.347C18.184.337 17.282.127 16.004.07 14.72.013 14.317 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-8.002 3.999 3.999 0 0 1 0 8.002zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"
                 />
               </svg>
-              <span className="sr-only">Twitter page</span>
+              <span className="sr-only">Instagram page</span>
             </a>
           </div>
         </div>

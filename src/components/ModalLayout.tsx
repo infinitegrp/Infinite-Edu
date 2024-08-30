@@ -34,11 +34,10 @@ const ModalLayout: React.FC<ModalLayoutProps> = ({
               : theme === "light"
               ? "#fff"
               : "#212227",
-            colorIcon: bgcolor
-              ? bgcolor
-              : theme === "dark"
+            colorIcon: theme
+              ? theme === "dark"
               ? "#fff"
-              : "#212227",
+              : "#212227" : "#fff",
           },
         },
       }}
