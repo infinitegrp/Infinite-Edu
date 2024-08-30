@@ -36,7 +36,7 @@ export function WhyGuideline() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-           <circle
+            <circle
               cx="406"
               cy="393"
               r="248.5"
@@ -83,6 +83,7 @@ export function WhyGuideline() {
           <div className=" max-w-screen-2xl px-10 my-2 md:px-20 lg:px-60  flex flex-col md:flex-row justify-center items-start gap-4">
             <div className="flex gap-4">
               <button
+                onClick={() => setOpen(true)}
                 className="flex mt-1 mb-4 h-8 animate-shimmer items-center flex-row rounded-xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
               bg-[length:200%_100%] px-2 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
@@ -115,6 +116,7 @@ export function WhyGuideline() {
             </div>
             <div className="flex gap-4">
               <button
+                onClick={() => setOpen(true)}
                 className="flex mt-1 mb-4 h-8 animate-shimmer items-center flex-row rounded-xl border border-gray-800 bg-[linear-gradient(110deg,#5858fb,45%,#9595f7,55%,#5858fb)]
                       bg-[length:200%_100%] px-2 text-sm text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
@@ -188,7 +190,7 @@ export function WhyGuideline() {
       </div>
       <ModalLayout open={open} setOpen={setOpen} title="" width={1000}>
         <div className="h-[70vh] w-full gap-1 md:gap-2 flex flex-col items-center justify-center ">
-          <h1 className="font-bold text-4xl md:text-6xl mb-5 text-black dark:text-gray-100">
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl mb-5 text-black dark:text-gray-100">
             What is Guideline <br />
             Group's&nbsp;
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-purple-500">
@@ -207,7 +209,7 @@ export function WhyGuideline() {
           </p>
           <button
             onClick={() => setopenContact(true)}
-            className="mt-5 mb-4 p-2 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm dark:text-slate-400 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            className="mt-3 mb-4 p-2 animate-shimmer items-center flex flex-row rounded-xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-3 text-sm dark:text-slate-400 text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
             <p className="pr-2"> Get Connected</p>
             <svg

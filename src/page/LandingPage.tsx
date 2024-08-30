@@ -101,7 +101,7 @@ export default function LandingPage() {
           “Guiding To Excellence”
         </p>
 
-        <div className="hidden md:flex max-w-screen-2xl px-2 md:px-20 lg:px-40 md:h-[680px]  w-full gap-2 flex-row justify-center mx-auto relative">
+        <div className="hidden md:flex max-w-screen-2xl px-2 md:px-20 lg:px-40 w-full gap-2 flex-row justify-center mx-auto relative">
           <div className="w-4/6 h-full flex flex-col gap-1 justify-between">
             <div className="h-2/5 rounded-xl">
               <StudyInternationaly />
@@ -117,7 +117,7 @@ export default function LandingPage() {
             <BorderLineCard className="h-[13.8rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
               <StudyIndia />
             </BorderLineCard>
-            <BorderLineCard className="h-[13rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
+            <BorderLineCard className="min-h-[13rem] h-full justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
               <UniversityAdmission />
             </BorderLineCard>
           </div>
@@ -149,14 +149,14 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* <div
+      <div
         id="guideline_group"
         className="pt-12 lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center"
       >
         <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-7">
           Guideline Group
         </p>
-        <p className="text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-20 max-w-[30rem] px-4 sm:px-0">
+        <p className="text-xs md:text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-10 max-w-[30rem] px-4 sm:px-0">
           Guideline Group is an international conglomerate, marking a
           substantial presence in Dubai and India. With an unwavering focus on
           innovation and excellence
@@ -164,17 +164,17 @@ export default function LandingPage() {
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">
           <GuideLineGroup />
         </div>
-      </div> */}
-
-
-      <div className="h-screen w-full">
-        <Lamp />
       </div>
+
+
+      {/* <div className="h-screen w-full">
+        <Lamp />
+      </div> */}
       <div
         id="contact"
-        className="lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center"
+        className="lg:px-0 py-8 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center"
       >
-        <p className="text-2xl md:text-4xl mb-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-4">
+        <p className="text-2xl md:text-4xl mb-10 font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 md:pt-8">
           Contact Us
         </p>
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">

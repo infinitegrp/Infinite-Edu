@@ -67,7 +67,7 @@ export default function StudyInternationaly() {
       <ModalLayout open={open} setOpen={setOpen} title="" width={1000}>
         <div className="h-[90vh] md:h-[70vh] w-full gap-2 md:gap-5  dark:bg-[#212227] bg-white flex flex-col items-center justify-between ">
           <p className="text-2xl md:text-4xl font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
-            Study Internationaly
+            Study Internationally
           </p>
           <p className="pt-1 md:text-base text-sm  font-center text-center text-black font-light dark:text-neutral-400  max-w-[50rem]">
             we guide students in finding their ideal international study

@@ -30,7 +30,7 @@ export default function Home() {
   }
   // disableDevtool()
   return (
-    <NextThemesProvider attribute="class">
+    <NextThemesProvider attribute="class" defaultTheme="dark">
       <NavbarDemo />
       <Spotlight
         className="fixed z-10 -top-40 left-0 md:left-60 md:-top-20"

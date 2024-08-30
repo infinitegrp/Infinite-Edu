@@ -145,7 +145,7 @@ const Footer = () => {
               <span className="sr-only">WhatsApp</span>
             </a>
             <a
-              href="mailto:info@guidelinegrp.com"
+              href="mailto:info@guidelineedu.com"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >

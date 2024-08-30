@@ -31,7 +31,7 @@ export default function ProgressLanding() {
   const count2 = useMotionValue(0);
   const count3 = useMotionValue(0);
   const Universities = useTransform(count, (value) => `${Math.round(value)}+`);
-  const FastTrack = useTransform(count1, (value) => `${Math.round(value)} mo`);
+  const FastTrack = useTransform(count1, (value) => `${Math.round(value)} months`);
   const Countries = useTransform(count2, (value) => `${Math.round(value)}+`);
   const Years = useTransform(count3, (value) => `${Math.round(value)}+`);
 
