@@ -170,7 +170,7 @@ const page = () => {
                           duration: 0.8,
                           ease: "easeInOut",
                         }}
-                        className="absolute text-xs md:text-sm ml-7 mr-7 md:ml-24 mb-10 md:mb-20 font-normal text-gray-300 max-w-[50rem]  sm:px-0 z-999"
+                        className="absolute text-[8px] md:text-sm ml-7 mr-7 md:ml-24 mb-10 md:mb-20 font-normal text-gray-300 max-w-[50rem]  sm:px-0 z-999"
                       >
                         <span className="text-lg md:text-lg font-bold">Dubai-UK International Study Pathway</span>
                         <br />
@@ -203,7 +203,7 @@ const page = () => {
                       >
                         <Image
                           src="/images/dubai/Work.png"
-                          className="w-full lg:h-[30rem] object-cover"
+                          className="w-full lg:h-[25rem] object-cover"
                           width={1000}
                           height={1000}
                           alt="Dubai Work"
@@ -223,10 +223,10 @@ const page = () => {
                             duration: 0.8,
                             ease: "easeInOut",
                           }}
-                          className="absolute text-xs md:text-sm font-normal mx-3 md:mx-20 pt-14  text-gray-300 max-w-[60rem] px-4 sm:px-0 z-999"
+                          className="absolute text-[8px] md:text-sm font-normal mx-3 md:mx-20 pt-14  text-gray-300 max-w-[60rem] px-4 sm:px-0 z-999"
                         >
                           <span className="text-lg font-bold">Comprehensive Support for a Smooth Transition Abroad</span><br />
-                          We understand that transitioning to a new country for studies can be challenging, which is why we offer extensive support services to ensure a smooth and comfortable experience for our students. From the moment you enroll in the program, we assist with food, accommodation, work opportunities, visa requirements, and other essential needs. Our goal is to not only facilitate your academic growth but also to ensure your well-being and success outside the classroom.
+                          We understand that transitioning to a new country for studies can be challenging, which is why we provide comprehensive support services to ensure a smooth experience. From enrollment, we assist with food, accommodation, work opportunities, visa requirements, and other essential needs. Our goal is to facilitate your academic growth while ensuring your well-being and success beyond the classroom.
                         </motion.p>
                       </motion.div>
                     </motion.div>
@@ -274,7 +274,7 @@ const page = () => {
                             duration: 0.8,
                             ease: "easeInOut",
                           }}
-                          className="absolute text-xs md:text-sm font-normal mx-3 md:mx-10 pt-24 md:pt-10  text-gray-300 max-w-[60rem] px-4 sm:px-0 z-999"
+                          className="absolute text-[8px] md:text-sm font-normal mx-3 md:mx-10 pt-24 md:pt-10  text-gray-300 max-w-[60rem] px-4 sm:px-0 z-999"
                         >
                           <span className="text-lg font-bold">Enriched Academic and Personal Growth</span>
                           <br />
@@ -329,14 +329,14 @@ const page = () => {
                           duration: 0.8,
                           ease: "easeInOut",
                         }}
-                        className="absolute text-xs md:text-sm font-normal md:pt-36 pt-10 mx-7 md:mx-24 text-gray-300 max-w-[50rem]  sm:px-0 z-999"
+                        className="absolute text-[8px] md:text-sm font-normal md:pt-36 pt-10 mx-7 md:mx-24 text-gray-300 max-w-[50rem]  sm:px-0 z-999"
                       >
-                        <span className="text-lg font-bold">
+                        <span className="text-[16 px] md:text-lg font-bold">
                           {" "}
                           Visa Support for Studying in Dubai
                         </span>
                         <br />
-                        We go beyond academics for our students studying abroad. We provide a 2-year resident visa along with a No Objection Certificate (NOC), empowering them to gain valuable work experience alongside their studies. This initiative opens up a world of professional opportunities, enabling students to integrate into the workforce, apply their knowledge practically, and secure financial independence. Our commitment ensures a seamless transition from classroom to career, giving our students a competitive edge in the global job market.
+                        We go beyond academics by providing a 2-year resident visa and a No Objection Certificate (NOC), allowing students to work while they study. This initiative opens professional opportunities, enabling practical application of knowledge and financial independence. Our commitment ensures a smooth transition from classroom to career, giving students a competitive edge in the global job market.
                       </motion.p>
                     </motion.div>
                   </motion.div>
@@ -346,7 +346,7 @@ const page = () => {
                   initial={{ opacity: 0.5, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                  className="pt-40 text-xs md:text-sm font-normal font-center text-center text-gray-400 mb-5 max-w-[60rem] px-4 sm:px-0"
+                  className="pt-40 text-[8px] md:text-sm font-normal font-center text-center text-gray-400 mb-5 max-w-[60rem] px-4 sm:px-0"
                 >
                   By participating in our pathway program, students gain the
                   advantage of experiencing diverse educational systems,
@@ -373,7 +373,7 @@ const page = () => {
           </div>
         </MotionConfig>
         <Leva hidden />
-        <ContactForm open={openContact} setOpen={setopenContact} bgcolor='#212227'/>
+        <ContactForm open={openContact} setOpen={setopenContact} bgcolor='#212227' />
       </NextThemesProvider>
     </>
   );
