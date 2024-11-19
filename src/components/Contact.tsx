@@ -136,17 +136,17 @@ export default function Contact() {
             Contact Informations
           </h2>
           <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
-            <span className="font-bold text-lg">Guideline International LLC</span> <br />
+            <span className="font-bold text-lg">Infinite International LLC</span> <br />
             Office no 112, First floor, Ansar gallery, Hamshah building, Al karama, Dubai, U.A.E <br /> <br />
             Ph : +971 58 5121 260
-            <br /> Mail : info@guidelineedu.com
+            <br /> Mail : info@Infiniteedu.com
           </p>
           <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
             <span className="font-bold text-lg">Head office INDIA</span> <br />
             Wolfpack Business Tower. KPCC Jn., MG Road - Cochin Kerala, India
             <br /> <br />
             Ph :+91 99477 31238
-            <br /> Mail : info@guidelineedu.com
+            <br /> Mail : info@Infiniteedu.com
           </p>
           {/* <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
             <span className="font-bold text-lg">Appointment</span> <br />

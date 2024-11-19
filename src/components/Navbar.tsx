@@ -37,8 +37,8 @@ export function NavbarDemo() {
           className="dark:hidden"
         />
         <Image
-          src={"/images/logoWhite.png"}
-          alt="logo"
+          src={"/images/logo-dark.png"}
+          alt="logo-dark"
           width={120}
           height={10}
           className="hidden dark:flex"
@@ -83,7 +83,7 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem setActive={setActive} active={active} item="Home" href="/">
             {/* <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/">Home</HoveredLink>
-              <HoveredLink href="/#why-guideline">Why Guideline</HoveredLink>
+              <HoveredLink href="/#why-Infinite">Why Infinite</HoveredLink>
               <HoveredLink href="/#about">About Us</HoveredLink>
               <HoveredLink href="/blogs">Blogs</HoveredLink>
               <HoveredLink href="/#contact">Contact Us</HoveredLink>
@@ -101,8 +101,8 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem
             setActive={setActive}
             active={active}
-            item="WhyGuideline"
-            href="/#why-guideline"
+            item="WhyInfinite"
+            href="/#why-Infinite"
           ></MenuItem>
           <MenuItem
             setActive={setActive}
@@ -116,8 +116,8 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/#about">Distance Education</HoveredLink>
               <HoveredLink href="/dubai">Study & Work In Dubai</HoveredLink>
               <HoveredLink href="/india">Study In India</HoveredLink>
-              <HoveredLink href="https://www.guidelinegrp.com" target="_blank">
-                Guideline Group
+              <HoveredLink href="https://www.Infinitegrp.com" target="_blank">
+                Infinite Group
               </HoveredLink>
             </div>
           </MenuItem>
@@ -158,7 +158,7 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem setActive={setActive} active={active} item="menu" href="#">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/">Home</HoveredLink>
-              <HoveredLink href="/#why-guideline">Why Guideline</HoveredLink>
+              <HoveredLink href="/#why-Infinite">Why Infinite</HoveredLink>
               <HoveredLink href="/#about">About Us</HoveredLink>
               <HoveredLink href="/blogs">Blogs</HoveredLink>
               <HoveredLink href="/#contact">Contact Us</HoveredLink>

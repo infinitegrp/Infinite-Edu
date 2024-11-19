@@ -42,7 +42,7 @@ const Blog = ({ data }: { data: Props }) => {
                               </div>
                               <div className="w-full">
                                  <h4 className="mb-1 text-base font-medium text-black dark:text-gray-300">
-                                    By Guideline Edu
+                                    By Infinite Edu
                                  </h4>
                               </div>
                            </div>
@@ -162,7 +162,7 @@ const Blog = ({ data }: { data: Props }) => {
                               </h5>
                               <div className="flex items-center sm:justify-end">
                                  <a
-                                    href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.guidelineedu.com/blogs`}
+                                    href={`https://www.linkedin.com/sharing/share-offsite/?url=https://www.Infiniteedu.com/blogs`}
                                     target="_blank"
                                     className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-md  dark:bg-black text-black dark:text-white bg-opacity-10 duration-300 hover:bg-opacity-100 hover:text-gray-500 sm:ml-3"
                                  >
@@ -176,7 +176,7 @@ const Blog = ({ data }: { data: Props }) => {
                                     </svg>
                                  </a>
                                  <a
-                                    href={`https://twitter.com/intent/tweet?url=https://www.guidelineedu.com/blogs/${data?._id}text=Check%20this%20out`}
+                                    href={`https://twitter.com/intent/tweet?url=https://www.Infiniteedu.com/blogs/${data?._id}text=Check%20this%20out`}
                                     target="_blank"
                                     className="ml-3 mb-3 inline-flex h-9 w-9 items-center justify-center rounded-md  dark:bg-black text-black dark:text-white bg-opacity-10 duration-300 hover:bg-opacity-100 hover:text-gray-500"
                                  >
@@ -190,7 +190,7 @@ const Blog = ({ data }: { data: Props }) => {
                                     </svg>
                                  </a>
                                  <a
-                                    href={`https://www.facebook.com/sharer/sharer.php?u=https://www.guidelineedu.com/blogs/${data?._id}`}
+                                    href={`https://www.facebook.com/sharer/sharer.php?u=https://www.Infiniteedu.com/blogs/${data?._id}`}
                                     target="_blank"
                                     className="ml-3 mb-3 inline-flex h-9 w-9 items-center justify-center rounded-md  dark:bg-black text-black dark:text-white bg-opacity-10 duration-300 hover:bg-opacity-100 hover:text-gray-500"
                                  >

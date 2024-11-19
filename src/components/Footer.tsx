@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="https://guidelineedu.com/" className="flex items-center">
-              <Image src={'/images/logoWhite.png'} className="hidden dark:flex" width={200} height={30} alt="guideline Logo" />
-              <Image src={'/images/logo.png'} className="dark:hidden" width={200} height={30} alt="guideline Logo" />
-              {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GuideLine</span> */}
+            <a href="https://Infiniteedu.com/" className="flex items-center">
+              <Image src={'/images/logo-dark.png'} className="hidden dark:flex" width={200} height={30} alt="Infinite Logo" />
+              <Image src={'/images/logo.png'} className="dark:hidden" width={200} height={30} alt="Infinite Logo" />
+              {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Infinite</span> */}
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -21,16 +21,16 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://www.guidelinegrp.com/"
+                    href="https://www.Infinitegrp.com/"
                     target="_blank"
                     className="hover:underline"
                   >
-                    Guideline group
+                    Infinite group
                   </a>
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://guidelineedu.com/dubai"
+                    href="https://Infiniteedu.com/dubai"
                     target="_blank"
                     className="hover:underline"
                   >
@@ -39,7 +39,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://guidelineedu.com/india"
+                    href="https://Infiniteedu.com/india"
                     target="_blank"
                     className="hover:underline"
                   >
@@ -55,7 +55,7 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://www.facebook.com/guidelinedubai?mibextid=ZbWKwL"
+                    href="https://www.facebook.com/Infinitedubai?mibextid=ZbWKwL"
                     target="_blank"
                     className="hover:underline">
                     Facebook
@@ -63,7 +63,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-4">
                   <a
-                    href="https://www.instagram.com/guideline.edu_?igsh=MXczZzQxbTZ1Mzc2bA=="
+                    href="https://www.instagram.com/Infinite.edu_?igsh=MXczZzQxbTZ1Mzc2bA=="
                     target="_blank"
                     className="hover:underline">
                     Instagram
@@ -102,14 +102,14 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
-            <a href="https://guidelineedu.com" className="hover:underline">
-              guideline™
+            <a href="https://Infiniteedu.com" className="hover:underline">
+              Infinite™
             </a>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
-              href="https://www.facebook.com/guidelinedubai?mibextid=ZbWKwL"
+              href="https://www.facebook.com/Infinitedubai?mibextid=ZbWKwL"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
@@ -145,7 +145,7 @@ const Footer = () => {
               <span className="sr-only">WhatsApp</span>
             </a>
             <a
-              href="mailto:info@guidelineedu.com"
+              href="mailto:info@Infiniteedu.com"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
@@ -162,7 +162,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/guideline.edu_?igsh=MXczZzQxbTZ1Mzc2bA=="
+              href="https://www.instagram.com/Infinite.edu_?igsh=MXczZzQxbTZ1Mzc2bA=="
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >

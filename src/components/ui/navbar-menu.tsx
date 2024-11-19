@@ -37,14 +37,14 @@ export const MenuItem = ({
             <Image
               src={"/images/logo.png"}
               alt="logo"
-              width={100}
+              width={120}
               height={10}
               className="dark:hidden"
             />
             <Image
-              src={"/images/logoWhite.png"}
-              alt="logo"
-              width={100}
+              src={"/images/logo-dark.png"}
+              alt="logo-dark"
+              width={120}
               height={10}
               className="hidden dark:flex"
             />

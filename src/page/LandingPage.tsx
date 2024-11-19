@@ -7,14 +7,14 @@ import UniversityAdmission from "@/components/UniversityAdmission";
 import DistanceEducation from "@/components/DistanceEducation";
 import WorkInDubai from "@/components/WorkInDubai";
 import StudyIndia from "@/components/StudyIndia";
-import GuideLineGroup from "@/components/GuideLineGroup";
+import InfiniteGroup from "@/components/InfiniteGroup";
 import Contact from "@/components/Contact";
 import { Lamp } from "@/components/Lamp";
-import { WhyGuideline } from "@/components/WhyGuideline";
+import { WhyInfinite } from "@/components/WhyInfinite";
 import Location from "@/components/Location";
 import BorderLineCard from "@/components/ui/borderCard";
 import CourseFinder from "@/components/CourseFinder";
-import WhyGuidelinePopup from "@/components/GuideLine";
+import WhyInfinitePopup from "@/components/Infinite";
 
 interface CardProps {
   children: ReactNode;
@@ -52,7 +52,7 @@ export default function LandingPage() {
       >
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <p className="py-2 font-normal text-lg md:text-xl font-center text-center text-black dark:text-neutral-300">
-          Guideline Educational Institution <br />
+          Infinite Educational Institution <br />
         </p>
         <div className="flex flex-row ">
           {text.map((el, i) => (
@@ -83,10 +83,10 @@ export default function LandingPage() {
         </div>
       </section>
       <div
-        id="why-guideline"
+        id="why-Infinite"
         className="w-full px-5 pt-10 dark:bg-black bg-white flex flex-col items-center justify-center"
       >
-        <WhyGuideline />
+        <WhyInfinite />
       </div>
       <div
         id="about"
@@ -150,19 +150,19 @@ export default function LandingPage() {
       </div>
 
       <div
-        id="guideline_group"
+        id="Infinite_group"
         className="pt-12 lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center"
       >
         <p className="text-2xl md:text-4xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-7">
-          Guideline Group
+          Infinite Group
         </p>
         <p className="text-xs md:text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-10 max-w-[30rem] px-4 sm:px-0">
-          Guideline Group is an international conglomerate, marking a
+          Infinite Group is an international conglomerate, marking a
           substantial presence in Dubai and India. With an unwavering focus on
           innovation and excellence
         </p>
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">
-          <GuideLineGroup />
+          <InfiniteGroup />
         </div>
       </div>
 
@@ -192,7 +192,7 @@ export default function LandingPage() {
           <Location />
         </div>
       </div>
-      <WhyGuidelinePopup open={open} setOpen={setOpen} />
+      <WhyInfinitePopup open={open} setOpen={setOpen} />
     </>
   );
 }

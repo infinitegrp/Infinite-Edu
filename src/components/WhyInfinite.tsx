@@ -5,14 +5,14 @@ import ModalLayout from "./ModalLayout";
 import { useTheme } from "next-themes";
 import ContactForm from "./ContactForm";
 
-export function WhyGuideline() {
+export function WhyInfinite() {
   const { theme } = useTheme();
   const [open, setOpen] = useState(false);
   const [openContact, setopenContact] = useState(false);
   return (
     <div className="pt-10 md:h-[40rem] h-[800px] w-full dark:bg-black bg-white flex flex-col items-center justify-start overflow-hidden rounded-md">
       <h1 className="md:text-3xl pb-5 text-2xl lg:text-4xl font-bold text-center text-black dark:text-white relative z-20">
-        Why Guideline
+        Why Infinite
       </h1>
       <div className="w-[20rem] md:w-[40rem] h-40 relative ">
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -106,7 +106,7 @@ export function WhyGuideline() {
               </button>
               <p className="dark:text-gray-400 text-gray-700 text-sm md:text-base">
                 <span className="dark:text-gray-300">
-                  Guideline Educational Institution is committed to
+                  Infinite Educational Institution is committed to
                   transparency, ensuring that students make their payments
                   directly to their chosen college or university.
                 </span>{" "}
@@ -139,7 +139,7 @@ export function WhyGuideline() {
               </button>
               <p className="dark:text-gray-400 text-gray-700 text-sm md:text-base">
                 <span className="dark:text-gray-300">
-                  Become a part of Guideline Group's extensive alumni network,
+                  Become a part of Infinite Group's extensive alumni network,
                 </span>{" "}
                 connecting with a community of successful graduates and
                 professionals who have benefitted from our educational programs
@@ -149,7 +149,7 @@ export function WhyGuideline() {
             </div>
           </div>
           <p className="text-center w-[50vw] pt-10 dark:text-gray-300 text-gray-700 font-bold text-lg">
-            What is guideline group{" "}
+            What is Infinite group{" "}
             <span className="text-indigo-500">alumni ?</span>{" "}
           </p>
           <div className="flex flex-row">
@@ -191,14 +191,14 @@ export function WhyGuideline() {
       <ModalLayout open={open} setOpen={setOpen} title="" width={1000}>
         <div className="h-[70vh] w-full gap-1 md:gap-2 flex flex-col items-center justify-center ">
           <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl mb-5 text-black dark:text-gray-100">
-            What is Guideline <br />
+            What is Infinite <br />
             Group's&nbsp;
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-purple-500">
               alumni !
             </span>
           </h1>
           <p className="pt-1 md:text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700 md:mb-12 max-w-[40rem]">
-            Embark on a journey with Guideline Group and become a distinguished
+            Embark on a journey with Infinite Group and become a distinguished
             member of our widespread alumni community. Spanning across the
             globe, our operations in Education, Emigration, IT, Hospitality,
             Management, Corporate Services, Travel & Tourism, Technical

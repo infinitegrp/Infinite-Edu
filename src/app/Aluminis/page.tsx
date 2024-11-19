@@ -10,14 +10,14 @@ function page() {
       <div>
         <div className="w-full h-screen gap-1 md:gap-2 flex py-40 flex-col items-center justify-between ">
           <h1 className="font-bold text-4xl mb-5  text-black dark:text-gray-100 text-center">
-            What is Guideline <br />
+            What is Infinite <br />
             Group's&nbsp;
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-purple-500">
               alumni !
             </span>
           </h1>
           <p className="pt-1 p-5 text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700  max-w-[40rem]">
-            Embark on a journey with Guideline Group and become a distinguished
+            Embark on a journey with Infinite Group and become a distinguished
             member of our widespread alumni community. Spanning across the
             globe, our operations in Education, Emigration, IT, Hospitality,
             Management, Corporate Services, Travel & Tourism, Technical

@@ -10,7 +10,7 @@ interface Props {
   link: string
 }
 
-const GuidelineCard: React.FC<Props> = ({ title, icon, description, link }) => {
+const InfiniteCard: React.FC<Props> = ({ title, icon, description, link }) => {
   return <BorderLineCard className="w-full h-full flex  justify-center items-center overflow-hidden relative dark:bg-transparent">
     <Link href={link} target="_blank">
       <div
@@ -54,59 +54,59 @@ const GuidelineCard: React.FC<Props> = ({ title, icon, description, link }) => {
   </BorderLineCard>
 }
 
-export default function GuideLineGroup() {
+export default function InfiniteGroup() {
   return (
     <BorderLineCard className="h-70 justify-center items-start cursor-pointer overflow-hidden flex flex-col relative border-red-500 bg-tr  border-spacing-2 border ">
       <div className="py-5 px-8 bg-white dark:bg-neutral-950">
         <h1 className="font-bold text-xl text-black dark:text-gray-100">
-          Guideline Group: Enhancing Education, IT, and Business Solutions
+          Infinite Group: Enhancing Education, IT, and Business Solutions
         </h1>
         <p className="text-xs md:text-sm xl:text-base text-gray-500 dark:text-gray-300 pt-3 md:pr-10">
-          At Guideline Group, we envision a world where technology, education, and business solutions converge to create unparalleled value and opportunities. Our mission is to be at the forefront of this convergence, leading the way in innovation and service.
+          At Infinite Group, we envision a world where technology, education, and business solutions converge to create unparalleled value and opportunities. Our mission is to be at the forefront of this convergence, leading the way in innovation and service.
           We are committed to sustainability, ethical practices, and community engagement. Our initiatives across all departments aim to create a positive impact on society and the environment.
-          &nbsp;<Link href={"https://www.guidelinegrp.com"} target="_blank" className="text-sm text-blue-300 py-2">Learn more</Link>
+          &nbsp;<Link href={"https://www.Infinitegrp.com"} target="_blank" className="text-sm text-blue-300 py-2">Learn more</Link>
         </p>
         <p className="text-sm text-blue-300 py-3"> Our Activities</p>
         <div className="flex flex-col xxl:flex-row gap-2 z-50">
           <div className="flex flex-col md:flex-row gap-2">
-            <GuidelineCard
-              title="Guideline Educational Institution"
+            <InfiniteCard
+              title="Infinite Educational Institution"
               icon={
                 <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
                 </svg>}
-              link="https://www.guidelineedu.com"
+              link="https://www.Infiniteedu.com"
               description="Our Educational arms are more than just schools and universities. We are cradles of learning where the leaders of tomorrow are nurtured. We believe in creating environments that foster curiosity, creativity, and critical thinking."
             />
-            <GuidelineCard
-              title="Guideline IT services"
+            <InfiniteCard
+              title="Infinite IT services"
               icon={
                 <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 8-4 4 4 4m8 0 4-4-4-4m-2-3-4 14" />
                 </svg>}
-              link="https://guidelineitserv.com"
+              link="https://Infiniteitserv.com"
               description="Our method blends expertise, innovation, and trend awareness to deeply understand and address client needs. By strategizing tailored, scalable solutions, we ensure effectiveness and future readiness. Our expert team prioritizes transparency and collaboration, employing agile methodologies and advanced tools for robust, adaptable solutions."
             />
           </div>
           <div className="flex flex-col md:flex-row gap-2">
-            <GuidelineCard
-              title="Guideline Business Solution"
+            <InfiniteCard
+              title="Infinite Business Solution"
               icon={
                 <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.6 16.733c.234.269.548.456.895.534a1.4 1.4 0 0 0 1.75-.762c.172-.615-.446-1.287-1.242-1.481-.796-.194-1.41-.861-1.241-1.481a1.4 1.4 0 0 1 1.75-.762c.343.077.654.26.888.524m-1.358 4.017v.617m0-5.939v.725M4 15v4m3-6v6M6 8.5 10.5 5 14 7.5 18 4m0 0h-3.5M18 4v3m2 8a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z" />
                 </svg>}
-              link="https://guidelinebiz.com"
+              link="https://Infinitebiz.com"
               description="Our Businessmen solutions division stands as a testament to our commitment to excellence. We offer a range of services from management consulting to market research, all designed to help businesses thrive in an ever-changing landscape."
             />
-            <GuidelineCard
-              title="Vibgyor Tours and Travel"
+            <InfiniteCard
+              title="Infinite Tours and Travel"
               icon={
                 <svg className="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
                 </svg>}
-              link="https://vibgyortour.com"
-              description="VIBGYOR TOURS & TRAVELS invites you to explore the vibrant colors of the world with unmatched travel experiences. From breathtaking landscapes to rich cultural adventures, travel the world with us and make unforgettable memories."
+              link="https://Infinitetour.com"
+              description="Infinite TOURS & TRAVELS invites you to explore the vibrant colors of the world with unmatched travel experiences. From breathtaking landscapes to rich cultural adventures, travel the world with us and make unforgettable memories."
             />
           </div>
         </div>
