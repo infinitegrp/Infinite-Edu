@@ -101,13 +101,13 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem
             setActive={setActive}
             active={active}
-            item="WhyInfinite"
+            item="Why Infinite"
             href="/#why-Infinite"
           ></MenuItem>
           <MenuItem
             setActive={setActive}
             active={active}
-            item="OurService"
+            item="Our Service"
             href="/#about"
           >
             <div className="flex flex-col space-y-4 text-sm">

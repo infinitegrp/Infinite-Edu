@@ -16,8 +16,8 @@ export default function StudyInternationaly() {
               Study Internationally
             </h1>
             <p className="text-sm lg:text-base text-gray-500 dark:text-white lg:pt-2 md:pt-1 pt-2 lg:pr-10 md:pr-5 ">
-              With partnerships in over 33+ countries and connections to 700+
-              universities, we guide students in finding their ideal
+              With partnerships in multiple countries and connections to various universities,
+              we guide students in finding their ideal
               international study opportunity
             </p>
             <div className="flex pb-11 overflow-hidden">

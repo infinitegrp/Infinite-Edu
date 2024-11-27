@@ -36,9 +36,9 @@ export default function ProgressLanding() {
   const Years = useTransform(count3, (value) => `${Math.round(value)}+`);
 
   useEffect(() => {
-    const animation = animate(count, 700, { duration: 2 });
+    const animation = animate(count, 100, { duration: 2 });
     const animation1 = animate(count1, 6, { duration: 2 });
-    const animation2 = animate(count2, 33, { duration: 2 });
+    const animation2 = animate(count2, 200, { duration: 2 });
     const animation3 = animate(count3, 15, { duration: 2 });
   }, []);
 
@@ -65,10 +65,9 @@ export default function ProgressLanding() {
               <motion.h1 className=" text-black dark:text-white font-bold text-2xl ">
                 {Universities}
               </motion.h1>
-              {/* <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold'>Universities</p> */}
+              <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold text-center'>International Study Programs</p>
               <p className="text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                Embark on a journey of unparalleled opportunity with over 100k
-                programs offered by more than 700 esteemed universities.
+                Access to top universities with expert admission support.
               </p>
             </div>
           </BorderLineCard>
@@ -93,12 +92,10 @@ export default function ProgressLanding() {
               <motion.h1 className=" text-black dark:text-white font-bold text-2xl ">
                 {Countries}
               </motion.h1>
-              <p className=" text-black dark:text-gray-300 xl:text-base font-bold">
-                Countries
-              </p>
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                operates in over 32 countries, offering unparalleled expertise
-                to a global clientele.
+                More than 200 clients across different countries.
+                Client-Centric Achievements
+                98% Client satisfaction rate.
               </p>
             </div>
           </BorderLineCard>

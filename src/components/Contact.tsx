@@ -5,6 +5,7 @@ import { Input } from "../components/ui/input";
 import { cn } from "../../utils/cn";
 import { PhoneInput } from "./ui/phoneInput";
 import axios from "axios";
+import { locations } from "../../utils/data";
 
 export default function Contact() {
   const formRef = React.useRef<HTMLFormElement>(null);
@@ -135,25 +136,14 @@ export default function Contact() {
           <h2 className="font-bold text-2xl text-neutral-800 dark:text-neutral-200">
             Contact Informations
           </h2>
-          <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
-            <span className="font-bold text-lg">Infinite International LLC</span> <br />
-            Office no 112, First floor, Ansar gallery, Hamshah building, Al karama, Dubai, U.A.E <br /> <br />
-            Ph : +971 58 5121 260
-            <br /> Mail : info@Infiniteedu.com
-          </p>
-          <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
-            <span className="font-bold text-lg">Head office INDIA</span> <br />
-            Wolfpack Business Tower. KPCC Jn., MG Road - Cochin Kerala, India
-            <br /> <br />
-            Ph :+91 99477 31238
-            <br /> Mail : info@Infiniteedu.com
-          </p>
-          {/* <p className="text-neutral-600 text-md max-w-sm mt-2 dark:text-neutral-400">
-            <span className="font-bold text-lg">Appointment</span> <br />
-            Mon to Thursday : 9am to 6pm (1pm to 2pm lunch break)
-            <br />
-            Friday : 2 pm to 6pm Public Holidays Off
-          </p> */}
+          {locations?.map(data =>
+            <p key={data?.title} className="text-neutral-600 text-sm lg:text-md max-w-sm mt-2 dark:text-neutral-400">
+              <span className="font-bold text-md">Infinite Group {data?.title}</span> <br />
+              {data?.address_line_1} {data?.address_line_2} {data?.address_line_3}<br />
+              <span className="text-sm">Ph : {data?.ph}</span>
+              <br />
+            </p>
+          )}
         </div>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full">

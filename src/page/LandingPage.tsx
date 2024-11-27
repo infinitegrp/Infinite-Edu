@@ -98,7 +98,7 @@ export default function LandingPage() {
         <p className="pt-1 text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-20 max-w-[30rem] px-4 sm:px-0">
           Each department is led by a dedicated divisional manager, guaranteeing
           focused expertise and strategic leadership. We are committed to
-          “Guiding To Excellence”
+          &quot;Endless Possibilities, Infinite Knowledge&quot;
         </p>
 
         <div className="hidden md:flex max-w-screen-2xl px-2 md:px-20 lg:px-40 w-full gap-2 flex-row justify-center mx-auto relative">
@@ -157,9 +157,10 @@ export default function LandingPage() {
           Infinite Group
         </p>
         <p className="text-xs md:text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-10 max-w-[30rem] px-4 sm:px-0">
-          Infinite Group is an international conglomerate, marking a
-          substantial presence in Dubai and India. With an unwavering focus on
-          innovation and excellence
+          Infinite Group is a global leader in education, with a strong presence in Dubai,
+          India and Srilanka, along with operations in several other countries.
+          With a steadfast commitment to innovation and excellence in learning,
+          we are dedicated to shaping the future of education worldwide.
         </p>
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">
           <InfiniteGroup />
@@ -186,7 +187,7 @@ export default function LandingPage() {
           Our Locations
         </p>
         <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
-          our prime locations in bustling cities across the UAE and India.
+          our prime locations in bustling cities across Dubai, Qatar, India and Srilanka.
         </p>
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[5rem]">
           <Location />
