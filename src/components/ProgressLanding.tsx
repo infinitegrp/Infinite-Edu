@@ -31,7 +31,10 @@ export default function ProgressLanding() {
   const count2 = useMotionValue(0);
   const count3 = useMotionValue(0);
   const Universities = useTransform(count, (value) => `${Math.round(value)}+`);
-  const FastTrack = useTransform(count1, (value) => `${Math.round(value)} months`);
+  const FastTrack = useTransform(
+    count1,
+    (value) => `${Math.round(value)} months`
+  );
   const Countries = useTransform(count2, (value) => `${Math.round(value)}+`);
   const Years = useTransform(count3, (value) => `${Math.round(value)}+`);
 
@@ -65,7 +68,9 @@ export default function ProgressLanding() {
               <motion.h1 className=" text-black dark:text-white font-bold text-2xl ">
                 {Universities}
               </motion.h1>
-              <p className=' text-black dark:text-gray-300 text-sm xl:text-base font-bold text-center'>International Study Programs</p>
+              <p className=" text-black dark:text-gray-300 text-sm xl:text-base font-bold text-center">
+                International Study Programs
+              </p>
               <p className="text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
                 Access to top universities with expert admission support.
               </p>
@@ -93,9 +98,8 @@ export default function ProgressLanding() {
                 {Countries}
               </motion.h1>
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                More than 200 clients across different countries.
-                Client-Centric Achievements
-                98% Client satisfaction rate.
+                More than 200 clients across different countries. Client-Centric
+                Achievements 98% Client satisfaction rate.
               </p>
             </div>
           </BorderLineCard>
@@ -123,10 +127,10 @@ export default function ProgressLanding() {
                 {FastTrack}
               </motion.h1>
               <p className=" text-black dark:text-gray-300 xl:text-base text-center font-bold">
-                FastTrack Programs
+                10th, 12th, UG & PG Programs
               </p>
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                Flexible Distance & Fastrack Programs for Professionals!
+                Flexible Distance & FastTrack Programs for Professionals!
               </p>
             </div>
           </BorderLineCard>

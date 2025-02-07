@@ -13,14 +13,20 @@ interface WhyInfiniteProps {
 const WhyInfinitePopup: React.FC<WhyInfiniteProps> = ({
   open,
   setOpen,
-  bgcolor
+  bgcolor,
 }) => {
-  const { theme } = useTheme()
-  const [openContact, setopenContact] = useState(false)
-  const [openAlumni, setopenAlumni] = useState(false)
+  const { theme } = useTheme();
+  const [openContact, setopenContact] = useState(false);
+  const [openAlumni, setopenAlumni] = useState(false);
   return (
     <>
-      <ModalLayout open={open} setOpen={setOpen} title='' width={1000} bgcolor="">
+      <ModalLayout
+        open={open}
+        setOpen={setOpen}
+        title=""
+        width={1000}
+        bgcolor=""
+      >
         <div className="pt-10 md:h-[40rem] h-[800px] w-[90vw] lg:w-[1000px] flex flex-col items-center justify-start overflow-hidden rounded-md">
           <h1 className="md:text-3xl pb-5 text-2xl lg:text-4xl font-bold text-center text-black dark:text-white relative z-20">
             Why Infinite
@@ -88,8 +94,8 @@ const WhyInfinitePopup: React.FC<WhyInfiniteProps> = ({
           <div className="flex flex-row items-center justify-center w-full relative">
             <div className="flex justify-center flex-col pt-80 md:pt-0 absolute max-w-[90vw] items-center pr-5">
               <p className="text-center md:pt-60 lg:pt-28 pb-6 dark:text-gray-300 text-gray-700 text-sm md:text-base">
-                We are authorized to manage student enrolments for universities and
-                colleges.{" "}
+                We are authorized to manage student enrolment for universities
+                and colleges.{" "}
               </p>
               <div className="   my-2 md:px-10 lg:px-10  flex flex-col lg:flex-row justify-center items-start gap-4">
                 <div className="flex gap-4">
@@ -116,12 +122,13 @@ const WhyInfinitePopup: React.FC<WhyInfiniteProps> = ({
                   </button>
                   <p className="dark:text-gray-400 text-gray-700 text-sm md:text-base">
                     <span className="dark:text-gray-300">
-                      Infinite Educational Institution is committed to
-                      transparency, ensuring that students make their payments
-                      directly to their chosen college or university.
+                      Infinite Education is committed to transparency, ensuring
+                      that students make their payments directly to their chosen
+                      college or university.
                     </span>{" "}
-                    We support a straightforward, no-extra-cost payment procedure,
-                    maintaining both transparency and trust throughout the process
+                    We support a straightforward, no-extra-cost payment
+                    procedure, maintaining both transparency and trust
+                    throughout the process
                   </p>
                 </div>
                 <div className="flex gap-4">
@@ -148,17 +155,18 @@ const WhyInfinitePopup: React.FC<WhyInfiniteProps> = ({
                   </button>
                   <p className="dark:text-gray-400 text-gray-700 text-sm md:text-base">
                     <span className="dark:text-gray-300">
-                      Become a part of Infinite Group's extensive alumni network,
+                      Become a part of Infinite Group's extensive alumni
+                      network,
                     </span>{" "}
                     connecting with a community of successful graduates and
-                    professionals who have benefitted from our educational programs
-                    and are now making significant strides in their respective
-                    fields.
+                    professionals who have benefitted from our educational
+                    programs and are now making significant strides in their
+                    respective fields.
                   </p>
                 </div>
               </div>
               <p className="text-center w-[50vw] pt-10 dark:text-gray-300 text-gray-700 font-bold text-lg">
-                What is Infinite group{" "}
+                What is Infinite Group{" "}
                 <span className="text-indigo-500">alumni ?</span>{" "}
               </p>
               <div className="flex flex-row">
@@ -199,7 +207,12 @@ const WhyInfinitePopup: React.FC<WhyInfiniteProps> = ({
           </div>
         </div>
       </ModalLayout>
-      <ModalLayout open={openAlumni} setOpen={setopenAlumni} title="" width={1000}>
+      <ModalLayout
+        open={openAlumni}
+        setOpen={setopenAlumni}
+        title=""
+        width={1000}
+      >
         <div className="h-[70vh] w-full gap-1 md:gap-2 flex flex-col items-center justify-center ">
           <h1 className="font-bold text-4xl md:text-6xl mb-5 text-black dark:text-gray-100">
             What is Infinite <br />
@@ -215,8 +228,8 @@ const WhyInfinitePopup: React.FC<WhyInfiniteProps> = ({
             Management, Corporate Services, Travel & Tourism, Technical
             Services, and Trading Industries position us alongside market
             leaders. Our vast network offers our students unparalleled career
-            assistance, leveraging our connections with industry frontrunners to
-            help them achieve their professional aspirations
+            assistance, leveraging our connections with industry front runners
+            to help them achieve their professional aspirations
           </p>
           <button
             onClick={() => setopenContact(true)}

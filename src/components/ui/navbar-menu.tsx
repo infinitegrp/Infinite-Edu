@@ -27,27 +27,30 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div onMouseEnter={() => setActive(item)} onClick={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
         {item === "menu" ? (
-          <Link href={href} onClick={(e) => e.preventDefault()}>
+          <Link
+            href={href}
+            onClick={(e) => e.preventDefault()}
+            className="flex gap-2 items-center text-blue-950 dark:text-gray-300"
+          >
             <Image
-              src={"/images/logo.png"}
+              src="/images/secondarylogo.png"
               alt="logo"
-              width={120}
-              height={10}
-              className="dark:hidden"
+              width={48}
+              height={56}
+              className="w-8 h-14"
             />
-            <Image
-              src={"/images/logo-dark.png"}
-              alt="logo-dark"
-              width={120}
-              height={10}
-              className="hidden dark:flex"
-            />
+            <div className="text-md flex flex-col justify-center uppercase">
+              <h1 className="font-semibold">Infinite Education</h1>
+              <p className="text-[8px]">
+                An Affiliate of Infinite Group of Companies
+              </p>
+            </div>
           </Link>
         ) : (
           <Link href={href}>{item}</Link>
@@ -91,7 +94,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative border-t-0 border-b-2 bg-opacity-30 bg-gray-500 dark:bg-gray-900 border-x-0 border-black/[0.2] dark:border-white/[0.2] backdrop-blur-lg shadow-input flex justify-center space-x-6 px-8 py-6 "
+      className="relative border-t-0 border-b-2 bg-opacity-30 bg-gray-500 dark:bg-gray-900 border-x-0 border-black/[0.2] dark:border-white/[0.2] backdrop-blur-lg shadow-input flex justify-center space-x-6 px-8 py-1 md:py-6 "
     >
       {children}
     </nav>

@@ -23,7 +23,7 @@ function page() {
             Management, Corporate Services, Travel & Tourism, Technical
             Services, and Trading Industries position us alongside market
             leaders. Our vast network offers our students unparalleled career
-            assistance, leveraging our connections with industry frontrunners to
+            assistance, leveraging our connections with industry front runners to
             help them achieve their professional aspirations
           </p>
           <button

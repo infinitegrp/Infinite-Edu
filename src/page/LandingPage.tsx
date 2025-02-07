@@ -2,19 +2,18 @@
 import React, { ReactNode, useState } from "react";
 import { motion } from "framer-motion";
 import ProgressLanding from "@/components/ProgressLanding";
-import StudyInternationaly from "@/components/StudyInternationaly";
-import UniversityAdmission from "@/components/UniversityAdmission";
-import DistanceEducation from "@/components/DistanceEducation";
-import WorkInDubai from "@/components/WorkInDubai";
-import StudyIndia from "@/components/StudyIndia";
+import DistanceEducation from "@/components/service/DistanceEducation";
+import StudyIndia from "@/components/service/StudyIndia";
 import InfiniteGroup from "@/components/InfiniteGroup";
 import Contact from "@/components/Contact";
-import { Lamp } from "@/components/Lamp";
 import { WhyInfinite } from "@/components/WhyInfinite";
 import Location from "@/components/Location";
 import BorderLineCard from "@/components/ui/borderCard";
 import CourseFinder from "@/components/CourseFinder";
 import WhyInfinitePopup from "@/components/Infinite";
+import StudyInternationally from "@/components/service/StudyInternationally";
+import StudyDubai from "@/components/service/StudyDubai";
+import PathwayProgram from "@/components/service/PathwayProgram";
 
 interface CardProps {
   children: ReactNode;
@@ -41,8 +40,16 @@ export default function LandingPage() {
   const [open, setOpen] = useState(false);
   const text = "Your Education Explorer".split(" ");
   React.useEffect(() => {
-    setTimeout(() => setOpen(true), 2000)
-  }, [])
+    const hasPopupBeenShown = localStorage.getItem("popupShown");
+
+    if (!hasPopupBeenShown) {
+      setTimeout(() => {
+        setOpen(true);
+        localStorage.setItem("popupShown", "true");
+      }, 2000);
+    }
+  }, []);
+
   return (
     <>
       {" "}
@@ -52,7 +59,7 @@ export default function LandingPage() {
       >
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <p className="py-2 font-normal text-lg md:text-xl font-center text-center text-black dark:text-neutral-300">
-          Infinite Educational Institution <br />
+          Infinite Education <br />
         </p>
         <div className="flex flex-row ">
           {text.map((el, i) => (
@@ -102,53 +109,51 @@ export default function LandingPage() {
         </p>
 
         <div className="hidden md:flex max-w-screen-2xl px-2 md:px-20 lg:px-40 w-full gap-2 flex-row justify-center mx-auto relative">
-          <div className="w-4/6 h-full flex flex-col gap-1 justify-between">
+          <div className="w-3/5 h-full flex flex-col gap-1 justify-between">
             <div className="h-2/5 rounded-xl">
-              <StudyInternationaly />
+              <StudyDubai />
             </div>
             <BorderLineCard className="h-3/5 min-h-96 justify-center rounded-xl relative">
               <DistanceEducation />
             </BorderLineCard>
           </div>
-          <div className="w-2/6 h-full flex flex-col gap-1 relative">
+          <div className="w-2/5 h-full flex flex-col gap-1 relative">
             <BorderLineCard className="h-[13.8rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
-              <WorkInDubai />
+              <PathwayProgram />
             </BorderLineCard>
             <BorderLineCard className="h-[13.8rem] min-h-48 justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
               <StudyIndia />
             </BorderLineCard>
             <BorderLineCard className="min-h-[13rem] h-full justify-center items-start rounded-xl overflow-hidden flex flex-col relative">
-              <UniversityAdmission />
+              <StudyInternationally />
             </BorderLineCard>
           </div>
         </div>
 
-
         <div className="md:hidden max-w-screen-2xl z--10 px-2 md:px-20 lg:px-40  w-full flex gap-1 flex-col justify-center mx-auto">
-          <StudyInternationaly />
+          <StudyDubai />
           <div className="flex flex-row gap-1">
-            <div className="md:w-4/6 w-1/2">
-              <BorderLineCard className=" md:block h-full justify-center items-start  overflow-hidden flex flex-col relative">
+            <div className="w-1/2 h-full">
+              <BorderLineCard className="h-full justify-center items-start  overflow-hidden flex flex-col relative">
                 <DistanceEducation />
               </BorderLineCard>
             </div>
-            <div className="flex flex-col  gap-1 h-full w-1/2 md:w-2/6">
-              <div className=" flex  flex-col gap-1 md:gap-2 h-full w-full rounded-xl md:rounded-2xl ">
-                <BorderLineCard className="h-40  md:h-52 justify-center items-start  overflow-hidden flex flex-col relative">
-                  <WorkInDubai />
+            <div className="flex flex-col gap-1 h-full w-1/2">
+              <div className="flex flex-col gap-1 md:gap-2 h-full w-full rounded-xl md:rounded-2xl ">
+                <BorderLineCard className="h-48 md:h-52 justify-center items-start  overflow-hidden flex flex-col relative">
+                  <PathwayProgram />
                 </BorderLineCard>
-                <BorderLineCard className="h-40 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative">
+                <BorderLineCard className="h-48 md:h-60 justify-center items-start  overflow-hidden flex flex-col relative">
                   <StudyIndia />
                 </BorderLineCard>
                 <BorderLineCard className="h-full justify-center items-start  overflow-hidden flex flex-col relative">
-                  <UniversityAdmission />
+                  <StudyInternationally />
                 </BorderLineCard>{" "}
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div
         id="Infinite_group"
         className="pt-12 lg:px-0 w-full gap-1 md:gap-2  dark:bg-black bg-white flex flex-col items-center justify-center"
@@ -157,17 +162,14 @@ export default function LandingPage() {
           Infinite Group
         </p>
         <p className="text-xs md:text-sm font-normal font-center text-center text-black dark:text-neutral-300 mb-10 md:mb-10 max-w-[30rem] px-4 sm:px-0">
-          Infinite Group is a global leader in education, with a strong presence in Dubai,
-          India and Srilanka, along with operations in several other countries.
-          With a steadfast commitment to innovation and excellence in learning,
-          we are dedicated to shaping the future of education worldwide.
+          Infinite Group of Companies is proud to deliver world-class services
+          across multiple countries. We have established ourselves as leaders in
+          various industries and continue to expand our reach globally.
         </p>
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40">
           <InfiniteGroup />
         </div>
       </div>
-
-
       {/* <div className="h-screen w-full">
         <Lamp />
       </div> */}
@@ -187,7 +189,8 @@ export default function LandingPage() {
           Our Locations
         </p>
         <p className="text-md font-normal font-center text-center text-black dark:text-neutral-400 mb-20">
-          our prime locations in bustling cities across Dubai, Qatar, India and Srilanka.
+          our prime locations in bustling cities across Dubai, Qatar, India and
+          Sri Lanka.
         </p>
         <div className="w-full max-w-screen-2xl px-5 md:px-20 lg:px-40 pb-[5rem]">
           <Location />

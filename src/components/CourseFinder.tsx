@@ -31,7 +31,7 @@ const initalValue = [
 
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState({
-    width: typeof window !== 'undefined' ? window.innerWidth : 0,
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
   });
 
   useEffect(() => {
@@ -41,8 +41,8 @@ const useWindowSize = () => {
       });
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return windowSize;
@@ -131,7 +131,7 @@ const CourseFinder = () => {
             initial={false}
             animate={{ opacity: isExpanded ? 1 : 0 }}
           >
-            {courseItem.name} | {courseItem.abbreviation} <br />
+            {courseItem.name} <br />
             <span className="text-xs">{courseItem.description}</span>
           </motion.div>
         ))}
@@ -162,7 +162,7 @@ const CourseFinder = () => {
             initial={false}
             animate={{
               height: "50vh",
-              opacity: 1
+              opacity: 1,
             }}
             whileTap={{ scale: 0.95 }}
           >
@@ -177,7 +177,7 @@ const CourseFinder = () => {
                 initial={false}
                 animate={{ opacity: 1 }}
               >
-                {courseItem.name} | {courseItem.abbreviation} <br />
+                {courseItem.name} <br />
                 <span className="text-xs">{courseItem.description}</span>
               </motion.div>
             ))}

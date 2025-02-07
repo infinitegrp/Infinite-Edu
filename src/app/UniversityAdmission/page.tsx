@@ -11,7 +11,7 @@ function page() {
       <div>
         <div className="h-[70vh] w-full gap-2 md:gap-5  dark:bg-[#212227] bg-white flex flex-col items-center justify-between ">
           <p className="text-2xl md:text-4xl font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
-            Study Internationaly
+            Study Internationally
           </p>
           <p className="pt-1 md:text-base text-sm  font-center text-center text-black font-light dark:text-neutral-400  max-w-[50rem]">
             we guide students in finding their ideal international study
@@ -26,7 +26,7 @@ function page() {
                 <span className="text-2xl">30+</span> Countries
               </h1>
               <p className=" text-black dark:text-gray-400 text-xs text-center">
-                Operating in 30+ countries, our extensive partnerships form the
+                Offering in 30+ countries, our extensive partnerships form the
                 backbone of our global presence.
               </p>
             </div>

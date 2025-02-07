@@ -20,15 +20,15 @@ export const locations = [
         address_line_1: 'K. C. Building',
         address_line_2: 'Mavelikkara, Alappuzha,',
         address_line_3: 'Kerala - India',
-        ph: '+971 50 339 7437',
-        directions: "#"
+        ph: '+91 9947731238',
+        directions: "https://www.google.com/maps/place/Mavelikara,+Kerala/@9.2423583,76.5018011,13z/data=!3m1!4b1!4m6!3m5!1s0x3b061ee020787e0d:0xc496b728b31ffb0f!8m2!3d9.2505757!4d76.5400806!16s%2Fg%2F11cs0136mr?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
     },
     {
         title: 'Sri Lanka',
         address_line_1: '68 D, Wettawa Kusala',
         address_line_2: 'Galhenawatta, Raddelugama',
-        address_line_3: 'Siduwa, Srilanka - 11870',
+        address_line_3: 'Siduwa, Sri Lanka - 11870',
         ph: '+971 4 261 2570',
-        directions: "#"
+        directions: "https://www.google.com/maps/place/Siduwa/@7.1452096,79.8753755,16.3z/data=!4m6!3m5!1s0x3ae2f152883c021b:0x995009d68eaa20a!8m2!3d7.1463076!4d79.8774608!16s%2Fg%2F11v3lk8p0y?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"
     },
 ]

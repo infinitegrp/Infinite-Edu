@@ -39,7 +39,7 @@ export default function Contact() {
       <div className=" w-full flex mx-auto rounded-none md:rounded-2xl p-4 shadow-input bg-white dark:bg-black">
         <div className="w-5/5 md:w-3/5">
           <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-            Have a question , or just want a Appointment, say hi!
+            Have a question , or just want an appointment, say hi!
           </h2>
           <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
             We'd love to hear from you! Drop us a line using the form below, and
@@ -134,7 +134,7 @@ export default function Contact() {
         </div>
         <div className="hidden md:w-2/5 pl-10 xl:pl-20 sm:flex gap-2 flex-col">
           <h2 className="font-bold text-2xl text-neutral-800 dark:text-neutral-200">
-            Contact Informations
+            Contact Information
           </h2>
           {locations?.map(data =>
             <p key={data?.title} className="text-neutral-600 text-sm lg:text-md max-w-sm mt-2 dark:text-neutral-400">

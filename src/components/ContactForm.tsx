@@ -52,7 +52,7 @@ const ContactForm: React.FC<ContactProps> = ({
     <ModalLayout open={open} setOpen={setOpen} title="" width={1000} bgcolor={bgcolor}>
       <div className="md:p-10">
         <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-          Have a question , or just want a Appointment, say hi!
+          Have a question , or just want an appointment, say hi!
         </h2>
         <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
           We'd love to hear from you! Drop us a line using the form below, and

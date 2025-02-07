@@ -77,7 +77,7 @@ export function WhyInfinite() {
       <div className="flex flex-row items-center justify-center">
         <div className="flex justify-center flex-col pt-80 md:pt-0 mx-5 absolute items-center">
           <p className="text-center w-[90vw] pt-28 md:pt-60 lg:pt-28 pb-6 px-10 dark:text-gray-300 text-gray-700 text-sm md:text-base">
-            We are authorized to manage student enrolments for universities and
+            We are authorized to manage student enrolment for universities and
             colleges.{" "}
           </p>
           <div className=" max-w-screen-2xl px-10 my-2 md:px-20 lg:px-60  flex flex-col md:flex-row justify-center items-start gap-4">
@@ -106,9 +106,9 @@ export function WhyInfinite() {
               </button>
               <p className="dark:text-gray-400 text-gray-700 text-sm md:text-base">
                 <span className="dark:text-gray-300">
-                  Infinite Educational Institution is committed to
-                  transparency, ensuring that students make their payments
-                  directly to their chosen college or university.
+                  Infinite Education is committed to transparency, ensuring that
+                  students make their payments directly to their chosen college
+                  or university.
                 </span>{" "}
                 We support a straightforward, no-extra-cost payment procedure,
                 maintaining both transparency and trust throughout the process
@@ -149,7 +149,7 @@ export function WhyInfinite() {
             </div>
           </div>
           <p className="text-center w-[50vw] pt-10 dark:text-gray-300 text-gray-700 font-bold text-lg">
-            What is Infinite group{" "}
+            What is Infinite Group{" "}
             <span className="text-indigo-500">alumni ?</span>{" "}
           </p>
           <div className="flex flex-row">
@@ -200,12 +200,12 @@ export function WhyInfinite() {
           <p className="pt-1 md:text-lg font-normal font-center text-center dark:text-gray-400 text-gray-700 md:mb-12 max-w-[40rem]">
             Embark on a journey with Infinite Group and become a distinguished
             member of our widespread alumni community. Spanning across the
-            globe, our operations in Education, Emigration, IT, Hospitality,
-            Management, Corporate Services, Travel & Tourism, Technical
-            Services, and Trading Industries position us alongside market
+            globe, our operations in Education, IT, Hospitality,
+            Management & Corporate Services, Travel & Tourism, Technical
+            Services, Real Estate, Advertising and Trading Industries position us alongside market
             leaders. Our vast network offers our students unparalleled career
-            assistance, leveraging our connections with industry frontrunners to
-            help them achieve their professional aspirations
+            assistance, leveraging our connections with industry front runners
+            to help them achieve their professional aspirations
           </p>
           <button
             onClick={() => setopenContact(true)}

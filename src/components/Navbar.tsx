@@ -24,7 +24,7 @@ export function NavbarDemo() {
   if (!mounted) return null;
   return (
     <>
-      <Link
+      {/* <Link
         href={"/"}
         className="hidden md:block fixed z-50 mt-4 ml-4"
         onClick={(e) => e.preventDefault()}
@@ -43,6 +43,24 @@ export function NavbarDemo() {
           height={10}
           className="hidden dark:flex"
         />
+      </Link> */}
+      <Link
+        href={"/"}
+        className="hidden md:flex fixed z-50 mt-2 ml-4 gap-2 items-center text-blue-950 dark:text-gray-300"
+      >
+        <Image
+          src="/images/secondarylogo.png"
+          alt="logo"
+          width={48}
+          height={56}
+          className="w-8 h-14"
+        />
+        <div className="text-md hidden lg:flex flex-col justify-center uppercase">
+          <h1 className="font-semibold">Infinite Education</h1>
+          <p className="text-[8px]">
+            An Affiliate of Infinite Group of Companies
+          </p>
+        </div>
       </Link>
       <div className="relative top-8 w-full flex items-center justify-center bg-slate-800">
         <Navbar />
@@ -59,7 +77,7 @@ interface Blog {
   description: string;
 }
 function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
+  const [active, setActive] = useState<string | null>("null");
   const { theme, setTheme } = useTheme();
   const [blogs, setBlogs] = React.useState<Blog[]>([]);
 
@@ -107,7 +125,7 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem
             setActive={setActive}
             active={active}
-            item="Our Service"
+            item="Our Services"
             href="/#about"
           >
             <div className="flex flex-col space-y-4 text-sm">
@@ -116,9 +134,6 @@ function Navbar({ className }: { className?: string }) {
               <HoveredLink href="/#about">Distance Education</HoveredLink>
               <HoveredLink href="/dubai">Study & Work In Dubai</HoveredLink>
               <HoveredLink href="/india">Study In India</HoveredLink>
-              <HoveredLink href="https://www.Infinitegrp.com" target="_blank">
-                Infinite Group
-              </HoveredLink>
             </div>
           </MenuItem>
           <MenuItem
@@ -127,7 +142,7 @@ function Navbar({ className }: { className?: string }) {
             item="Blogs"
             href="/blogs"
           >
-            <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+            <div className="text-sm grid grid-cols-2 gap-10 p-4">
               {blogs?.slice(0, 4)?.map((item, idx) => (
                 <ProductItem
                   key={idx}
@@ -155,7 +170,7 @@ function Navbar({ className }: { className?: string }) {
         )}
       >
         <Menu setActive={setActive}>
-          <MenuItem setActive={setActive} active={active} item="menu" href="#">
+          <MenuItem setActive={setActive} active={active} item="menu" href="/">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/">Home</HoveredLink>
               <HoveredLink href="/#why-Infinite">Why Infinite</HoveredLink>

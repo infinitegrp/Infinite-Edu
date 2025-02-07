@@ -16,17 +16,24 @@ const IndiaContent = () => {
       <div className="max-w-screen-2xl px-5 md:px-20 lg:px-40 w-full space-y-4 mx-auto py-4 pb-24 text-neutral-500">
         <div className="w-full flex flex-col md:flex-row md:gap-10">
           <div className="md:w-1/2 flex flex-col justify-center">
-            <b>Transparent Admission Process</b>
+            <b>Highlights of Studying in India</b>
             <br />
             <p>
-              For students aiming to continue their education in India, our
-              seasoned experts provide comprehensive support, guiding them to
-              choose the appropriate course and institution that matches their
-              career goals. We guarantee a transparent admissions process
-              without any hidden fees
+              <b>World-Class Institutions:</b> Access to highly reputed
+              universities and colleges with a strong focus on academics and
+              research.
+              <br />
+              <br />
+              <b>Affordable Education:</b> Competitive tuition fees and living
+              costs make India a popular destination for international
+              students.
+              <br />
+              <br />
+              <b>Rich Cultural Experience:</b> Immerse yourself in a vibrant
+              culture and explore India’s diverse heritage.
             </p>
             <br />
-            <Link href={"#"} onClick={handleOpen}>
+            <Link href={"#"} onClick={handleOpen} className="text-blue-500">
               Learn more
             </Link>
           </div>
@@ -41,15 +48,24 @@ const IndiaContent = () => {
         </div>
         <div className="w-full flex flex-col md:flex-row md:gap-10">
           <div className="md:w-1/2 flex flex-col justify-center md:order-2">
-            <b>Available 24/7 for assistance</b>
+            <b>Our Services</b>
             <br />
             <p>
-              Since we have a presence in both India and the UAE, our team is
-              readily available 24/7 for assistance, both locally and in-person,
-              ensuring that every need is addressed promptly and effectively.
+              <b>Transparent Admission Process:</b> We prioritize transparency,
+              ensuring that students and their families have a clear
+              understanding of the process and associated costs.
+              <br />
+              <br />
+              <b>Tailored Guidance:</b> Our team assists you in choosing the
+              right institution and program that aligns with your career
+              aspirations.
+              <br />
+              <br />
+              <b>Comprehensive Support:</b> From application to enrollment
+              and beyond, we provide end-to-end assistance.
             </p>
             <br />
-            <Link href={"#"} onClick={handleOpen}>
+            <Link href={"#"} onClick={handleOpen} className="text-blue-500">
               Learn more
             </Link>
           </div>
