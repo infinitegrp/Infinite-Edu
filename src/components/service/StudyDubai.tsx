@@ -12,7 +12,8 @@ const StudyDubai = () => {
         <Link
           href={"/dubai"}
           className="h-full w-full justify-center items-start  overflow-hidden flex flex-col relative"
-        >
+        > 
+        
           <motion.div className="pt-3 md:pt-4 lg:pt-6 px-2.5 md:px-5 lg:px-6 h-full w-full bg-white dark:bg-neutral-950">
             <h1 className="font-semibold text-sm md:text-lg text-black dark:text-white">
               Study and Work in Dubai
