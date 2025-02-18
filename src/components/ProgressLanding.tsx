@@ -153,7 +153,7 @@ export default function ProgressLanding() {
                 Years of Experience{" "}
               </p>
               <p className=" text-black dark:text-gray-400 text-xs text-center w-32 md:w-40">
-                Backed by over 15 years of unrivaled experience
+                Backed by over 15 years of unrivaled experience.
               </p>
             </motion.div>
             <motion.div

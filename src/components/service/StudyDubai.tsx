@@ -20,7 +20,7 @@ const StudyDubai = () => {
             </h1>
             <p className="text-xs md:text-sm lg:text-md text-gray-500 dark:text-gray-300 pt-2 md:pt-2 lg:pt-2 ">
               Earn, learn, and build your future with our trusted Study and Work
-              programs in the Dubai
+              programs in the Dubai.
             </p>
             <div className="d-flex flex-row">
               <CustomButton href={"/dubai"}>Explore</CustomButton>

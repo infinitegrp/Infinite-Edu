@@ -20,8 +20,8 @@ const PathwaySection = () => {
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
           className="pt-1 text-sm font-normal font-center text-center text-gray-400 mb-20 max-w-[30rem] px-4 sm:px-0"
         >
-          opportunity for students to begin their educational journey in Dubai
-          and complete their final year in the UK
+          Opportunity for students to begin their educational journey in Dubai
+          and complete their final year in the UK.
         </motion.p>
 
         <motion.div className=" max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 flex flex-col gap-5  w-full h-full">
@@ -152,7 +152,7 @@ const PathwaySection = () => {
                         <br />
                         After completing your degree in the UK, you become
                         eligible for the PSW , allowing you to gain work
-                        experience in one of the world&nbsp;s leading economies.
+                        experience in one of the world&apos;s leading economies.
                       </p>
                     </div>
                     <div className="flex gap-8">
@@ -220,7 +220,7 @@ const PathwaySection = () => {
                     duration: 0.8,
                     ease: "easeInOut",
                   }}
-                  className="absolute text-xs md:text-sm font-normal p-10 md:p-5 pb-2 md:pb-1 md:bottom-8 max-w-[60rem] z-20"
+                  className="absolute text-xs md:text-sm font-normal p-10 md:p-5 pb-2 md:pb-1 md:bottom-8 max-w-[60rem] z-20 text-white"
                 >
                   <span className="text-lg font-bold pb-4">How It Works</span>
 

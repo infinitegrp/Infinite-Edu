@@ -57,7 +57,7 @@ export default function DistanceEducation() {
           className="text-xs text-start xl:text-base text-gray-500 dark:text-gray-300 pt-3 "
         >
           Our distance/online education programs are ideal for working
-          professionals who cannot commit to full-time, on-campus studies
+          professionals who cannot commit to full-time, on-campus studies.
         </p>
         <CustomButton
           onClick={() => setOpen(true)}
@@ -76,7 +76,7 @@ export default function DistanceEducation() {
             </div>
           </div>
         </div>
-        <div className="flex xl:flex-row flex-col gap-4 xl:pt-8 h-full">
+        <div className="flex xl:flex-row flex-col gap-4 xl:pt-8">
           <BorderLineCard className="w-full h-60 md:h-40 flex  justify-center items-center overflow-hidden relative dark:bg-transparent">
             <div
               className="flex flex-col md:hidden"

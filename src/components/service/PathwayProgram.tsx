@@ -16,7 +16,7 @@ export default function PathwayProgram() {
         </h1>
         <p className="text-xs xl:text-sm text-gray-500 dark:text-gray-300 pt-2 md:pt-2 lg:pt-2 ">
           opportunity for students to begin their educational journey in Dubai
-          and complete their final year in the UK
+          and complete their final year in the UK.
         </p>
         <div className="d-flex flex-row">
           <CustomButton href={"/dubai"}>Explore</CustomButton>

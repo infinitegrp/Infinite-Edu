@@ -115,7 +115,7 @@ const page = () => {
                   initial={{ opacity: 0.5, y: 100 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut" }}
-                  className="pt-40 text-[8px] md:text-sm font-normal font-center text-center text-[#FFD700] mb-5 max-w-[60rem] px-4 sm:px-10"
+                  className="pt-40 text-[8px] md:text-sm font-normal font-center text-center text-white mb-5 max-w-[60rem] px-4 sm:px-10"
                 >
                   By participating in our pathway program, students gain the
                   advantage of experiencing diverse educational systems,
@@ -131,7 +131,7 @@ const page = () => {
                   className="border px-4 p-4 md:mb-24 rounded-xl mt-3 mb-4 h-8 animate-shimmer items-center flex flex-row border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] text-sm dark:text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                   onClick={() => setopenContact(true)}
                 >
-                  <p className="pr-2 py-4 text-base text-[#FFD700]">
+                  <p className="pr-2 py-4 text-base text-white">
                     Enquire Now
                   </p>
                   <svg

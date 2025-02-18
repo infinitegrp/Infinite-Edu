@@ -15,6 +15,9 @@ module.exports = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
       },
+      fontFamily: {
+        bebas: ["var(--font-bebas)"],
+      },
       keyframes: {
         shimmer: {
           from: {

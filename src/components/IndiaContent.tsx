@@ -25,12 +25,11 @@ const IndiaContent = () => {
               <br />
               <br />
               <b>Affordable Education:</b> Competitive tuition fees and living
-              costs make India a popular destination for international
-              students.
+              costs make India a popular destination for international students.
               <br />
               <br />
               <b>Rich Cultural Experience:</b> Immerse yourself in a vibrant
-              culture and explore India’s diverse heritage.
+              culture and explore India&apos;s diverse heritage.
             </p>
             <br />
             <Link href={"#"} onClick={handleOpen} className="text-blue-500">
@@ -46,25 +45,23 @@ const IndiaContent = () => {
             />
           </div>
         </div>
-        <div className="w-full flex flex-col md:flex-row md:gap-10">
-          <div className="md:w-1/2 flex flex-col justify-center md:order-2">
+        <div className="w-full flex flex-col md:flex-row">
+          <div className="md:w-1/2 flex flex-col gap-3 justify-center md:order-2">
             <b>Our Services</b>
-            <br />
             <p>
               <b>Transparent Admission Process:</b> We prioritize transparency,
               ensuring that students and their families have a clear
               understanding of the process and associated costs.
-              <br />
-              <br />
+            </p>
+            <p>
               <b>Tailored Guidance:</b> Our team assists you in choosing the
               right institution and program that aligns with your career
               aspirations.
-              <br />
-              <br />
-              <b>Comprehensive Support:</b> From application to enrollment
-              and beyond, we provide end-to-end assistance.
             </p>
-            <br />
+            <p>
+              <b>Comprehensive Support:</b> From application to enrollment and
+              beyond, we provide end-to-end assistance.
+            </p>
             <Link href={"#"} onClick={handleOpen} className="text-blue-500">
               Learn more
             </Link>
@@ -73,8 +70,8 @@ const IndiaContent = () => {
             <Image
               src={"/images/24x7.png"}
               alt="admission-process"
-              height={400}
-              width={400}
+              height={100}
+              width={1000}
             />
           </div>
         </div>

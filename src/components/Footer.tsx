@@ -13,20 +13,12 @@ const Footer = () => {
               className="flex flex-col justify-center gap-2 items-center text-blue-900 dark:text-gray-300"
             >
               <Image
-                src="/images/secondarylogo.png"
+                src="/logo-primary.svg"
                 alt="logo"
-                width={48}
-                height={56}
-                className="w-12 h-28"
+                width={100}
+                height={100}
+                className="w-full h-full"
               />
-              <div className="text-lg flex flex-col justify-center uppercase">
-                <h1 className="font-bold text-center text-base md:text-xl">
-                  Infinite Education
-                </h1>
-                <p className="text-xs text-center">
-                  An Affiliate of Infinite Group of Companies
-                </p>
-              </div>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

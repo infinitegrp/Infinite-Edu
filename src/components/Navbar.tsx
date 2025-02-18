@@ -46,9 +46,9 @@ export function NavbarDemo() {
       </Link> */}
       <Link
         href={"/"}
-        className="hidden md:flex fixed z-50 mt-2 ml-4 gap-2 items-center text-blue-950 dark:text-gray-300"
+        className="hidden md:flex fixed z-50 -top-8 ml-4 gap-2 items-center text-blue-950 dark:text-gray-300"
       >
-        <Image
+        {/* <Image
           src="/images/secondarylogo.png"
           alt="logo"
           width={48}
@@ -60,7 +60,14 @@ export function NavbarDemo() {
           <p className="text-[8px]">
             An Affiliate of Infinite Group of Companies
           </p>
-        </div>
+        </div> */}
+        <Image
+          src="/logo-secondary.svg"
+          alt="logo"
+          width={300}
+          height={300}
+          className="w-full h-[8.5rem]"
+        />
       </Link>
       <div className="relative top-8 w-full flex items-center justify-center bg-slate-800">
         <Navbar />

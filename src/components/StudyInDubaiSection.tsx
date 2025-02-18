@@ -215,15 +215,15 @@ const StudyInDubaiSection = () => {
                   }}
                   className="absolute text-[8px] md:text-sm font-normal p-10 md:p-8 bottom-1 max-w-[60rem] z-20"
                 >
-                  <span className="text-lg font-bold pb-4">
+                  <span className="text-lg font-bold pb-4 text-white">
                     Why Choose Dubai?
                   </span>
 
-                  <div className="flex flex-col gap-2 pt-4 text-xs">
-                    <h2 className="font-bold text-sm">World-Class Education</h2>
+                  <div className="flex flex-col gap-2 pt-4 text-xs text-white">
+                    <h2 className="font-bold text-sm text-white">World-Class Education</h2>
                     Dubai hosts some of the top universities and colleges with
-                    state-of-the-art facilities and experienced faculty
-                    <h2 className="font-bold text-sm">Work Opportunities</h2>
+                    state-of-the-art facilities and experienced faculty.
+                    <h2 className="font-bold text-sm text-white">Work Opportunities</h2>
                     Students can work part-time while studying, gaining valuable
                     international work experience.
                   </div>

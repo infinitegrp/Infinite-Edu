@@ -111,7 +111,7 @@ export function WhyInfinite() {
                   or university.
                 </span>{" "}
                 We support a straightforward, no-extra-cost payment procedure,
-                maintaining both transparency and trust throughout the process
+                maintaining both transparency and trust throughout the process.
               </p>
             </div>
             <div className="flex gap-4">
@@ -205,7 +205,7 @@ export function WhyInfinite() {
             Services, Real Estate, Advertising and Trading Industries position us alongside market
             leaders. Our vast network offers our students unparalleled career
             assistance, leveraging our connections with industry front runners
-            to help them achieve their professional aspirations
+            to help them achieve their professional aspirations.
           </p>
           <button
             onClick={() => setopenContact(true)}

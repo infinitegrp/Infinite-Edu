@@ -65,7 +65,7 @@ export default function MultiLayerParallax() {
           transition={{ delay: 0.3, duration: 0.8, ease: "easeInOut", }}
           className="text-center  md:text-base text-xs max-w-screen-2xl px-5 my-2 md:px-20 lg:px-40 w-full  text-neutral-500">
           <b>Indian Higher Education</b><br /><br />
-          India has one of the largest higher education systems in the world that stands second in terms of the higher education network. The term ‘higher education’ with respect to India denotes the tertiary level education that is imparted. The entire higher education ecosystem in India comprises around 1000+ universities and 42,000+ colleges imparting exceptional education. All these institutions fall under the purview of the Ministry of Education
+          India has one of the largest higher education systems in the world that stands second in terms of the higher education network. The term &apos;higher education&apos; with respect to India denotes the tertiary level education that is imparted. The entire higher education ecosystem in India comprises around 1000+ universities and 42,000+ colleges imparting exceptional education. All these institutions fall under the purview of the Ministry of Education.
         </motion.p>
       </motion.div>
     </div>

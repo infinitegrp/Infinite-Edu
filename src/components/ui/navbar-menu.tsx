@@ -27,7 +27,11 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} onClick={() => setActive(item)} className="relative">
+    <div
+      onMouseEnter={() => setActive(item)}
+      onClick={() => setActive(item)}
+      className="relative"
+    >
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -45,9 +49,9 @@ export const MenuItem = ({
               height={56}
               className="w-8 h-14"
             />
-            <div className="text-md flex flex-col justify-center uppercase">
-              <h1 className="font-semibold">Infinite Education</h1>
-              <p className="text-[8px]">
+            <div className="flex flex-col justify-center uppercase">
+              <h1 className="font-bebas text-2xl">Infinite Education</h1>
+              <p className="text-[6px]">
                 An Affiliate of Infinite Group of Companies
               </p>
             </div>
